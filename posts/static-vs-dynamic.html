@@ -3,12 +3,19 @@
 <html>
   <head>
     <title>Static vs. dynamic</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/post.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>    
+
   </head>
   <body>
     <a id="back" href="../index.html">Home</a>
     <div id="top-bar">
-      <h1 id="title">Static vs. dynamic type checking - which is better?</h1>
+      <h1 id="title">Static vs. dynamic type checking - the never-ending battle</h1>
       <hr>
     </div>
     <div id="main">
@@ -31,8 +38,37 @@
         error. Since it only checks the types it encounter it won't validate the types 
         of any execution paths you don't test. 
       </p>
+        
       <p>
+        In the Python code snippet below there are two separate execution paths, 
+        and depending on the what value <code class="inline">some_condition</code> holds
+        the else condition may or may not run. 
+        
+        
+      </p>
+<pre class="code-block"><code class="python">
+  if some_condition:
+    print(1 + 1)
+  else:
+    print(1 + "1")
+</code></pre>
+      <p>
+        Someone who has used Python may see that
+        the print-statement in the else path will give a type error. 
+        In a statically 
+        type checked language the error could be caught compile-time. Python, 
+        however, has a dynamic type system and will not notice the type error if 
+        execution doesn't go down that path. Now picture the condition being 
+        something that evaluates to <code class="inline">True</code> 99% of the time.
+        The error may not be caught until you force a test on it. 
+      </p>
+
+      <h1>Pros and cons</h1>
+
+      <p>
+        <hr>
         Mixed languages, inheritance downcasting requires dynamic.
+        Testing dynamic languages in REPL (complete code not needed).
       </p>
 
       <h1>My experiences</h1>
