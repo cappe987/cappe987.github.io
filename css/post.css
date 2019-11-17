@@ -53,10 +53,9 @@
   border-radius: 0.5em;
   padding-top: 0.6em;
 }
-.python{
-  /* font-family: 'Courier', Courier, monospace; */
-  border-radius: 0.5em;
-}
+
+/* font-family: 'Courier', Courier, monospace; */
+.python{ border-radius: 0.5em; }
 .csharp{ border-radius: 0.5em; }
 .haskell{ border-radius: 0.5em;}
 
@@ -91,5 +90,7 @@ p > code{
   /* font-size: 0.8em; */
   line-height: 0.7em;
   font-family: 'Courier', Courier, monospace;
+  /* word-wrap: none; */
+  white-space: nowrap;
   /* font-weight: 600; */
 }
