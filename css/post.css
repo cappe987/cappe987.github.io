@@ -37,25 +37,59 @@
 }
 
 #main>p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1.2em;
 }
 
 .code-block{
   display: block;
-  padding-bottom: 20px;
+  /* background: #F0F0F0; */
+  background-color: #fafafa;
+  /* font-size: 1.2em; */
+  border-color: rgba(124, 124, 124, 0.4);
+  border-style: solid;
+  border-width: 1px;;
+  border-radius: 0.5em;
+  padding-top: 0.6em;
+}
+.python{
+  /* font-family: 'Courier', Courier, monospace; */
+  border-radius: 0.5em;
+}
+.csharp{ border-radius: 0.5em; }
+.haskell{ border-radius: 0.5em;}
 
+
+/* Code blocks */
+pre > code {
+  /* position: relative; */
+  /* top: 10px; */
+  /* margin-bottom: -10px; */
+  /* padding-top: 10px; */
+  font-family: 'Courier', Courier, monospace;
+  font-size: 1em;
+
+
+  /* display: block;
   background: #F0F0F0;
-  font-size: 1.2em;
+  border-color: rgba(124, 124, 124, 0.4);
+  border-style: solid;
+  border-width: 1px;;
+  border-radius: 0.5em; */
 }
 
-.code{
+/* .code{
   background: rgb(184, 184, 184);
   border-radius: 0.2em;
   font-size: 1em;
   padding: 0.2em;
-}
+} */
 
-.inline{
-  font-weight: 600;
+/* Inline code */
+p > code{
+  /* font-size: 0.8em; */
+  line-height: 0.7em;
+  font-family: 'Courier', Courier, monospace;
+  /* font-weight: 600; */
 }

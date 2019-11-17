@@ -6,19 +6,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/post.css">
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
 
   </head>
   <body>
     <a id="back" href="../index.html">Home</a>
-    <div id="top-bar">
+    <header id="top-bar">
       <h1 id="title">Static vs. dynamic type checking - the never-ending battle</h1>
       <hr>
-    </div>
-    <div id="main">
+    </header>
+    <article id="main">
       <h1>What are they?</h1>
       <p>
         Type checking can differ a lot in modern programming languages.
@@ -26,47 +24,135 @@
         a big fan of static type checking. 
       </p>
       <p>
-        Static type checking can be defined as language where the 
-        compiler checks the types. Type safety, to a certain degree, 
-        can be guaranteed without even running the program. A variable has 
-        one type and one type only. It can never change its type. This eliminates 
-        a lot of errors and you can spend less time testing it.   
+        <blockquote><q>Static typing can find type errors reliably at compile time, 
+          which should increase the reliability of the delivered 
+          program</q> - <i>Wikipedia</i> </blockquote>
+        Static type checking guarantees type safety, to a certain degree, 
+        without even running the program. A variable has one type and 
+        one type only. It can never change its type. This eliminates a 
+        lot of errors and you can spend less time testing it.   
       </p>
       <p>
         A language with dynamic type checking has its types checked during runtime. 
+        These languages often leave out type declarations in the code, leading 
+        to less code to read and write.
         This adds extra overhead when running, and the possibility of a runtime type 
         error. Since it only checks the types it encounter it won't validate the types 
         of any execution paths you don't test. 
       </p>
         
       <p>
-        In the Python code snippet below there are two separate execution paths, 
-        and depending on the what value <code class="inline">some_condition</code> holds
-        the else condition may or may not run. 
+        The code snippet below contains two separate execution paths, 
+        and depending on what value <code>some_condition</code> holds
+        the <code>else</code> condition may or may not run. 
         
         
       </p>
-<pre class="code-block"><code class="python">
-  if some_condition:
-    print(1 + 1)
-  else:
-    print(1 + "1")
+
+<pre class="code-block"><code class="python"> if some_condition:
+   print(1 + 1)
+ else:
+   print(1 + "1")
 </code></pre>
+
       <p>
         Someone who has used Python may see that
-        the print-statement in the else path will give a type error. 
-        In a statically 
-        type checked language the error could be caught compile-time. Python, 
-        however, has a dynamic type system and will not notice the type error if 
-        execution doesn't go down that path. Now picture the condition being 
-        something that evaluates to <code class="inline">True</code> 99% of the time.
-        The error may not be caught until you force a test on it. 
+        the addition in the else path will throw a type error. 
+        A statically typed language would catch the error compile-time.
+        Python, however, has a dynamic type system and will 
+        not notice the type error if execution doesn't go down that path. 
+        Imagine the condition being something that evaluates to 
+        <code>True</code> 99% of the time. You could continue coding for a 
+        good while before noticing anything is wrong.
+      </p>
+      <p>
+        Statically typed languages, while type safe to a certain degree, can 
+        still contain dynamically typed parts. Languages that make use 
+        of inheritance (eg. C#, Java, C++) tend to mix static and dynamic typing. 
+        A variable of type A can also hold an instance of any subclass to A. 
+        This works because any subclass of A can do everything that A 
+        can do. Although it can't make use of the subclass' additional 
+        functionalities while assigned to a variable of the supertype, you can downcast the object to its actual type. 
       </p>
 
-      <h1>Pros and cons</h1>
-
       <p>
+        When a variable contains an object of
+        a different type than declared we speak of actual type (the type 
+        of the object, possibly a subclass) vs. apparent type (the type of the variable). 
+        Here the dynamic part comes in. Because the actual 
+        type of the object may differ from the apparent type we 
+        can't know at compile-time if we can downcast. Different execution paths may 
+        lead to the variable containing a different subclass. 
+        
+        Only when we know the actual type of the variable can we tell
+        if the code allows the downcasting or not. If not it usually 
+        results in a runtime error.
+      <p>
+
+
+      <h1>Pros and cons</h1>
+        <p>
+          Statically typed languages tend to have better code completion.
+          With your text editor correctly set up you can get red squiggly lines 
+          under a lot of what would result in a compiler error, saving you 
+          some time. You can see what types a function wants as input, reducing
+          the chances of making incorrect assumptions. 
+        </p>
+
+<pre class="code-block"><code class="python"> map(function, iterables)
+</code></pre>
+
+        <p>
+          The snippet above shows the type signature for the function 
+          <code>map</code> in Python. 
+          We can see that it wants a function and an iterable for input. 
+          Without knowing the meaning of map you can't tell 
+          what we should pass to it. You could somewhat assume what counts as 
+          iterable, but it doesn't classify what counts as iterable. 
+          Looking at the function paramter we can't tell anything about 
+          what type the argument should have.
+          
+        </p>
+
+<pre class="code-block"><code class="csharp"> IEnumerable&ltR&gt Select&ltT,R&gt(IEnumerable&ltT&gt, Func&ltT,R&gt)
+</code></pre>
+
+        <p>
+          Here we have the type signature for the mapping function in C# 
+          (called Select). <code>T</code> and
+          <code>R</code> represents two generic types which 
+          it has to match in the type signature. 
+
+          For the first argument you can pass it any C# class that implements 
+          the interface <code>IEnumerable&ltT&gt</code> of any type 
+          <code>T</code>. As opposed to Python it clearly states what defines 
+          an iterable.
+
+          <code>Func&ltT,R&gt</code> represents a function 
+          that takes a value of type <code>T</code> and returns a value of 
+          type <code>R</code>. This means that if we pass in a list of 
+          integers, we must also pass in a function that takes an integer 
+          as input, and we will recieve an <code>IEnumerable</code> of 
+          type <code>R</code> as output. The compiler will complain if 
+          we pass it anything that doesn't match.
+        </p>
+        <p>
+          Static typing tends to make lanuages more verbose when explicitly 
+          stating the types, but not necessarily. Some languages have a 
+          strong type inference. 
+        </p>
+<pre class="code-block"><code class="haskell"> map f [] = []
+ map f (x:xs) = (f x) : map f xs
+</code></pre>
+        <p>
+          The snippet above shows a simple implementation of <code>map</code> in Haskell. 
+          Without specifying any types it can infer the type 
+          <code>(a -> b) -> [a] -> [b]</code>. 
+        </p>
+
+
         <hr>
+      <p>
         Mixed languages, inheritance downcasting requires dynamic.
         Testing dynamic languages in REPL (complete code not needed).
       </p>
@@ -77,7 +163,12 @@
 
       </p>
       <hr>
-    </div>
-    <!-- Hello -->
+
+
+
+    </article>
   </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>    
