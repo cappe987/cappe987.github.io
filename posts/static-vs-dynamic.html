@@ -39,8 +39,8 @@
         These languages often leave out type declarations in the code, leading 
         to less code to read and write.
         This adds extra overhead when running, and increases the likelihood 
-        of runtime type error. Since it only checks the types it encounter 
-        it won't validate the types of any execution paths you don't test. 
+        of runtime type error. Since it only checks the types it encounters, 
+        it won't validate the types in any execution paths you don't test. 
       </p>
         
       <p>
@@ -97,8 +97,8 @@
           Statically typed languages tend to have better code completion.
           With your text editor correctly set up you can get red squiggly lines 
           under a lot of what would result in a compiler error, saving you 
-          some time. You can see the types of the function input, reducing
-          the chances of making incorrect assumptions. 
+          some time. You can also see the type signatures of variables 
+          and functions, reducing the chances of making incorrect assumptions. 
         </p>
 
 <pre class="code-block"><code class="python"> map(function, iterables)
@@ -107,7 +107,8 @@
         <p>
           The snippet above shows the type signature for the function 
           <code>map</code> in Python. 
-          We can see that it wants a function and an iterable for input. 
+          We can see that it wants a function and an iterable for input 
+          (according to hopefully good variable names). 
           Without knowing the meaning of map you can't tell 
           what we should pass to it. You could somewhat assume what counts as 
           iterable, but it doesn't classify exactly what defines an iterable. 
@@ -126,7 +127,7 @@
 
           For the first argument you can pass it any C# class that implements 
           the interface <code>IEnumerable&ltT&gt</code> of any type 
-          <code>T</code>. As opposed to Python it clearly states what defines 
+          <code>T</code>. As opposed to Python, it clearly states what defines 
           an iterable.
 
           <code>Func&ltT,R&gt</code> represents a function 
@@ -147,7 +148,7 @@
 </code></pre>
         <p>
           The snippet above shows a simple implementation of <code>map</code> in Haskell. 
-          By analyzing how I've used lists, list operators and a function, 
+          By analyzing how I've used lists, list operators, and functions, 
           it can infer the type signature <code>(a -> b) -> [a] -> [b]</code>.
         </p>
 
@@ -175,5 +176,5 @@
   </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script> -->
 <script>hljs.initHighlightingOnLoad();</script>    
