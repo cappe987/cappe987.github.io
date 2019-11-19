@@ -67,11 +67,21 @@ results in a runtime error.
 
 # Static typing
 
+Statically typed languages tend to have better code completion.
+With your text editor correctly set up you can get red squiggly lines 
+under a lot of what would result in a compiler error, saving you 
+some time. You can also see the type signatures of variables 
+and functions, reducing the chances of making incorrect assumptions. 
+
+{% highlight python %}
+map(function, iterables)
+{% endhighlight %}
+
 The snippet above shows the type signature for the function 
 `map` in Python. We can see that it wants a function and an iterable for 
-input (according to hopefully good variable names). 
+input, according to the hopefully well-named parameters. 
 Without knowing the meaning of map you can't tell 
-what we should pass to it. You could somewhat assume what counts as 
+what arguments you should pass to it. You could somewhat assume what counts as 
 iterable, but it doesn't classify exactly what defines an iterable. 
 Looking at the function parameter we can't tell anything about 
 what type the argument should have.
@@ -82,12 +92,11 @@ IEnumerable<R> Select<T,R>(IEnumerable<T>, Func<T,R>)
 {% endhighlight %}
 
 Here we have the type signature for the same function in C#. 
-`T` and
-`R` represents two generic types which 
-it has to match in the type signature. 
+`T` and `R` represents two generic types. They could be the same type, 
+or they could be different types. 
 
 For the first argument you can pass it any C# class that implements 
-the interface   IEnumerable&ltT&gt` of any type 
+the interface `IEnumerable<T>` of any type 
 `T`. As opposed to Python, it clearly states what defines 
 an iterable.
 
