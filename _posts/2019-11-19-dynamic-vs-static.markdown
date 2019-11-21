@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Static vs dynamic typing"
-date: 2019-11-19
+date: 2019-11-21
 categories: ""
+published: true
 ---
 
 
