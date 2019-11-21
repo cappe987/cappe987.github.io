@@ -93,7 +93,8 @@ IEnumerable<R> Select<T,R>(IEnumerable<T>, Func<T,R>)
 
 Here we have the type signature for the same function in C#. 
 `T` and `R` represents two generic types. They could be the same type, 
-or they could be different types. 
+or they could be different types. We do not care, as long as all `T`'s 
+have the same type, same goes for `R`. 
 
 For the first argument you can pass it any C# class that implements 
 the interface `IEnumerable<T>` of any type 
@@ -144,8 +145,17 @@ welcoming. If you compare the previously mentioned code snippets of `map` in Pyt
 to the `Select` in C#, you can easily guess which one a new programmer would go for. 
 
 
-# My experiences
+# My experiences and opinions
+I was first introduced to programming through my university when I began studying 
+computer science. The first course taught the statically typed language C, and later 
+on C#. The whole first year consisted of only statically typed languages before finally 
+reaching the dynamically typed JavaScript in a course in web development. Using 
+JavaScript felt odd, there were a lot of features I missed. Mainly the code 
+completion and variable/function suggestions. I ran into a great deal of bugs and 
+unexpected behavior; but I guess some of these can be attributed to JavaScript specifically.
 
+I have tried Python as well, and I had similar experiences to JavaScript with it. So as of now I am 
+on the static side. I am, however, in no way saying that either is better or worse than 
+the other. This just happens to be my opinion on it. Someone who was taught Python as
+their first language may be more inclined to prefer dynamic type systems.
 
-
-Project files for compilers, etc. 
