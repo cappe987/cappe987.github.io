@@ -2,15 +2,15 @@
 layout: post
 title: "Static vs dynamic typing"
 date: 2019-11-19
-categories: types
+categories: ""
 ---
 
 
 # Static and dynamic typing explained 
 
 > Static typing can find type errors reliably at compile time, 
-    which should increase the reliability of the delivered 
-    program - Wikipedia
+> which should increase the reliability of the delivered 
+> program - Wikipedia
 
 Static type checking guarantees type safety, to a certain degree, 
 without even running the program. A variable has one type and 
@@ -125,10 +125,27 @@ it can infer the type signature `(a -> b) -> [a] -> [b]`.
 
 # Dynamic typing
 
+Dynamically typed languages, while more overhead, usually have no compilation stage, 
+and can thus run immediately. Compiling a large project can take upwards of a few seconds, 
+if not minutes. When you first learn a compiled language, the compilation step may not feel
+like any hindrance; a small program can take less than a second to compile. 
+
+No compilation opens up for a new cool possibility for testing your code. 
+A compiled language can only run your test cases as often as you compile; but in a 
+dynamically typed language you can set up your tests to run whenever you save a file. 
+This way you can constantly keep track on if you break something.
+If, however, you are a save-maniac like me who hits Ctrl+S every few seconds, 
+you may want to learn to control yourself.
+
+Dynamic typing tends to lead to less verbose languages. Without static type checking, 
+the need to write out types disappears. This can be a great feature for a newcomer.
+A less verbose language with no strict compiler yelling at them usually appears more 
+welcoming. If you compare the previously mentioned code snippets of `map` in Python 
+to the `Select` in C#, you can easily guess which one a new programmer would go for. 
+
 
 # My experiences
 
 
-# To write about
-Mixed languages, inheritance downcasting requires dynamic.
-Testing dynamic languages in REPL (complete code not needed).
+
+Project files for compilers, etc. 
