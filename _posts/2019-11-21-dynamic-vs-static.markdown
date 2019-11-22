@@ -15,7 +15,7 @@ published: true
 
 A statically typed programming language checks that the types of 
 everything matches. If something doesn't match, the compiler stops 
-and displays an error. This guarantees type safety to a certain degree
+and displays an error. This guarantees type safety to a certain degree,
 without even running the program. A variable has one type and 
 one type only. It can never change its type. This eliminates a 
 lot of errors, and you can spend less time testing it. 
@@ -23,8 +23,8 @@ lot of errors, and you can spend less time testing it.
 A language with dynamic type checking has its types checked during runtime. 
 These languages often leave out type declarations in the code, leading 
 to less code to read and write.
-This adds extra overhead when running, and increases the likelihood 
-of runtime type error. Since it only checks the types it encounters, 
+Checking during runtime adds extra overhead when running, and increases the 
+likelihood of runtime type error. Since it only checks the types it encounters, 
 it won't validate the types in any execution paths you don't test. 
 
 The code snippet below contains two separate execution paths, 
@@ -57,10 +57,10 @@ functionalities while assigned to a variable of the supertype, you can
 downcast the object to its actual type. 
 
 When a variable contains an object of
-a different type than declared we speak of actual type (the type 
+a different type than declared, we speak of actual type (the type 
 of the object, possibly a subclass) vs. apparent type (the type of the variable). 
 Here the dynamic part comes in. Because the actual 
-type of the object may differ from the apparent type we 
+type of the object may differ from the apparent type, we 
 can't know at compile-time if we can downcast. Different execution paths may 
 lead to the variable containing a different subclass. 
 
@@ -97,7 +97,7 @@ IEnumerable<R> Select<T,R>(IEnumerable<T>, Func<T,R>)
 Here we have the type signature for the same function in C#. 
 `T` and `R` represents two generic types. We do not care about 
 the actual types of the arguments, as long as all `T`'s 
-have the same type, same goes for the `R`'s. 
+have the same type; and same goes for the `R`'s. 
 
 For the first argument you can pass it any C# class that implements 
 the interface `IEnumerable<T>` of any type 
@@ -125,20 +125,27 @@ map f (x:xs) = (f x) : map f xs
 The snippet above shows a simple implementation of `map` in Haskell. 
 By analyzing how I've used lists, list operators, and functions, 
 it can infer the type signature `(a -> b) -> [a] -> [b]`.
+This matches the type signature of C#'s `Select`, `a` is the `T`
+and `b` is the `R`, although the parameters have swapped places.
+C# has it the other way because there you typically use it by doing
+`someObject.Select(function)` on an object, instead of passing in the 
+object as a parameter. Haskell on the other hand, makes use of partial 
+application where it makes more sense to apply the function first.
 
 
 # Dynamic typing
 
 Dynamically typed languages, while more overhead, usually have no compilation stage, 
-and can thus run immediately. Compiling a large project can take upwards of a few seconds, 
-if not minutes. When you first learn a compiled language, the compilation step may not feel
-like any hindrance; as a small program can take less than a second to compile. 
+and can thus run immediately. Compiling a large project can take several seconds, 
+if not minutes. When you first learn a compiled language, the 
+compilation step may not feel like any hindrance; as a small program can take 
+less than a second to compile. 
 
 No compilation opens up for a new cool possibility for testing your code. 
 A compiled language can only run your test cases as often as you compile; but in a 
 dynamically typed language you can set up your tests to run whenever you save a file. 
-This way you can constantly keep track on if you break something.
-If, however, you are a save-maniac like me who hits Ctrl+S every few seconds, 
+This way you can constantly keep track of if you break something.
+If, however, you are a save-maniac like me, who hits Ctrl+S every few seconds, 
 you may want to learn to control yourself.
 
 Dynamic typing tends to lead to less verbose languages. Without static type checking, 
