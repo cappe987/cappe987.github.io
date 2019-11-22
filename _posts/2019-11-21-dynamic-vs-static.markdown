@@ -13,7 +13,9 @@ published: true
 > which should increase the reliability of the delivered 
 > program - Wikipedia
 
-Static type checking guarantees type safety, to a certain degree, 
+A statically typed programming language checks that the types of 
+everything matches. If something doesn't match, the compiler stops 
+and displays an error. This guarantees type safety to a certain degree
 without even running the program. A variable has one type and 
 one type only. It can never change its type. This eliminates a 
 lot of errors, and you can spend less time testing it. 
@@ -93,9 +95,9 @@ IEnumerable<R> Select<T,R>(IEnumerable<T>, Func<T,R>)
 {% endhighlight %}
 
 Here we have the type signature for the same function in C#. 
-`T` and `R` represents two generic types. They could be the same type, 
-or they could be different types. We do not care, as long as all `T`'s 
-have the same type, same goes for `R`. 
+`T` and `R` represents two generic types. We do not care about 
+the actual types of the arguments, as long as all `T`'s 
+have the same type, same goes for the `R`'s. 
 
 For the first argument you can pass it any C# class that implements 
 the interface `IEnumerable<T>` of any type 
@@ -130,7 +132,7 @@ it can infer the type signature `(a -> b) -> [a] -> [b]`.
 Dynamically typed languages, while more overhead, usually have no compilation stage, 
 and can thus run immediately. Compiling a large project can take upwards of a few seconds, 
 if not minutes. When you first learn a compiled language, the compilation step may not feel
-like any hindrance; a small program can take less than a second to compile. 
+like any hindrance; as a small program can take less than a second to compile. 
 
 No compilation opens up for a new cool possibility for testing your code. 
 A compiled language can only run your test cases as often as you compile; but in a 
@@ -140,7 +142,7 @@ If, however, you are a save-maniac like me who hits Ctrl+S every few seconds,
 you may want to learn to control yourself.
 
 Dynamic typing tends to lead to less verbose languages. Without static type checking, 
-the need to write out types disappears. This can be a great feature for a newcomer.
+the need to write out types disappears. This lowers the bar for newcomers.
 A less verbose language with no strict compiler yelling at them usually appears more 
 welcoming. If you compare the previously mentioned code snippets of `map` in Python 
 to the `Select` in C#, you can easily guess which one a new programmer would go for. 
@@ -153,10 +155,10 @@ on C#. The whole first year consisted of only statically typed languages before 
 reaching the dynamically typed JavaScript in a course in web development. Using 
 JavaScript felt odd, there were a lot of features I missed. Mainly the code 
 completion and variable/function suggestions. I ran into a great deal of bugs and 
-unexpected behavior; but I guess some of these can be attributed to JavaScript specifically.
+unexpected behavior; I guess some of these can be attributed to JavaScript specifically.
 
-I have tried Python as well, and I had similar experiences to JavaScript with it. So as of now I am 
-on the static side. I am, however, in no way saying that either is better or worse than 
-the other. This just happens to be my opinion on it. Someone who was taught Python as
-their first language may be more inclined to prefer dynamic type systems.
+I have tried Python as well, and I had similar experiences to JavaScript with it. So 
+as of now I am on the static side. I am, however, in no way saying that either is better 
+or worse than the other. This just happens to be my opinion on it. Someone who was 
+taught Python as their first language may be more inclined to prefer dynamic type systems.
 

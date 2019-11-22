@@ -12,5 +12,27 @@ pre, code {
   // background-color: #eef;
   // background-color: rgb(255, 240, 243); 
   // background-color: rgb(240, 250, 255); // Light blue
-  background-color: rgb(238, 246, 255); // Orange
+  background-color: rgb(238, 246, 255);
+}
+
+p > code {
+  white-space: nowrap;
+}
+
+
+.summary{
+  font-size: 1.2em;
+}
+
+.details{
+  background-color: rgb(243, 243, 243);
+  border: rgb(197, 197, 197);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0.8em;
+  // display: inline;
+  // padding: 5px;
 }
