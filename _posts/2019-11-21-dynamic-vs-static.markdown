@@ -34,7 +34,7 @@ condition may or may not run.
 {% highlight python %}
 if some_condition:
    print(1 + 1)
- else:
+else:
    print(1 + "1") 
 {% endhighlight %}
 

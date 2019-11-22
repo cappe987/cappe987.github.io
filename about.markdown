@@ -19,4 +19,4 @@ You can find the source code for Jekyll at GitHub:
 
 Hello! My name is Casper, and I'm a computer science student, 2nd year.
 Here I will be writing about concepts and technologies I find interesting
-in the world in computing.
+in the world of computing.
