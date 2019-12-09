@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Operators are functions too"
-date: 2019-11-28
+date: 2019-12-09
 categories: ""
 published: true
 ---
