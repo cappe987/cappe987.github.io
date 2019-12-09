@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Operators are just functions"
+title: "Operators are functions too"
 date: 2019-11-28
 categories: ""
-published: false
+published: true
 ---
 
 # Introduction
@@ -15,23 +15,30 @@ language. Developers expect them to exist; no one would want to program without 
 
 Many languages like to extend their operators, usually `+`, to work on several 
 types. Python allows using the plus operator on both strings and 
-numbers. The interpreter accepts both`"AB" + "CD"` and `3 + 5`; 
+numbers. The interpreter accepts both `"AB" + "CD"` and `3 + 5`; 
 but these are not the same operation, just the same operator. 
 Addition on numbers is commutative, `3 + 5 == 5 + 3`; addition on 
 strings is not, `"A" + "B" != "B" + "A"`.
 
+
+**Operator:** 
+> a symbol or function denoting an operation (e.g. ×, +).
+
+**Operation:** 
+> an action to be performed on some data.
+
 Languages do this through operator overloading, either built in to the 
 compiler/interpreter, or as a part of the actual language. You specify 
-what an operator should do for a specific class. While integer addition 
+what operation an operator should do for a specific class/type. While integer addition 
 adds up the numbers, string addition
 (also known as concatenation) appends the second string to the end of the first to 
 create a new string. If you do add any yourself, you shouldn't give them 
 completely different behavior than what the symbol usually means. 
-Using the `+` operator on Vectors shouldn't perform a division just 
-because you thought it seemed convenient.
+Using the `+` operator on Vectors shouldn't perform a cross product just 
+because you thought it seemed convenient. 
 
 
-# The real face of operators
+# Operators as functions
 You may think of operators as these magical symbols that the developers 
 programmed into the language. While partially true, you can also see an 
 operator as a infix function (excluding Lisp, where verything is prefix). 
@@ -45,7 +52,7 @@ it return?
 {% endhighlight %}
 In a more familiar style: 
 {% highlight csharp %}
-bool addition(int a, int b);
+bool greaterThan(int a, int b);
 {% endhighlight %}
 This is not accounting for any other possible operator overloading, 
 such as strings or other number types (eg. float/double).
@@ -70,8 +77,8 @@ You can usually express operators in terms of other operators. In C you
 can define `+` and `-` using bitwise operators; and in turn you can 
 define `*` and `/` with those. Assuming you have other language constructs 
 such as loops and if-statements available. Integer equality and comparison 
-can be defined with the help of subtraction. Logical operators can be 
-defined with equality. 
+can be expressed with the help of subtraction. Logical operators can be 
+expressed with equality. 
 
 At the time of writing this I am currently working on making an interpreter 
 for my own Lisp-like language. I was having some trouble figuring out how to 
@@ -83,7 +90,7 @@ library for the language. A few less operators to worry about.
 Unfortunately I couldn't take it any further than that; as the language 
 I'm making is rather high-level. The rest of the standard operators 
 are hardcoded in the parser, but are parsed as function calls to 
-allow for easy partial application and less types to worry about.
+allow for easier partial application and less types to worry about.
 
 {% highlight csharp %}
 bool and(bool a, bool b){
@@ -125,3 +132,11 @@ add5div a b = (a + 5) / (b + 5)
 Haskell has a bunch of code-defined operators in the standard libary 
 to help with certain actions in its very intricate type system. For 
 example: `$`, `<$>`, `<*>`, and `>>=`.
+
+Defining custom operators is more common in functional programming languages than 
+imperative ones. Imperative has all these state-manipulating statements 
+and function calls, while in functional languages everything is done 
+by composing functions, which makes operators very useful. Instead of 
+passing two different data into a function as arguments, you use that function 
+as an operator to make it look more elegant. Function calls become less 
+cluttered and, if you are familiar with the operator, easier to read.
