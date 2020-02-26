@@ -46,7 +46,7 @@ Think of `>` as a function. What parameters does it have and what does
 it return?
 
 <details class="details">
-<summary class="summary">Answer: greater-than type signature</summary>
+<summary class="summary">Click to expand: greater-than type signature</summary>
 {% highlight fsharp %}
 (int -> int -> bool)
 {% endhighlight %}
@@ -57,7 +57,7 @@ bool greaterThan(int a, int b);
 This is not accounting for any other possible operator overloading, 
 such as strings or other number types (eg. float/double).
 </details>
-
+<br/>
 
 Some programming languages lets you treat operators like a function. In the code 
 snippet below, we assign the plus operation to the function `addition`
