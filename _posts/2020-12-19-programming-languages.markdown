@@ -3,7 +3,7 @@ layout: post
 title: "What programming languages are worth learning?"
 date: 2020-02-26
 categories: ""
-published: false
+published: true
 ---
 
 There exists many programming languages out there. But a lot of them have many similarities. Today I will discuss some points you should consider when choosing a new programming language, as well as give some suggestions of my own. Note that this applies only when learning a language for the sake of learning. When picking a language for a serious project you should pick the one that fits best for the situation, and the language best for a specific situation is a trade-off between languages you know well and languages that makes the project easier. But I'm not here to talk about that. I will talk about what to consider when you try to become a better programmer.
@@ -47,10 +47,32 @@ Now we're done with the statically typed languages. The next family is very old,
 
 Sticking to the dynamically typed languages we have Erlang. Erlang was made to be a language with focus on **concurrent programming**. The purpose of it was to be a language for telecommunications for the Swedish company Ericsson. They needed a language which could easily handle a lot of requests without failing. And if one call fails it can't crash everything. Instead it can just crash that specific process and start up a new process again. It can also do updates without restarting the program, or even stopping a phone call. After an update any new processes will be started with the new version, while the old processes stay on the old version until they end. Each process is a separate entity that can communicate by passing messages to each other. These properties also makes it **highly scalable**. Another newcomer on the scene is Elixir, which also uses the BEAM VM that Erlang is built upon.
 
-As for logic and mathematical programming, I don't really have any experience with them. But I am definitely curious to try them out. Mathematical languages like Wolfram supports symbolic representations of expression. So writing an expression like `x+5` is completely fine, leaving the `x` as a variable. It can then manipulate that variable as fits when more operations are applied. Maybe I multiply it with another `x` and get `x^2 + 5x`. You can also apply that `x` and get a final result, or you can just treat it as a function of `f(x)`. And to just mention a logic language, Prolog is the one I've had my eyes on to learn some day.
+As for logic and mathematical programming, I don't really have any experience with them. But I am definitely curious to try them out. Mathematical languages like Wolfram supports **symbolic representations of expression**. So writing an expression like `x+5` is completely fine, leaving the `x` as a variable. `x+5` is a valid return value. While most other languages would complain that it's a function and you need to give a value to `x` before getting a result. From that it can then manipulate that variable as fits when more operations are applied. Maybe I multiply it with another `x` and get `x^2 + 5x`. You can also apply that `x` and get a final result, or you can just treat it as a function of `f(x)`. And to just mention a logic language, Prolog is the one I've had my eyes on to learn some day. 
+
+A little side note. SQL (Structured Query Language) also falls into the declarative programming paradigm. It's considered a domain-specific programming language and is used to query databases. Although today they tend to also support some imperative programming.
+
+Another side note. Proof assistant languages like Coq are made to help prove mathematical theorems. They also belong to the declarative family.
 
 
+# What to learn?
+As I mentioned in the beginning, many languages share a lot and learning similar languages doesn't contribute much to your overall knowledge. You will want to learn a different language that changes the way you think. 
 
+> A language that doesn't affect the way you think about programming, is not worth knowing - *Alan Perlis*
 
-Haskell, F#/ML, Lisp, Elixir
-Rust, C++, Golang, Clojure.
+C | I think everyone should learn C to understand how things work under the hood. Maybe Rust can be included here as well.
+
+C++ | Java | C# | Learn one of them. Many other modern languages can probably also be placed here.
+
+Python | JavaScript | Popular for scripting. Definitely useful but not for larger projects, in my opinion.
+
+Haskell | F# | Haskell is a bit more of a deep-dive, so if you know Haskell you probably won't gain much from learning F#. But Haskell is also considered much harder to learn.
+
+Clojure | A language from the Lisp family to teach you about them.
+
+Erlang | Elixir | To learn a bit about their way of concurrent programming.
+
+Wolfram | Matlab | In case you are interested in programming with mathematics.
+
+Prolog | To learn about logic programming.
+
+If the language you are interested in isn't in this list, try and see which category it fits into to decide whether it's worth learning or not.
