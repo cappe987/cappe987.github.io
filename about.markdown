@@ -17,6 +17,6 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll -->
 
-Hello! My name is Casper, and I'm a computer science student, 2nd year.
+Hello! My name is Casper, and I just graduated with a Bachelor's degree in Computer Science.
 Here I will be writing about concepts and technologies I find interesting
 in the world of computing.
