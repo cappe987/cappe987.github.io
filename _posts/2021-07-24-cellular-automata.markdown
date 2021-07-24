@@ -2,7 +2,7 @@
 layout: post
 title: "Cellular automata"
 date: 2021-07-24
-categories: ""
+tag: computer_science
 published: true
 ---
 
