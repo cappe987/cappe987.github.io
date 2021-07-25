@@ -78,7 +78,7 @@ switch (x){
 }
 ```
 
-Everything stated here extends easily to functions with multiple arguments or multiple return values, usually denoted as tuples. Although deciding if such functions are injective or surjective may become much harder. The notation for such a function is $$f : A \times B \rightarrow C \times D$$, where $$A \times B$$ means the cross-product of the sets $$A$$ and $$B$$. Meaning all possible combinations of the elements of the two sets. When you have multiple arguments the domain increases a whole lot in size, since now every element in $$A$$ can be paired with every element in $$B$$. The total domain size becomes $$\vert A \vert \times \vert B \vert$$ (size of $$A$$ multiplied by size of $$B$$).
+Everything stated here extends easily to functions with multiple arguments or multiple return values, usually denoted as tuples. Although deciding if such functions are injective or surjective may become much harder. The notation for such a function is $$f : A \times B \rightarrow C \times D$$, where $$A \times B$$ means the Cartesian product of the sets $$A$$ and $$B$$. Meaning all possible combinations of the elements of the two sets. When you have multiple arguments the domain increases a whole lot in size, since now every element in $$A$$ can be paired with every element in $$B$$. The total domain size becomes $$\vert A \vert \times \vert B \vert$$ (size of $$A$$ multiplied by size of $$B$$).
 
 
 Functions and relations are everywhere in programming. In places you never considered before. Even your browser is a mapping that takes a URL and returns a webpage. Keep an eye out for them and see if you can use that knowledge to write cleaner and better code, and maybe catch some bugs.
