@@ -10,7 +10,7 @@ There exists many programming languages out there. But a lot of them have many s
 
 > A language that doesn't affect the way you think about programming, is not worth knowing - *Alan Perlis*
 
-# Categories to choose from
+## Categories to choose from
 There are some general categories we can choose from when picking a language. We can start to consider the paradigms as the categories. [Wikipedia](https://en.wikipedia.org/wiki/Programming_paradigm) mentions the two largest categories as **imperative** and **declarative**. Each of which has 2 and 3 subcategories. 
 
 - Imperative
@@ -25,7 +25,7 @@ Each of these 5 subcategories require a different mindset and thought process wh
 
 Of course languages inside these paradigms can differ a lot. For example different language families. Languages that were heavily inspired by another language shares even more, while a language in a completely separate family may only share some things. Next we will take a look at some different language families inside the different paradigms. Languages that are multi-paradigm I will classify to their main paradigm.
 
-# Imperative languages
+## Imperative languages
 Procedural and object-oriented programming has a lot of overlap, and that the parts that overlap are what classifies the languages as imperative. Imperative means that the languages works by modifying state, it executes one line at a time and the state for the next line is dependent on the previous line. An example of modifying state is this: `x = x + 1` modifies the variable `x`. If-statements and while- and for-loops are iconic imperative features. 
 
 One major family here is the statically typed object-oriented family where we have C# and Java with very verbose syntax and makes use of **inheritance** and other features that we today consider object-oriented. Object-oriented programming means to model your code in terms of objects with behavior. Objects have private fields to represent their state and objects communicate with each other through calling each other's methods. C syntax can also look very similar to C# and Java, since the imperative parts of them look the same, but C doesn't have any object-oriented features, and is therefore different. While you can quite easily write C# code in C-style, the opposite is only possible to a certain degree (you can emulate object-oriented in C using function pointers, but you can't emulate inheritance). And C also has a different use-case. It's much lower level than C# and Java, since you must **manually manage memory** on the heap. I consider C# and Java to be in the same class of languages, hence you should only learn one. If you know C# then you won't gain much from learning Java. C on the other hand is a different class and you can definitely aim to learn along with C# or Java.
@@ -38,7 +38,7 @@ Lastly I want to mention Smalltalk. The **original object-oriented** language as
 
 Of course these aren't the only imperative languages, but it's what I wanted to cover. You can also read [this post]({% post_url 2019-11-21-dynamic-vs-static %}) if you want to learn more about static vs dynamic typing.
 
-# Declarative 
+## Declarative 
 Declarative programming is usually stateless. Each computation only depends on the values given to it. This takes inspiration from mathematics where the output of a function only depends on the input, and the output is always the same given the same input. In functional programming this is called a **pure** function, a function that behaves like the mathematical definition of a function. Now, most functional languages don't uphold this to the fullest, but the goal is to have as many of your functions as possible pure. A pure function can easily be tested as it doesn't depend on the context in which it is used. 
 
 Complete purity in a language would also require that no IO (input/output) is done, as those are impure actions. Which makes it sound like a completely pure language is useless. And it sort of is. Haskell is one of the first languages that aimed for this. Every function must be pure, but thanks to **laziness** you can postpone the evaluation to the end of the program, and thanks to **monads** you can chain the IO so actions happen in the right order. Haskell also introduces the do-notation for monads, that lets you write almost imperative-like code, while still keeping the code functional and pure. The more I learn about Haskell the more it seems like Haskell programmers aim to code in imperative-style. Haskell is also very **inspired by mathematics** and takes many concepts from it.
@@ -56,7 +56,7 @@ A little side note. SQL (Structured Query Language) also falls into the declarat
 Another side note. Proof assistant languages like Coq are made to help prove mathematical theorems. They also belong to the declarative family.
 
 
-# What to learn?
+## What to learn?
 As I mentioned in the beginning, many languages share a lot and learning similar languages doesn't contribute much to your overall knowledge. You will want to learn a different language that changes the way you think. 
 
 C | I think everyone should learn C to understand how things work under the hood. Maybe Rust can be included here as well.

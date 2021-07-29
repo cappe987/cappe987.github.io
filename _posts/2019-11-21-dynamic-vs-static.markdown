@@ -7,7 +7,7 @@ published: true
 ---
 
 
-# Static and dynamic typing explained 
+## Static and dynamic typing explained 
 
 > Static typing can find type errors reliably at compile time, 
 > which should increase the reliability of the delivered 
@@ -68,7 +68,7 @@ Only when we know the actual type of the variable can we tell
 if the code allows the downcasting or not. If not it usually 
 results in a runtime error.
 
-# Static typing
+## Static typing
 
 Statically typed languages tend to have better code completion.
 With your text editor correctly set up you can get red squiggly lines 
@@ -133,7 +133,7 @@ object as a parameter. Haskell on the other hand, makes use of partial
 application where it makes more sense to apply the function first.
 
 
-# Dynamic typing
+## Dynamic typing
 
 Dynamically typed languages, while more overhead, usually have no compilation stage, 
 and can thus run immediately. Compiling a large project can take several seconds, 
@@ -155,7 +155,7 @@ welcoming. If you compare the previously mentioned code snippets of `map` in Pyt
 to the `Select` in C#, you can easily guess which one a new programmer would go for. 
 
 
-# My experiences and opinions
+## My experiences and opinions
 I was first introduced to programming through my university when I began studying 
 computer science. The first course taught the statically typed language C, and later 
 on C#. The whole first year consisted of only statically typed languages before finally 

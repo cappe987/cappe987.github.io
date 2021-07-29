@@ -6,7 +6,7 @@ categories: ""
 published: true
 ---
 
-# Introduction
+## Introduction
 
 Most programming languages today have a bunch of operators for different 
 purposes. Usually for mathematical, logical, comparison, and bitwise 
@@ -38,7 +38,7 @@ Using the `+` operator on Vectors shouldn't perform a cross product just
 because you thought it seemed convenient. 
 
 
-# Operators as functions
+## Operators as functions
 You may think of operators as these magical symbols that the developers 
 programmed into the language. While partially true, you can also see an 
 operator as a infix function (excluding Lisp, where verything is prefix). 
@@ -103,7 +103,7 @@ bool and(bool a, bool b){
 }
 {% endhighlight %}
 
-# Defining your own operators
+## Defining your own operators
 
 Once again, only some languages allow defining custom operators. 
 When talking about operators I am speficially talking about 

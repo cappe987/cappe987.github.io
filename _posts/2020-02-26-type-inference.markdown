@@ -6,10 +6,10 @@ categories: ""
 published: true
 ---
 
-# Introduction
+## Introduction
 The W algorithm developed by J. Hindley and R. Milner is used to infer the types of a programming language where no types have been explicitly written. Several functional languages today use this kind of inference, for exampel F# and Haskell (although Haskellers still like to write out the types). The method works by assuming everything is a different generic type. The types of any pre-existing functions and any constants will be known before starting. So if there is a `0` in the code then that is an integer, `0.0` is a float, `[]` is a generic list. 
 
-# Finding the types
+## Finding the types
 
 Types with an apostrophe before them means they are generic. A type is written with the syntax `variable_name : variable_type`.
 
@@ -42,7 +42,7 @@ id : 'a -> 'a
 
 And now we're done with that function. All values have been reduced to the same type. There are no further reductions to be done. The identity function has the type `'a -> 'a` because it will always return the same value it is given. 
 
-# A more complicated example
+## A more complicated example
 Below we have a function of which we do not know any of the types for.
 
 {% highlight fsharp %}
@@ -102,7 +102,7 @@ myfunc : ('a -> 'b) -> 'a list -> 'b list
 The final type of `myfunc` is `('a -> 'b) -> 'a list -> 'b list`. Any experienced functional programmer should now see what function it is, if they didn't already see it the second they saw the function definition. It is of course the famous `map` function, or more specifically the `map` function for lists.
 
 
-# Introducing a type error
+## Introducing a type error
 Now lets say we instead have the same function but a `::` switched out for a `+`.
 
 {% highlight fsharp %}
@@ -114,7 +114,7 @@ let rec myfunc f xs =
 
 The plus operator has the type `(+) : 'num -> 'num -> 'num` where `'num` symbolizes a generic number type (eg. int, float, double). This would mean that `f : 'a -> 'num`. But the returning value of `myfunc` can't be a `'num` because the first case of the pattern match says it's an `'h list`. Now we have reached a type error and compilation we can stop here. This code will not compile because the types for `+` doesn't match.
 
-# Exercise for the reader
+## Exercise for the reader
 
 {% highlight fsharp %}
 let exercise l = 

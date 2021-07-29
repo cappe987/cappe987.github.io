@@ -33,7 +33,7 @@ The rules are as follows:
 
 4.  If it has 4 or more living neighbours then it dies.
 
-![A glider in Conway's Game of Life](/assets/glider.png)
+![A glider in Conway's Game of Life](/assets/cellular-automata-glider.png)
 
 Too few neighbours and it dies of underpopulation, too many and it dies
 of overpopulation. Just the right amount and new cells are born. The image above 
