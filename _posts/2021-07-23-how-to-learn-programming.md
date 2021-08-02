@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Programming. How to learn it and how to get help."
+title: "Programming: how to learn it and how to get help."
 date: 2021-07-23
 categories: ""
 published: true
