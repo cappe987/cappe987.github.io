@@ -26,3 +26,8 @@ published: false
 - End of day 2. I stuck around and talked a bit to some of my to-be colleagues.
 
 ## Day 3
+- Meeting and tour about the safety installations and rules.
+- Tour around the manufacturing area. How it's made.
+- Meeting the Purchase team. Buys components.
+- ESD course
+- Presentation and discussion about what Quality is and why it's important
