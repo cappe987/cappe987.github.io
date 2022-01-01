@@ -37,10 +37,15 @@ $background-pattern: 'triangles.png';
 //********************************************************
 //                  Common styles
 //********************************************************
+html {
+//  height: 100%;
+}
+
 body {
   color: $font-color;
   background: $background-color url(pics/background/#{$background-pattern});
   background-size: 50px;
+  height: 100%;
 }
 .card {
   background-color: $post-panel-color;
@@ -94,7 +99,8 @@ a {
 //********************************************************
 ul.social-media {
   text-align: center;
-  padding: 0 0 10px 0;
+  padding: 0 0 0 0;
+  margin-bottom: 0;
   li {
     display: inline-block;
   }
@@ -179,6 +185,8 @@ div.post-meta {
   border-color: #666666;
   border-style: solid;
   margin: 0 0 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
   ul {
     display: inline;
     padding-left: 0;
@@ -196,6 +204,11 @@ div.post-meta {
 
 .post-descr {
   font-size: 1.2em;
+  margin-bottom: -0.5em;
+  margin-top: -0.5em;
+//  border-width: 0 0 1px 0;
+//  border-color: #666666;
+//  border-style: solid;
 }
 .post-footer {
   height: 40px;
@@ -337,6 +350,7 @@ table.inner-borders {
 //********************************************************
 .footer {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .footer-distributed {
@@ -368,7 +382,7 @@ table.inner-borders {
   position: relative;
 }
 .content{
-  padding-bottom: 250px;
+  padding-bottom: 10em;
 //  padding-bottom: fill;
 //margin-bottom: 100%;
 //padding-bottom: 100%;
@@ -457,7 +471,7 @@ table.inner-borders {
   }
   .footer-distributed .footer {
     float: none;
-    margin: 0 auto 20px;
+    margin: 0 auto 0;
   }
   .footer-distributed .footer {
     line-height: 1.8;

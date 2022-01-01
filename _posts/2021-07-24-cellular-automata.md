@@ -35,14 +35,7 @@ Heinonen and Pukkala [[3](#trees)] have applied cellular automata to forest plan
 Cellular automata can also be self-organizing [[4](#stephen)]. This means that over time they will tend towards a certain pattern, much like certain constructs that can be found in nature. Like cellular automata, biological systems also use small components to gradually build structures.
 
 # References
-<a name="cellular"/>
-[1] Eric W Weisstein. *Cellular Automaton*. URL: <https://mathworld.wolfram.com/CellularAutomaton.html>.
-
-<a name="uses"/>
-[2] Michael J Young. *Typical Uses of Cellular Automata*. Nov. 2006. URL: <http://www.mjyonline.com/CellularAutomataUses.htm>.
-
-<a name="trees"/>
-[3] Tero Heinonen and Timo Pukkala. "The use of cellular automaton approach in forest planning". In: *Canadian Journal of Forest Research 37* (Nov. 2007), pp. 2188-2200. DOI: 10.1139/X07-073.
-
-<a name="stephen"/>
-[4] Stephen Wolfram. "Cellular Automata". In: (1983).
+<a name="cellular"/> [1] Eric W Weisstein. *Cellular Automaton*. URL: <https://mathworld.wolfram.com/CellularAutomaton.html>.
+<a name="uses"/> [2] Michael J Young. *Typical Uses of Cellular Automata*. Nov. 2006. URL: <http://www.mjyonline.com/CellularAutomataUses.htm>.
+<a name="trees"/> [3] Tero Heinonen and Timo Pukkala. "The use of cellular automaton approach in forest planning". In: *Canadian Journal of Forest Research 37* (Nov. 2007), pp. 2188-2200. DOI: 10.1139/X07-073.
+<a name="stephen"/> [4] Stephen Wolfram. "Cellular Automata". In: (1983).
