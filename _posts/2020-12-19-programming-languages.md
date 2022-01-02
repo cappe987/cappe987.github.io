@@ -3,7 +3,7 @@ layout: post
 title: "What programming languages are worth learning?"
 date: 2020-12-19
 categories: ""
-published: true
+published: false
 ---
 
 There exists many programming languages out there. But a lot of them have many similarities. Today I will discuss some points you should consider when choosing a new programming language, as well as give some suggestions of my own. Note that this applies only when learning a language for the sake of learning. When picking a language for a serious project you should pick the one that fits best for the situation, and the language best for a specific situation is a trade-off between languages you know well and languages that makes the project easier. But I'm not here to talk about that. I will talk about what to consider when you try to become a better programmer.
