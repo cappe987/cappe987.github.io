@@ -54,7 +54,7 @@ Don’t ask for help immediately. Always try to find an answer online first by G
 
 Discord communities are a great place for beginners. When you finally ask for help, be as specific as possible. Explain the issue in detail and provide all information about the problem (if it’s an exercise you have found somewhere then please send the whole exercise description or a link to it). Sending parts of the relevant code is also very helpful. Going back to the previous example of “How do I make my snake longer?” you will probably need to explain how you have coded your snake so far and show the code for it. That way you can get help with how you should proceed. Without knowing what your code looks like you often can’t get an exact answer to such a question. Depending on what your code looks like one solution may be much more difficult than another.
 
-I also recommend reading this: [dont' ask to ask, just ask](https://dontasktoask.com/). In short, don't ask "can anyone help me with X?". Instead explain your problem directly.
+I also recommend reading this: [don't ask to ask, just ask](https://dontasktoask.com/). In short, don't ask "can anyone help me with X?". Instead explain your problem directly.
 
 
 
