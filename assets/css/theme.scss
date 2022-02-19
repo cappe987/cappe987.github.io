@@ -20,9 +20,13 @@
 //$accent-color: #3CA2A2;    // original =)
 //$accent-color: #C38FD6;  // velvet
 //$accent-color: #8FD6B3;  // greenish
-$accent-color: #35B4DE;  // bluish
+//$accent-color: #35B4DE;  // bluish
 //$accent-color: #D2E354;  // yellowish
 //$accent-color: #52B54B;  // green
+
+//$accent-color: #70CF89;
+//$accent-color: #9fe0b9;
+$accent-color: #4fcc96;
 
 $font-color: #dddddd;
 $background-color: #292929;
@@ -481,3 +485,13 @@ table.inner-borders {
   }
 }
 
+
+.profile-pic {
+
+	border-radius:50%;
+	width: 50%;
+	height: auto;;
+	object-fit: cover;
+	margin-bottom: 2em;
+
+}
