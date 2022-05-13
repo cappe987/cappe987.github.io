@@ -399,6 +399,7 @@ table.inner-borders {
 
 .post-content p {
   font-size: 1.1em;
+  padding-top: 1em;
 }
 .post-content a {
   font-size: 1.1em;
@@ -494,4 +495,10 @@ table.inner-borders {
 	object-fit: cover;
 	margin-bottom: 2em;
 
+}
+
+// Allows for single linebreaks in .md file. Jekyll inserts <br/>
+// tags for single line breaks. This ignores them.
+p br {
+	display: none;
 }

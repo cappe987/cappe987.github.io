@@ -13,7 +13,12 @@ title: Blog archive
 					<ul class="posts">
 					{% capture year %}{{currentyear}}{% endcapture %} 
 				{% endif %}
-			<li><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3></li>
+				<!-- <li><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3></li> -->
+			  <li class="archive_list">
+			    <time>{{ post.date | date_to_string }}</time>
+			    <a class="archive_list_article_link" href='{{ post.url | relative_url }}'>{{post.title}}</a>
+			    <p>{{post.description}}</p>
+			  </li>
 	{% endfor %}
 	</div>
 </div>
