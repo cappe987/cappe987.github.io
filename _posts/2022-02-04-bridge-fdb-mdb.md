@@ -15,7 +15,7 @@ each other. A packet coming in on one connection has the possibility to go out
 on any of the other bridged connections.
 
 
-# Forwarding Database (fdb)
+## Forwarding Database (fdb)
 The Forwarding Database (fdb) stores the information about which bridged
 connection a data packet should use depending on what the destination is. An fdb
 entry needs to store the MAC address of the known destination and which
@@ -38,7 +38,7 @@ Show the contents of the fdb in Linux
 bridge fdb show
 ```
 
-# Ageing
+## Ageing
 To avoid the fdb filling up with old entries a bridge can use *ageing*. It
 keeps count of how many seconds has passed since each MAC address sent a packet
 through the bridge; the counter is reset when a packet from that MAC address
@@ -57,7 +57,7 @@ you simply add `static` at the end
 bridge fdb add <MAC> dev <INTERFACE>
 ```
 
-# Multicast database (mdb)
+## Multicast database (mdb)
 The kernel also stores a database of all the multicast groups, which can be seen
 if you run
 ```sh
@@ -74,7 +74,7 @@ could look like this `01010000`. This indicates the second and fourth port are
 in the group. When all ports eventually leave the group it can remove the
 entry.
 
-# Hardware offloading
+## Hardware offloading
 Sometimes you want a bit higher performance. For those times you can use a
 specialized hardware circuit for network switching. You get less load on your
 CPU and higher throughput because the packets are switched directly in the
