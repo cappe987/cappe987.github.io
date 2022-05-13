@@ -70,7 +70,7 @@ body {
 //h6 { font-size: .75em; }
 h1 { font-size: 2.5em; }
 h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
+h3 { font-size: 1.3em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
@@ -399,7 +399,7 @@ table.inner-borders {
 
 .post-content p {
   font-size: 1.1em;
-  padding-top: 1em;
+  //padding-top: 1em;
 }
 .post-content a {
   font-size: 1.1em;
@@ -413,6 +413,7 @@ table.inner-borders {
 .post-content h6 {
   padding-top: 50px;
   margin-top: -50px;
+  font-weight: bold;
 }
 
 
