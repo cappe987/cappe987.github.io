@@ -1,7 +1,7 @@
 # Jekyll configuration
 
 name: casan
-description: Software Developer
+description: A blog about software development and related topics
 
 # Url is currently only used only for the RSS feed in feed.xml
 #url: casan.se
@@ -27,7 +27,7 @@ social:
     #  linkedin:
     #  instagram: ''
     #  lastfm: ''
-    #  rss: feed.xml
+    rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
 #google_analytics_key:
@@ -47,6 +47,9 @@ comments: false
 #paginate: 3
 
 #highlighter: rouge
+
+plugins:
+  - jekyll-feed
 
 markdown: kramdown
 kramdown:

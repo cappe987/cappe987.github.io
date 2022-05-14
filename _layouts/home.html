@@ -38,10 +38,22 @@ My writings
 
 {% endfor %}
 
+<h2 class="post-title" style="font-size: 2em">
+    <a href="{{ 'archive' | relative_url }}.html">
+    	View all posts...
+    </a>
+</h2>
+
+<div class="post-descr">
+    <p>
+    	/archive
+    </p>
+</div>
 
 <div class="post-footer">
     <div class="column-full">
-        <h2>...</h2>
-        <h2><a href="{{ 'archive' | relative_url }}.html">Blog archive</a></h2>
+        <!--<h3>...</h3>-->
+        <!--<h3><a href="{{ 'archive' | relative_url }}.html">Blog archive</a></h3>-->
+        <h3><a href="/feed.xml">Subscribe via RSS</a></h3>
     </div>
 </div>
