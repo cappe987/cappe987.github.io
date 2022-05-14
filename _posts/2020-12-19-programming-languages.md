@@ -59,20 +59,20 @@ Another side note. Proof assistant languages like Coq are made to help prove mat
 ## What to learn?
 As I mentioned in the beginning, many languages share a lot and learning similar languages doesn't contribute much to your overall knowledge. You will want to learn a different language that changes the way you think. 
 
-C | I think everyone should learn C to understand how things work under the hood. Maybe Rust can be included here as well.
+`C`: I think everyone should learn C to understand how things work under the hood. Maybe Rust can be included here as well.
 
-C++ | Java | C# | Learn one of them. Many other modern languages can probably also be placed here.
+`C++ | Java | C#`: Learn one of them. Many other modern languages can probably also be placed here.
 
-Python | JavaScript | Popular for scripting. Definitely useful but not for larger projects, in my opinion. Many other modern languages can probably also be placed here.
+`Python | JavaScript`: Popular for scripting. Definitely useful but not for larger projects, in my opinion. Many other modern languages can probably also be placed here.
 
-Haskell | F# | Haskell is a bit more of a deep-dive, so if you know Haskell you probably won't gain much from learning F#. But Haskell is also considered much harder to learn.
+`Haskell | F#`: Haskell is a bit more of a deep-dive, so if you know Haskell you probably won't gain much from learning F#. But Haskell is also considered much harder to learn.
 
-Clojure | A language from the Lisp family to teach you about them.
+`Clojure`: A language from the Lisp family to teach you about them.
 
-Erlang | Elixir | To learn a bit about their way of concurrent programming.
+`Erlang | Elixir`: To learn a bit about their way of concurrent programming.
 
-Wolfram | Matlab | In case you are interested in programming with mathematics.
+`Wolfram | Matlab`: In case you are interested in programming with mathematics.
 
-Prolog | To learn about logic programming.
+`Prolog`: To learn about logic programming.
 
 If the language you are interested in isn't in this list, try and see which category it fits into to decide whether it's worth learning or not.
