@@ -62,4 +62,3 @@ exclude: ['README.md', 'LICENSE']
 include:
   - _static
   - assets
-  - /
