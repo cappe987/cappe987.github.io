@@ -1,6 +1,7 @@
 # Jekyll configuration
 
 name: casan
+title: casan
 description: A blog about software development and related topics
 
 # Url is currently only used only for the RSS feed in feed.xml
