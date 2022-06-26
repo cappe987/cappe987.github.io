@@ -11,13 +11,13 @@ In this post we will take a closer look at functions and some mathematical conce
 
 
 
-## Terminology and notation
+# Terminology and notation
 
 Before getting into the main topic I want to cover some terminology and notation. Sets are denoted as an uppercase letter in math-style font like $$A$$. When I say that an element **maps** to another it is simply a way of saying that some element $$x$$, when given as argument to $$f$$ will return an element $$y$$, or as an equation $$y = f(x)$$, $$x$$ maps to $$y$$. A **transformation** from $$x$$ to $$y$$. A function/mapping is simply a transformation from one thing to another. One goes in, another goes out. 
 
 It is also good to know the mathematical notation for the types of a function. $$f : A \rightarrow B$$ represents a function $$f$$ that takes a single argument of type $$A$$ and returns a value of type $$B$$. To be more accurate, $$A$$ and $$B$$ aren't types, but rather a set of possible values that can be input/output. But in the world of programming we often represent them as types like `int`, `string`, `float`, or similar. For example, the $$log$$ function could be written as $$log : \mathbb{R}^+ \rightarrow \mathbb{R}$$, which means all positive real numbers as input and all real numbers as output. Although in the programming world it would instead be written as $$log : \text{float} \rightarrow \text{float}$$. $$A$$ is called the **domain**. $$B$$ is called the **codomain**. If we want to be more exact we use the term **range** to indicate all possible values that $$f$$ can return. Which means that the range is a subset of the codomain. For example, for the function $$f(x) = x^2$$ we can say it has the codomain $$\mathbb{R}$$, but if you inspect the function you will see that the range is only $$\mathbb{R}^+$$, only the positive real numbers since the function can never return any negative numbers.
 
-## Determinism and the definition of a function
+# Determinism and the definition of a function
 
 Going strictly by the mathematical definition we don't have any reference types (pointers) and no `void` functions. A function must always return a value for any element that is in its domain. Exceptions like values that will cause division by zero or other undefined computations will not be in that domain and are expected to not be put into the function. To be able to make any useful arguments regarding a function we must also require it to be **pure**. 
 
@@ -38,7 +38,7 @@ If the return values were different then that would contradict the definition of
 
 
 
-## Injective, surjective, and bijective
+# Injective, surjective, and bijective
 
 An injective function is a function $$f : A \rightarrow B$$ where no two elements in $$A$$ returns the same element in $$B$$. This is a function that is reversible because each value in the range has only one corresponding value in the domain. But that is only true for the range. Every value $$y = f(x)$$ can be reversed to get back $$x$$, but not every value in the codomain. The codomain may be a superset of the range, so there may be elements in the codomain that do not have any corresponding element in the domain. Some properties that derive from this is that the sets of the domain and range must be the same size, and the codomain must be equal or greater than the domain. 
 
@@ -49,7 +49,7 @@ Bijective functions are functions that are both injective and surjective. When w
 While bijective functions have a clear use-case of inverse operations, injective and surjective functions may be harder to find a good use for. Although it can be something to keep in mind when programming as they have some unique properties which you may be able to use for something.
 
 
-## Chaining functions
+# Chaining functions
 
 When we have functions that always return values and have well-defined domains and codomains then we can easily chain them. This is called function composition. In mathematical notation it looks like this $$ g \circ f$$, which simply means $$g(f(x))$$. But to do this the functions must have matching domains and codomains. If $$f : A \rightarrow B$$ then we must have $$g : B \rightarrow C$$ to be able to chain them. So if $$h = g \circ f$$ then $$h : A \rightarrow C$$ since it performs both $$f$$ and $$g$$. Composing functions like this is very good for creating a long pipeline of transformations. And if we stick to using deterministic functions then it becomes very clean looking code and the different components get separated into distinct parts where one returns what the next needs. When chaining functions it is important to keep track on the domain and range of your functions. If $$g$$ can return a value that $$f$$ cannot take as input then you have a problem.
 
@@ -64,7 +64,7 @@ There is nothing wrong with non-deterministic functions. Non-determinism is requ
 
 
 
-## Other types of mappings
+# Other types of mappings
 
 Dictionaries, HashMaps, HashDictionaries, and the like are all mappings from one set to another. The key is the input and the value is the output. And as long as you don't modify them they are deterministic. Although modifying them are often a key feature of using them. They may not be considered functions, but they are definitely relations, a superset of functions. A relation is just a mapping from one element to another, often denoted (1,2) when 1 maps to 2 (in function notation: $$2 = f(1)$$). Although relations are often represented as whole sets of mappings to indicate all possible relations like $$\{(1,2), (2,3), (3,4), (4,5)\}$$ to indicate a subset of the function $$f(x) = x + 1$$ for integers.
 

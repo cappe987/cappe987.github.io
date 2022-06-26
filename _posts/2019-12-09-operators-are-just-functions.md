@@ -8,7 +8,7 @@ description: "Viewing operators as functions and functions as operators."
 published: true
 ---
 
-## Introduction
+# Introduction
 
 Most programming languages today have a bunch of operators for different purposes. Usually for mathematical, logical, comparison, and bitwise operations. `+`, `-`, `*`, `/`, `&&`, `||`, exists in probably every modern language. Developers expect them to exist; no one would want to program without them.
 
@@ -23,7 +23,7 @@ Many languages like to extend their operators, usually `+`, to work on several t
 Languages do this through operator overloading, either built in to the compiler/interpreter, or as a part of the actual language. You specify what operation an operator should do for a specific class/type. While integer addition adds up the numbers, string addition (also known as concatenation) appends the second string to the end of the first to create a new string. If you do add any yourself, you shouldn't give them completely different behavior than what the symbol usually means.  Using the `+` operator on Vectors shouldn't perform a cross product just because you thought it seemed convenient. 
 
 
-## Operators as functions
+# Operators as functions
 You may think of operators as these magical symbols that the developers programmed into the language. While partially true, you can also see an operator as a infix function (excluding Lisp, where everything is prefix).  Think of `>` as a function. What parameters does it have and what does it return?
 
 <details class="details">
@@ -68,7 +68,7 @@ bool and(bool a, bool b){
 }
 {% endhighlight %}
 
-## Defining your own operators
+# Defining your own operators
 
 Once again, only some languages allow defining custom operators.  When talking about operators I am speficially talking about binary operators in this context.  An example of a unary operator (one argument) is `-` when placed right in front of a numerical to create a negative number `a = -2`.  A ternary operator (three arugments) commonly exists in the form of a one line if-else statement `condition ? when true : when false`.  Less common operators like unary and ternary have their uses, but not in this post.
 

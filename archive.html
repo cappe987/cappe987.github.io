@@ -15,7 +15,7 @@ title: Blog archive
 				{% endif %}
 				<!-- <li><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3></li> -->
 			  <li class="archive_list">
-			    <time>{{ post.date | date_to_string }} - </time>
+			    <time>{{ post.date | date: "%b %-d" }} - </time>
 			    <a class="archive_list_article_link" href='{{ post.url | relative_url }}'>{{post.title}}</a>
 			    <p class="archive-desc">{{post.description}}</p>
 			  </li>

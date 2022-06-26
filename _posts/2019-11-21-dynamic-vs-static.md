@@ -9,7 +9,7 @@ published: true
 ---
 
 
-## Static and dynamic typing explained 
+# Static and dynamic typing explained 
 
 > Static typing can find type errors reliably at compile time, 
 > which should increase the reliability of the delivered 
@@ -36,7 +36,7 @@ When a variable contains an object of a different type than declared, we speak o
 
 Only when we know the actual type of the variable can we tell if the code allows the downcasting or not. If not it usually results in a runtime error.
 
-## Static typing
+# Static typing
 
 Statically typed languages tend to have better code completion.  With your text editor correctly set up you can get red squiggly lines under a lot of what would result in a compiler error, saving you some time. You can also see the type signatures of variables and functions, reducing the chances of making incorrect assumptions. 
 
@@ -67,7 +67,7 @@ map f (x:xs) = (f x) : map f xs
 The snippet above shows a simple implementation of `map` in Haskell.  By analyzing how I've used lists, list operators, and functions, it can infer the type signature `(a -> b) -> [a] -> [b]`.  This matches the type signature of C#'s `Select`, `a` is the `T` and `b` is the `R`, although the parameters have swapped places.  C# has it the other way because there you typically use it by doing `someObject.Select(function)` on an object, instead of passing in the object as a parameter. Haskell on the other hand, makes use of partial application where it makes more sense to apply the function first.
 
 
-## Dynamic typing
+# Dynamic typing
 
 Dynamically typed languages, while more overhead, usually have no compilation stage, and can thus run immediately. Compiling a large project can take several seconds, if not minutes. When you first learn a compiled language, the compilation step may not feel like any hindrance; as a small program can take less than a second to compile. 
 
@@ -76,7 +76,7 @@ No compilation opens up for a new cool possibility for testing your code.  A com
 Dynamic typing tends to lead to less verbose languages. Without static type checking, the need to write out types disappears. This lowers the bar for newcomers.  A less verbose language with no strict compiler yelling at them usually appears more welcoming. If you compare the previously mentioned code snippets of `map` in Python to the `Select` in C#, you can easily guess which one a new programmer would go for. 
 
 
-## My experiences and opinions
+# My experiences and opinions
 I was first introduced to programming through my university when I began studying computer science. The first course taught the statically typed language C, and later on C#. The whole first year consisted of only statically typed languages before finally reaching the dynamically typed JavaScript in a course in web development. Using JavaScript felt odd, there were a lot of features I missed. Mainly the code completion and variable/function suggestions. I ran into a great deal of bugs and unexpected behavior; I guess some of these can be attributed to JavaScript specifically.
 
 I have tried Python as well, and I had similar experiences to JavaScript with it. So as of now I am on the static side. I am, however, in no way saying that either is better or worse than the other. This just happens to be my opinion on it. Someone who was taught Python as their first language may be more inclined to prefer dynamic type systems.

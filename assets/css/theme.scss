@@ -50,6 +50,7 @@ body {
   background: $background-color url(pics/background/#{$background-pattern});
   background-size: 50px;
   height: 100%;
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
 }
 .card {
   background-color: $post-panel-color;
@@ -189,7 +190,7 @@ div.post-meta {
   border-color: #666666;
   border-style: solid;
   margin: 0 0 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   margin-bottom: 0;
   ul {
     display: inline;
@@ -393,32 +394,23 @@ table.inner-borders {
 //display: flex;
 }
 
-.home-content h2 {
-  font-size: 2em;
+html {
+  letter-spacing: 0.05rem;
 }
 
-.home-content p {
-  font-size: 1.1em;
-  //padding-top: 1em;
-}
+.post-content h1 { font-size: 1.7rem; }
+.post-content h2 { font-size: 1.2rem; }
 
-.post-content h2 {
-  font-size: 2.2em;
-}
-
-.post-content h3 {
-  font-size: 1.7em;
-}
-
+.home-content p,
 .post-content code,
 .post-content p,
 .post-content time,
 .post-content a {
-  font-size: 1.4em;
+  font-size: 1rem;
 }
 
 .post-content > p > code {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .home-content h1,
@@ -432,16 +424,22 @@ table.inner-borders {
 .post-content h3,
 .post-content h4,
 .post-content h5,
-.post-content h6 {
-  padding-top: 50px;
-  margin-top: -50px;
+.post-content h6
+{
   font-weight: bold;
 }
 
 .post-content .archive-desc {
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
+.post-content {
+  padding-top: 1rem;
+}
+
+.page-title {
+  font-size: 1.7rem;
+}
 
 // Scrollbar
 ::-webkit-scrollbar {
@@ -535,23 +533,29 @@ p br {
   //scroll-margin-top: 5em;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 500px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 700px;
-  }
-}
-@media (min-width: 992px){
-  .container {
-    max-width: 700px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 900px;
-  }
+//@media (min-width: 576px) {
+  //.container {
+    //max-width: 540px;
+    //max-width: 1000px;
+  //}
+//}
+//@media (min-width: 768px) {
+  //.container {
+    //max-width: 720px;
+    //max-width: 1000px;
+  //}
+//}
+//@media (min-width: 992px){
+  //.container {
+    //max-width: 720px;
+  //}
+//}
+//@media (min-width: 1200px) {
+  //.container {
+    //max-width: 1000px;
+  //}
+//}
+
+.container {
+  max-width: 1000px;
 }
