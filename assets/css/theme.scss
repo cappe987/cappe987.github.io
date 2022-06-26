@@ -393,18 +393,40 @@ table.inner-borders {
 //display: flex;
 }
 
-.post-content h2 {
+.home-content h2 {
   font-size: 2em;
 }
 
-.post-content p {
+.home-content p {
   font-size: 1.1em;
   //padding-top: 1em;
 }
-.post-content a {
-  font-size: 1.1em;
+
+.post-content h2 {
+  font-size: 2.2em;
 }
 
+.post-content h3 {
+  font-size: 1.7em;
+}
+
+.post-content code,
+.post-content p,
+.post-content time,
+.post-content a {
+  font-size: 1.4em;
+}
+
+.post-content > p > code {
+  font-size: 1em;
+}
+
+.home-content h1,
+.home-content h2,
+.home-content h3,
+.home-content h4,
+.home-content h5,
+.home-content h6,
 .post-content h1,
 .post-content h2,
 .post-content h3,
@@ -414,6 +436,10 @@ table.inner-borders {
   padding-top: 50px;
   margin-top: -50px;
   font-weight: bold;
+}
+
+.post-content .archive-desc {
+  font-size: 1.2em;
 }
 
 
