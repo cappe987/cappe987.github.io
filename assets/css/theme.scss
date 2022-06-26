@@ -535,3 +535,23 @@ p br {
   //scroll-margin-top: 5em;
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 992px){
+  .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
