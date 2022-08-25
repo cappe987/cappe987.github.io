@@ -68,8 +68,24 @@ finishes very early into the guard band and it has to idle until the next gate.
 ```
 
 # Frame Preemption
-- Frame preemption
-It can have the values `S`, `H`, and `R`. 
+Frame Preemption can be used in conjunction with Time-Aware Shapers to make
+them more efficient. Frame preemption was covered briefly in the TSN
+introduction post. A quick recap. It requires frames to be classified as express
+or non-express frames. It allows non-express frames to be interrupted by express
+frames to allow the express frame to send immediately.
+
+When used with Time-Aware Shaper you apply the different Frame Preemption
+options SetGateStates (`S`), Set-And-Hold-MAC (`H`), and Set-And-Release-MAC
+(`R`) to the different gates. `S` does nothing with respect to Frame Preemption,
+but is an indicator that the guard band needs to be longer before it starts. `H`
+makes sure any frames from previous gate are preempted when the gate starts. `R`
+allows non-express frames to send again. `H` allows the guard bands to be
+reduced drastically because now they can preempt a frame when reached. It only
+needs to add the extra CRC checksum and then it can move on to the next gate.
+Shorter guard bands enables better bandwidth usage.
+
+If you have multiple express gates (`H`) in a row then it won't be able to
+preempt in preparation for the next gate, but then you also have bad design :).
 
 # Generating schedules
 - Qcc to generate optimal schedules (heuristics)
