@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "TSN: Time-Aware Shaper"
-date: 2022-06-26
+date: 2022-08-25
 tags: networks
 description: "Time Sensitive Networking and the 802.1Qbv standard"
-published: false
+published: true
 ---
 
 Let's dive a little deeper into Time-Aware Shapers, specified in the
@@ -86,10 +86,3 @@ Shorter guard bands enables better bandwidth usage.
 
 If you have multiple express gates (`H`) in a row then it won't be able to
 preempt in preparation for the next gate, but then you also have bad design :).
-
-# Generating schedules
-- Qcc to generate optimal schedules (heuristics)
-
-- Seamless transitions to change schedules without downtime
-
-- Hardware layout. Lists and gate lists
