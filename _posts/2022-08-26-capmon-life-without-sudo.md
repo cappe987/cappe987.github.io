@@ -10,7 +10,8 @@ published: true
 A couple months ago a colleague showed me his post on [a life without
 sudo](https://troglobit.com/2016/12/11/a-life-without-sudo/). In it he
 demonstrates the elegant use of Linux
-[capabilities(7)](http://man7.org/linux/man-pages/man7/capabilities.7.html). I
+[capabilities(7)](http://man7.org/linux/man-pages/man7/capabilities.7.html). If
+you aren't familiar with capabilities I recommend reading his post first. I
 started using it myself and found it incredibly convenient. I would run sudo
 many times per day before. This would usually be to do some network-related
 activity such as sending raw packets or changing network interfaces. These I
