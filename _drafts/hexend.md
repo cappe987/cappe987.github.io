@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hexend - Send raw hex packets"
-date: 2022-08-26
+<!--date: 2022-08-26-->
 tags: networks programming
 description: A tool I made for sending raw hex packets
 published: false
