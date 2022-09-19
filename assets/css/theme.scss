@@ -559,3 +559,27 @@ p br {
 .container {
   max-width: 1000px;
 }
+
+// Font Awesome styling to avoid it as a dependency
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.svg-inline--fa.fa-w-14 {
+  width: .875em;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
