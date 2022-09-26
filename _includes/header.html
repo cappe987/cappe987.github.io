@@ -1,7 +1,8 @@
+{% comment %}
 {% if site.tags != "" %}
 {% include collecttags.html %}
 {% endif %}
-
+{% endcomment %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,10 +23,10 @@
  </head>
 
 <body>
-
+{% comment %}
 {% include google-analytics.html %}
 {% include yandex-metrica.html %}
-
+{% endcomment %}
 <script type="text/javascript">
     WebFontConfig = {
         google: {
