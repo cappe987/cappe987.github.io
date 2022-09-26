@@ -8,16 +8,15 @@ published: true
 ---
 
 This is a short story from `$DAYJOB` about my discovery and investigations of
-an issue with the build system. Unfortunately, it is one without a satisfying
-ending.
+an issue with the build system.
 
-One day when building our code at work I suddenly got a segmentation fault when
-building. An odd occurrence. I could not recall any changes to the build
-system and checking the Git log I could not find any changes that would affect
-it. It got even more mysterious as I went back in the Git history and would
-still have the crash. I managed to narrow the issue down to one package which
-was being built slightly differently than our other packages. Still, it didn't
-make sense why it was failing.
+One day when building our code I suddenly got a segmentation fault when
+building. An odd occurrence. I could not recall any changes to the build system
+and checking the Git log I could not find any changes that would affect it. It
+got even more mysterious as I went back in the Git history and would still have
+the crash. I managed to narrow the issue down to one package which was being
+built slightly differently than our other packages. Still, it didn't make sense
+why it was failing.
 
 The weirdest part of all this was that it was failing *between* two steps in the
 build process. I added debug prints to the build system and I could see that it
@@ -66,9 +65,9 @@ but were not selected and it did not make sense why Make would iterate over them
 when building a completely unrelated package. It did not do this iteration at
 all when building other packages.
 
-For some reason, Make would start iterating over a lot of (all?) variables. To
-this day I have no answer to why this happens. But one question remained. Why
-did it start happening now? Why was it never an issue before?
+For some reason, Make would start iterating over all variables. I did not delve
+further into this right now. I switched focus. Why did it start happening now?
+Why was it never an issue before?
 
 It didn't take too long for me to realize that a couple of weeks prior I had
 upgraded Ubuntu on my work laptop from 21.04 to 22.04. Could they have upgraded
@@ -95,12 +94,18 @@ with Ubuntu 21.04 to build it for many years in the future.
 I turned my attention back to the "faulty" package in our build system. Since it
 was never really handled in an ideal way I decided to dig into that instead,
 resulting in the package being split up and treated the same as every package
-should be treated in the build system.
+should be treated in the build system. 
 
-This journey has been a very interesting and educational one. Now I'm left with
-a build system that is working and in better shape than before, but also with
-dozens of unanswered questions that I may never get the answer to.
+Only after doing this did I discover this piece of Make code: `$(.VARIABLES)`. I
+realize I should have looked closer at this code earlier, but at a glance the
+code around it didn't do anything groundbreaking. It turns out this is a special
+variable in Make that holds all other variables' names, and it was being
+iterated over. 
 
+I still have not found out why it suddenly became an issue on Ubuntu 22, but at
+least I found what caused the issue. This journey has been a very interesting
+and educational one. I learnt a lot about our build system and Make in general.
+Time well spent!
 
 
 
