@@ -66,13 +66,13 @@ bridge mdb show
 
 For multicast it will create a entry when it gets an IGMP Join message. It
 creates a entry for that group and marks the port that it arrived on. The goal
-of multicast is of course to be able to send one message to multiple
-recipients. Which means that the mdb must store all ports that are in the
-group, and then remove them when they leave. This is typically stored in a port
-masks. For a switch with 8 ports, where ports 2 and 4 are in the group, it
-could look like this `01010000`. This indicates the second and fourth port are
-in the group. When all ports eventually leave the group it can remove the
-entry.
+of multicast is to be able to send one message to multiple recipients. Which
+means that the mdb must store all ports that are in the group, and then remove
+them when they leave. This is typically stored in a port masks. For a switch
+with 8 ports, where ports 2 and 4 are in the group, it could look like this
+`00001010` (represented by the second and fourth bit). This indicates the
+second and fourth port are in the group. When all ports eventually leave the
+group it can remove the entry.
 
 # Hardware offloading
 Sometimes you want a bit higher performance. For those times you can use a
@@ -82,7 +82,7 @@ hardware and never touches the CPU. One drawback of this is that the hardware
 only has the features it was built with. If you ever lack some feature you
 can't simply write some code for it. But it usually comes with at least some
 common features, such as its own fdb and mdb that are stored in its own
-internal memory. 
+internal memory.
 
 The fdb and mdb are stored in a table with fast lookup to quickly switch the
 packets. The table might look something like this (simplified, it will usually
@@ -95,16 +95,16 @@ contain more information, e.g., age and if it is static or not)
 | 00:00:00:12:ad:fd |  2   |  UC  |      5      |
 | 01:00:5e:01:02:03 |  2   |  MC  |      1      |
 -------------------------------------------------
-``` 
+```
 The type indicates Unicast or Multicast. The unicast entries points at the port
 it should send the packet to. Multicast, on the other hand, points to an index
-in another table. This is where the port mask is stored. 
+in another table. This is where the port mask is stored.
 
 Entries to this table can be added if the device driver supports it. Then an
 entry will be added to both software and hardware, since it goes through
 software first. All multicast addresses are added through software because that
 is where the IGMP protocol is handled. Though, some entries may exist in
-hardware only. This happens when the hardware learns unicast entries. 
+hardware only. This happens when the hardware learns unicast entries.
 
 These are all things the bridge manages, whether it is a software defined bridge
 ,like the one in Linux, or if it has been offloaded to a hardware circuit. This
