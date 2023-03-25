@@ -409,9 +409,16 @@ html {
   font-size: 1rem;
 }
 
-.post-content > p > code {
-  font-size: 1rem;
-}
+//.post-content > p > code { font-size: 1rem; }
+
+//.post-content > ol { font-size: 1rem; }
+
+//.footnotes > ol { font-size: 1rem; }
+
+.post-content { font-size: 1rem; }
+
+
+
 
 .home-content h1,
 .home-content h2,
@@ -431,6 +438,7 @@ html {
 
 .post-content .archive-desc {
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .post-content {
