@@ -3,6 +3,7 @@ layout: post
 title: PTP and timestamping methods
 date: 2023-03-26
 tags: networks
+categories: networks
 description: A maybe not so gentle introduction to the Precision Time Protocol
 published: false
 ---

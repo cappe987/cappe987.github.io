@@ -2,7 +2,8 @@
 layout: post
 title: "Cellular automata"
 date: 2021-07-24
-tag: computer_science
+tags: computer_science
+categories: computer-science
 description: "Conway's Game of Life and other cellular automata. Originally a school essay."
 published: true
 ---

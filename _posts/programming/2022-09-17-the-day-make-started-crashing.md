@@ -2,7 +2,7 @@
 layout: post
 title: "The day Make started crashing"
 date: 2022-09-17
-tags: linux programming
+tags: programming linux
 description: The last thing you want is for your build system to crash
 published: true
 ---

@@ -3,13 +3,14 @@ layout: post
 title: "TSN: Time-Aware Shaper"
 date: 2022-08-25
 tags: networks
+categories: networks
 description: "Time Sensitive Networking and the 802.1Qbv standard"
 published: true
 ---
 
 Let's dive a little deeper into Time-Aware Shapers, specified in the
 IEEE 802.1Qbv standard. For a light introduction go read my [intro to
-TSN]({% post_url 2022-06-07-tsn-intro %}).
+TSN]({% post_url networks/2022-06-07-tsn-intro %}).
 
 # Gates
 The shapers are applied on egress and each shaper has a list of time slots,

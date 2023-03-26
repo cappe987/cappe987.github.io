@@ -3,6 +3,7 @@ layout: post
 title: "A simpler life without sudo"
 date: 2022-08-26
 tags: linux programming
+categories: linux
 description: Using Capmon to figure out what capabilities your program needs
 published: true
 ---

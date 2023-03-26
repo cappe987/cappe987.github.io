@@ -2,8 +2,8 @@
 layout: post
 title: "Operators are functions too"
 date: 2019-12-09
-categories: ""
-tag: programming
+tags: programming
+categories: programming
 description: "Viewing operators as functions and functions as operators."
 published: true
 ---

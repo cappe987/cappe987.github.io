@@ -2,7 +2,8 @@
 layout: post
 title: "Network bridge forwarding and learning"
 date: 2022-02-18
-tags: programming networks
+tags: networks linux
+categories: networks
 description: "Bridge forwarding of unicast and multicast in software and hardware"
 published: true
 ---

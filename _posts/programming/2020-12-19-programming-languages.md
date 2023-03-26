@@ -2,7 +2,8 @@
 layout: post
 title: "What programming languages are worth learning?"
 date: 2020-12-19
-categories: ""
+tags: programming
+categories: programming
 published: false
 ---
 
@@ -36,7 +37,7 @@ Bash is, unlike Python and JavaScript, not object-oriented. While many developer
 
 Lastly I want to mention Smalltalk. The **original object-oriented** language as Alan Kay imagined object-oriented programming to be. This is not what we consider object-oriented today, not like C#, Java, or Python. Smalltalk works by message passing between objects. I don't know much more about Smalltalk since I've never used it, but it's definitely on my list of languages to learn. I want to see how what Alan Kay envisioned the paragdigm to be. 
 
-Of course these aren't the only imperative languages, but it's what I wanted to cover. You can also read [this post]({% post_url 2019-11-21-dynamic-vs-static %}) if you want to learn more about static vs dynamic typing.
+Of course these aren't the only imperative languages, but it's what I wanted to cover. You can also read [this post]({% post_url programming/2019-11-21-dynamic-vs-static %}) if you want to learn more about static vs dynamic typing.
 
 # Declarative 
 Declarative programming is usually stateless. Each computation only depends on the values given to it. This takes inspiration from mathematics where the output of a function only depends on the input, and the output is always the same given the same input. In functional programming this is called a **pure** function, a function that behaves like the mathematical definition of a function. Now, most functional languages don't uphold this to the fullest, but the goal is to have as many of your functions as possible pure. A pure function can easily be tested as it doesn't depend on the context in which it is used. 

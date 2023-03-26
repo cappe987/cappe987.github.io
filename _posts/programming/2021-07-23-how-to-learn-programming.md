@@ -2,8 +2,8 @@
 layout: post
 title: "Programming: how to learn it and how to get help."
 date: 2021-07-23
-categories: ""
-tag: programming
+tags: programming
+categories: programming
 description: "A tutorial for how to use tutorials. Some tips on how to learn efficiently."
 published: true
 ---

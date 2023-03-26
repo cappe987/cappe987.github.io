@@ -2,8 +2,8 @@
 layout: post
 title: "Static vs dynamic typing"
 date: 2019-11-21
-categories: ""
-tag: programming
+tags: programming
+categories: programming
 description: "Comparing static and dynamic typing and my experiences and opinions."
 published: true
 ---

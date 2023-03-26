@@ -2,7 +2,8 @@
 layout: post
 title: "Bouncing balls simulation using X11"
 date: 2021-08-02
-tag: programming
+tags: programming linux
+categories: programming
 description: "A small project where I explore the X11 API in C."
 published: true
 ---

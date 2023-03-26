@@ -2,7 +2,8 @@
 layout: mathpost
 title: "Functions: a deep dive"
 date: 2021-07-25
-tags: programming computer_science math
+tags: math programming computer_science
+categories: math
 description: "Programming functions from a mathematical perspective."
 published: true
 ---

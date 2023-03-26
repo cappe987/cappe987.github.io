@@ -2,8 +2,8 @@
 layout: post
 title: "Type inference with Hindley-Milner W algorithm"
 date: 2020-02-26
-categories: ""
-tag: computer_science
+tags: computer_science
+categories: computer-science
 description: "A demonstration of the Hindley-Milner W Algorithm in F#."
 published: true
 ---
