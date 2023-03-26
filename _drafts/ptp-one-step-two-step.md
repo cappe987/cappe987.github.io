@@ -160,7 +160,7 @@ Described from the point of the master clock's time:
 
 
 Using one-step works the same, with the only difference that the master does
-not need to senc a *Follow_Up* packet.
+not need to send a *Follow_Up* packet.
 
 
 Two-step only requires the networking hardware to be able to timestamp packets.
