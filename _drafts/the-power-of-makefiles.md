@@ -7,9 +7,10 @@ description: A little showcase of what Make can do
 published: false
 ---
 
-This is part 2 of a post I did on [boot.dev](https://boot.dev/) about [The
-Utility of Makefiles](https://blog.boot.dev/misc/the-utility-of-makefiles/). In
-this post I will dive a bit deeper into what makes Makefiles so powerful.
+This is part 2 of a post I did on [boot.dev](https://boot.dev/) about
+[Makefiles to improve your
+life](https://blog.boot.dev/stories/makefiles-to-improve-your-life/). In this
+post I will dive a bit deeper into what makes Makefiles so powerful.
 
 # Variables
 A life without variables? Not possible! They are in Make too and help avoiding
