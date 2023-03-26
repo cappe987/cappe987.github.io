@@ -17,7 +17,9 @@ My writings
 
 <div class="post-descr">
     <p>
-        {{ post.description }}
+        <!--{{ post.description }}-->
+	<!--{{ post.excerpt }}-->
+	{{ post.content | strip_html | truncatewords:25 }}
     </p>
 </div>
 
