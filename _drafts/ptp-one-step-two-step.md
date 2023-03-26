@@ -8,6 +8,14 @@ description: A maybe not so gentle introduction to the Precision Time Protocol
 published: false
 ---
 
+<style type="text/css">
+pre > code {
+      display: block !important;
+      line-height: 1.3rem !important;
+      font-size: 1.3rem !important;
+}
+</style>
+
 Computers in networks traditionally don't have any knowledge of when other
 computers can/will transmit data. Dozens of devices transmitting data whenever
 they want will inevitably lead to collisions and congestions at one point or
@@ -56,11 +64,13 @@ The synchronization process of a slave clock consists of two steps:
 Step (1) involves the master sending the current time, taken as close to the
 wire as possible, in a *Sync* packet to the slave. PTP defines two methods for
 doing this: one-step and two-step. This is explained in more detail later. The
-slave can now update its clock to the provided timestamp. The timestamp that
-arrived has the value `master_clock - cable_delay`. If PTP only ever did step
-(1) the slave would always stay behind the master by `cable_delay` time. Devices
-would then end up further behind the further they are from the master, and each
-intermediate switch would add more to that.
+slave can now update its clock to the provided timestamp. Upon reception, the
+packet gets timestamped again. Now the slave has `receive_time - transmit_time
+= offset_from_master`. The slave can now adjust its clock to the calculated
+offset. Though it has not yet compensated for the cable delay. If PTP only ever
+did step (1) the slave would always stay behind the master by `cable_delay`
+time. Devices would then end up further behind the further they are from the
+master, and each intermediate switch would add more to that.
 
 For step (2) the slave sends a *Delay_Req* (delay request) to the master and
 records the transmission time (`t1`) for itself to use later. The master
@@ -73,6 +83,8 @@ now be `cable_delay * 2`. This means the slave clock should add `(t2-t1)/2` to
 its clock. Now the master and slave clocks have successfully synchronized. The
 process will then repeat at regular intervals to make sure everything stays
 synchronized.
+
+
 
 
 
@@ -94,12 +106,62 @@ metadata that can then be fetched by the receiving application. Simple enough!
 The transmission poses more of a challenge since metadata can't be included on
 the wire. As mentioned earlier, there exist two methods for handling this. The
 simplest one involves sending one packet, taking the timestamp from when it was
-sent, and then sending a follow-up that includes the transmission of the first
-packet. This is called two-step timestamping.
+sent, and then sending a *Follow_Up* packet that includes the transmission of
+the first packet. This is called two-step timestamping.
 
 The other alternative, one-step timestamping, requires hardware that can detect
 and modify the right fields in the PTP packets as they go out on the wire. That
 way the packet contains the data.
+
+
+The following illustration shows the slave clock synchronizing to the master
+clock using two-step timestamping. The cable has a delay of 1 time unit.
+Described from the point of the master clock's time:
+
+```
+  Master         Slave
+      ┌───────────┐
+      │           │
+   50─┼──────┐    ├─20
+      │      │    │
+   51─┼────┐ └───►├─21
+      │    │      │
+   52─┤    └─────►├─22->51
+      │           │
+   53─┤     ┌─────┼─52
+      │     │     │
+   54─┤◄────┘     ├─53
+      │           │
+   55─┼─────┐     ├─54
+      │     │     │
+   56─┤     └────►├─55->56
+      │           │
+   57─┤           ├─57
+      └───────────┘
+```
+
+{:start="50"}
+50. Master sends *Sync* packet and timestamps it (`50`).
+51. Slave receives *Sync* and timestamps it (`21`). Master sends *Follow_Up*
+    containing the transmission time of *Sync*.
+52. Slave receives *Follow_Up* and calculates the difference between *Sync*
+    transmission and reception. `50-21=29`. Slave updates its clock by
+    adjusting it `+29`. `22+29=51`.
+53. Slave sends a *Delay_Req* and timestamps it (`52`).
+54. Master receives *Delay_Req* and timestamps it (`54`).
+55. Master sends back the *Delay_Req* timestamp in a *Delay_Resp* packet.
+56. Slave receives *Delay_Resp*. It now has the timestamps `52` and `54`, which
+    represents the cable delay multiplied by 2. Half comes from the packet
+    delay request. And the other half comes from the earlier *Sync* packet
+    where the slave knowingly set its time to `cable_delay` behind the master
+    since it didn't know the delay. The slave adjusts its time by `(54-52)/2=1`
+    and moves it `1` unit forward.
+57. The clocks are now synced.
+
+
+Using one-step works the same, with the only difference that the master does
+not need to senc a *Follow_Up* packet.
+
 
 Two-step only requires the networking hardware to be able to timestamp packets.
 The timestamping happens either in the MAC hardware or the PHY hardware. The PHY
@@ -108,13 +170,6 @@ before the packet goes on the wire. Performing timestamping in the MAC can give
 slightly higher variation in accuracy, but still good enough for many
 use cases.
 
-<style type="text/css">
-pre > code {
-      display: block !important;
-      line-height: 1.3rem !important;
-      font-size: 1.3rem !important;
-}
-</style>
  <!--┌───┐-->
  <!--│CPU│-->
  <!--└▲─┬┘-->
