@@ -1,11 +1,11 @@
 ---
 layout: post
 title: PTP and timestamping methods
-date: 2023-03-26
+date: 2023-04-05
 tags: networks
 categories: networks
 description: A maybe not so gentle introduction to the Precision Time Protocol
-published: false
+published: true
 ---
 
 <style type="text/css">
@@ -77,12 +77,12 @@ records the transmission time (`t1`) for itself to use later. The master
 timestamps the reception time (`t2`) of the message and sends that back in a
 *Delay_Resp* (delay response) to the slave.
 
-Because t1 was already `cable_delay` time behind the master clock, due to the
-cable delay on the previous *Sync* packet, the difference between t1 and t2 will
-now be `cable_delay * 2`. This means the slave clock should add `(t2-t1)/2` to
-its clock. Now the master and slave clocks have successfully synchronized. The
-process will then repeat at regular intervals to make sure everything stays
-synchronized.
+Because `t1` was already `cable_delay` time behind the master clock, due to the
+cable delay on the previous *Sync* packet, the difference between `t1` and `t2`
+will now be `cable_delay * 2`. This means the slave clock should add
+`(t2-t1)/2` to its clock. Now the master and slave clocks have successfully
+synchronized. The process will then repeat at regular intervals to make sure
+everything stays synchronized.
 
 
 
@@ -105,9 +105,9 @@ metadata that can then be fetched by the receiving application. Simple enough!
 
 The transmission poses more of a challenge since metadata can't be included on
 the wire. As mentioned earlier, there exist two methods for handling this. The
-simplest one involves sending one packet, taking the timestamp from when it was
-sent, and then sending a *Follow_Up* packet that includes the transmission of
-the first packet. This is called two-step timestamping.
+simplest one involves sending a packet, taking the timestamp from when it was
+sent, and then sending a *Follow_Up* packet that includes the transmission time
+of the first packet. This is called two-step timestamping.
 
 The other alternative, one-step timestamping, requires hardware that can detect
 and modify the right fields in the PTP packets as they go out on the wire. That
@@ -163,12 +163,12 @@ Using one-step works the same, with the only difference that the master does
 not need to send a *Follow_Up* packet.
 
 
-Two-step only requires the networking hardware to be able to timestamp packets.
-The timestamping happens either in the MAC hardware or the PHY hardware. The PHY
-will provide better accuracy since it allows timestamping to be the last action
-before the packet goes on the wire. Performing timestamping in the MAC can give
-slightly higher variation in accuracy, but still good enough for many
-use cases.
+Two-step only requires the networking hardware to be capable of timestamping
+packets. The timestamping happens either in the MAC hardware or the PHY
+hardware. The PHY will provide better accuracy since it allows timestamping to
+be the last action before the packet goes on the wire. Performing timestamping
+in the MAC can give slightly higher variation in accuracy, but still good
+enough for many use cases.
 
  <!--┌───┐-->
  <!--│CPU│-->
