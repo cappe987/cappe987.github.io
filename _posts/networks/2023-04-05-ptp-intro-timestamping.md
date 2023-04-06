@@ -170,17 +170,9 @@ be the last action before the packet goes on the wire. Performing timestamping
 in the MAC can give slightly higher variation in accuracy, but still good
 enough for many use cases.
 
- <!--┌───┐-->
- <!--│CPU│-->
- <!--└▲─┬┘-->
-  <!--│ │-->
- <!--┌┴─▼┐-->
- <!--│MAC│-->
- <!--└▲─┬┘-->
-  <!--│ │-->
- <!--┌┴─▼┐-->
- <!--│PHY│-->
- <!--└▲─▼┘-->
+The following illustration shows an example layout of how a MAC and PHY would
+be attached in switching hardware. The PHY attaches directly to the cable.
+
 ```
       ┌───┐
       │CPU│
@@ -194,8 +186,6 @@ enough for many use cases.
 │PHY│ │PHY│ │PHY│
 └▲─▼┘ └▲─▼┘ └▲─▼┘
 ```
-The above illustration shows an example layout of how a MAC and PHY would be
-attached in switching hardware. The PHY attaches directly to the cable.
 
 For one-step, the hardware also needs the functionality to modify the packet,
 and that includes understanding the PTP packet layout. Using one-step results in
