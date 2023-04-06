@@ -1,4 +1,4 @@
-{% include header.html %}
+{% include header.html -%}
     <div class="wrapper">
       <div class="content">
         <div class="container container-center">
@@ -13,35 +13,35 @@
                       <time>{{ page.date | date_to_string }}</time>
                     </div>
                     <ul>
-                      {% for tag in page.tags %}
+                      {% for tag in page.tags -%}
                         <li><a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
-                      {% endfor %}
+                      {% endfor -%}
                     </ul>
                   </div>
                   <div class="post-content">
-                    {% if page.toc %}
-                      {% include toc.html html=content class='toc' %}
-                    {% endif %}
+                    {% if page.toc -%}
+                      {% include toc.html html=content class='toc' -%}
+                    {% endif -%}
                     {{ content }}
-                    {% include share.html %}
+                    {% include share.html -%}
                   </div>
-                  {% if page.comments %}
+                  {% if page.comments -%}
                   <div id="disqus_thread">
                     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
                   </div>
-                  {% endif %}
+                  {% endif -%}
                 </div>
               </div>
             </div>
             <div class="col-md-3 hidden-xs">
-              {% include sidebar.html %}
+              {% include sidebar.html -%}
             </div>
           </div>
         </div>
-        {% include disqus-comments.html %}
+        {% include disqus-comments.html -%}
       </div>
-      {% include footer.html %}
+      {% include footer.html -%}
     </div>
   </body>
 </html>

@@ -1,28 +1,32 @@
-{% comment %}
-{% if site.tags != "" %}
-{% include collecttags.html %}
-{% endif %}
-{% endcomment %}
+{% comment -%}
+{% if site.tags != "" -%}
+{% include collecttags.html -%}
+{% endif -%}
+{% endcomment -%}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!--    <title>{{ site.name }}{% if page.title %} |{{ page.title }} {% endif %}</title> -->
     <title>{% if page.title %} {{site.name}} | {{ page.title }} {% else %} {{site.author}} {% endif %}</title>
     <meta name="theme-color" content="#222222"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ '/assets/css/bootstrap4.min.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/theme.css' | relative_url }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
-    {% include open-graph-meta-tags.html %}
+    {% if page.description -%}
+    <meta name="description" content="{{ page.description }}">
+    {% else -%}
+    <meta name="description" content="Writings about computers, programming, linux, networks, and more...">
+    {% endif -%}
+    {% include open-graph-meta-tags.html -%}
  </head>
 
 <body>
-{% comment %}
-{% include google-analytics.html %}
-{% include yandex-metrica.html %}
-{% endcomment %}
+{% comment -%}
+{% include google-analytics.html -%}
+{% include yandex-metrica.html -%}
+{% endcomment -%}
 <script type="text/javascript">
     WebFontConfig = {
         google: {
