@@ -52,6 +52,7 @@ permalink: /:categories/:title:output_ext
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 markdown: kramdown
 kramdown:
