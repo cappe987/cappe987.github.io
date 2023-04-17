@@ -2,3 +2,5 @@ _cache
 _site
 .idea/
 .jekyll-cache
+public/
+resources/
