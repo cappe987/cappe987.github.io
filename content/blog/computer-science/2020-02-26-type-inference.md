@@ -114,7 +114,7 @@ let rec myfunc f xs =
   | x::xs -> f x + myfunc f xs
 ```
 
-The plus operator has the type `(+) : 'num -> 'num -> 'num` where `'num` symbolizes a generic number type (eg. int, float, double). This would mean that `f : 'a -> 'num`. But the returning value of `myfunc` can't be a `'num` because the first case of the pattern match says it's an `'h list`. Now we have reached a type error and compilation we can stop here. This code will not compile because the types for `+` doesn't match.
+The plus operator has the type `(+) : 'num -> 'num -> 'num` where `'num` symbolizes a generic number type (eg. int, float, double). This would mean that `f : 'a -> 'num`. But the returning value of `myfunc` can't be a `'num` because the first case of the pattern match says it's an `'h list`. Now we have reached a type error and compilation can stop here. This code will not compile because the types for `+` doesn't match.
 
 ## Exercise for the reader
 

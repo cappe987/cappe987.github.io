@@ -14,4 +14,4 @@ draft: false
 ---
 
 
-Here is the documentation for some of my projects
+Here is documentation for some of my projects

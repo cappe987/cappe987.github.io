@@ -61,7 +61,7 @@ defaultBackgroundImage = "img/bg.jpg" # used as default for background images
   editAppendPath = true
   seriesOpened = false
   showHeadingAnchors = true
-  showPagination = true
+  showPagination = false
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
@@ -101,7 +101,7 @@ defaultBackgroundImage = "img/bg.jpg" # used as default for background images
   cardView = false
 
 [term]
-  showHero = false
+  showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
