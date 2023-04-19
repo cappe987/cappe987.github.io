@@ -11,6 +11,14 @@ showDescription: true
 draft: true
 ---
 
+<style type="text/css">
+pre > code {
+      display: block !important;
+      line-height: 1.3rem !important;
+      font-size: 1.3rem !important;
+}
+</style>
+
 Measure the time a packet is on the wire accurately using hardware timestamping.
 This is useful for measuring the impact of traffic congestion and testing QoS
 features. The timestamped packets are intended to never touch any software on
@@ -18,6 +26,8 @@ their trip through the network since that adds considerable delay and jitter,
 and the benefit of hardware timestamping dwindles. In which case using `ping`
 may be enough precision.
 
+If you are unfamiliar with timestamping I recommend checking out my post on [PTP
+and timestamping methods]({{< ref 2023-04-05-ptp-intro-timestamping.md >}}).
 
 ## GitHub repository
 {{< github repo="cappe987/wiretime" >}}
@@ -41,6 +51,19 @@ calculated across several packets and the average is taken.
 The most basic command looks like this
 ```sh
 wiretime --tx eth1 --rx eth2
+```
+
+The following is an illustration of an example setup. Wiretime runs on SW1 and
+transmits on one port and receives on another. The packet is switched in
+hardware through SW2, and then back to SW1.
+```
+    ┌───────┐
+    │       │
+┌───▲─┐   ┌─▼───┐
+│ SW1 │   │ SW2 │
+└───▲─┘   └─▼───┘
+    │       │
+    └───────┘
 ```
 
 ### Flags
