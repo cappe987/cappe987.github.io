@@ -11,13 +11,12 @@ showDescription: true
 draft: true
 ---
 
-Send hexdumps copied from Tcpdump/Wireshark. Save the hexdump in a file and give
-it to `hexend` to send it on an interface. Useful for repeating a specific
-captured frame, instead of making a pcap playback or trying to recreate it using
-tools like [Nemesis](https://github.com/libnet/nemesis) or
-[EasyFrames](https://github.com/microchip-ung/easyframes).
-
-It is also an option to write the hexdump by hand if you so wish.
+Send hexdumps copied from Tcpdump/Wireshark. Save the hexdump in a file and
+give it to `hexend` to send it on an interface. Useful for repeating a specific
+captured frame, instead of making a pcap playback or trying to recreate it
+using tools like [Nemesis](https://github.com/libnet/nemesis) or
+[EasyFrames](https://github.com/microchip-ung/easyframes). It is also possible
+to write the frame by hand if you so wish.
 
 
 ## GitHub repository
