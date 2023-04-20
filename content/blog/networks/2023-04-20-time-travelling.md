@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accidental timetravel with timestamping"
-date: 2023-04-19
+date: 2023-04-20
 tags: ["networks", "linux"]
 categories: networks
 description: While experimenting with timestamping I accidentally travelled back in time.
