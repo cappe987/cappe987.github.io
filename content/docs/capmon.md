@@ -7,7 +7,7 @@ date: 2023-04-15
 showReadingTime: false
 showDate: false
 showDescription: true
-draft: true
+published: true
 ---
 
 Monitor when processes check `capabilities(7)` to find out what they require.

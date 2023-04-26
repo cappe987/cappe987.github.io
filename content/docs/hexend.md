@@ -8,7 +8,7 @@ date: 2023-04-16
 showReadingTime: false
 showDate: false
 showDescription: true
-draft: true
+published: true
 ---
 
 Send hexdumps copied from Tcpdump/Wireshark. Save the hexdump in a file and
