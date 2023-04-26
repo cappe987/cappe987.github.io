@@ -10,7 +10,9 @@ published: true
 
 Recently I got the idea that I wanted to experiment with using X11 directly, instead of some higher-level library where buttons and fields already exist as objects. The goal was to get a better idea of how the graphics and window systems works in Linux (X11 specifically). This wasn't a huge project and I only got to see parts of it before moving on, but it was a very interesting experience. Especially for someone like me who has barely done any kind of graphics programming before. In doing this project I started with a template from [this guide](http://mech.math.msu.su/~vvb/2course/Borisenko/CppProjects/GWindow/xintro.html) that contained setting up a window and listening to user events inside the window. The [official documentation](https://www.x.org/releases/X11R7.6/doc/libX11/specs/libX11/libX11.html) was also very useful, along with the manpages in Linux. This post contains some short explanations of problems I encountered and discoveries I made during this project. Github: [https://github.com/cappe987/graphics-simulation](https://github.com/cappe987/graphics-simulation).
 
-![Gif of blue circles bouncing on green circles](img/x11-project.gif)
+
+<!--![Gif of blue circles bouncing on green circles](img/x11-project.gif)-->
+GIF TEMPORARILY REMOVED DUE TO ISSUES WITH GO HUGO
 
 The gif above shows my project. It is small blue balls bouncing on green balls. The blue balls fall from top to bottom and green balls can be placed or removed by left and right clicking. I know the bounce physics isn't correct but ignore that for now. The goal was just to learn about X11, not to make great physics.
 
