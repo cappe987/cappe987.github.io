@@ -42,7 +42,7 @@ defaultBackgroundImage = "img/bg6.jpg" # used as default for background images
   showMoreLinkDest = "/blog"
   cardView = false
   cardViewScreenWidth = false
-  layoutBackgroundBlur = true # only used when layout equals background
+  layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
   showDate = true
@@ -52,7 +52,7 @@ defaultBackgroundImage = "img/bg6.jpg" # used as default for background images
   showAuthor = true
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = true
@@ -74,7 +74,7 @@ defaultBackgroundImage = "img/bg6.jpg" # used as default for background images
 [list]
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = true
   showSummary = false
