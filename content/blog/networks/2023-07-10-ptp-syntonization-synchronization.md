@@ -8,14 +8,6 @@ description: Aligning and keeping clocks aligned
 published: true
 ---
 
-<!--<style type="text/css">-->
-<!--pre > code {-->
-      <!--display: block !important;-->
-      <!--line-height: 1.3rem !important;-->
-      <!--font-size: 1.3rem !important;-->
-<!--}-->
-<!--</style>-->
-
 Setting two clocks to the same time doesn't seem that hard, right? If
 same-second precision is enough for you then you can usually do that. But when
 we are talking nanosecond precision like that provided by PTP (IEEE1588,
