@@ -43,7 +43,7 @@ The crash would occur on the last line, but the key here is the function call to
 allocation happens on the stack. This allows the memory to later be freed
 automatically when the function exits. Reading the manpage
 [alloca(3)](https://man7.org/linux/man-pages/man3/alloca.3.html) we can find
-```
+```no-hl
 BUGS
        There is no error indication if the stack frame cannot
        be extended. (However, after a failed allocation, the

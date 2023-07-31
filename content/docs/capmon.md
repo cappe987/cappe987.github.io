@@ -16,8 +16,7 @@ run it with sudo since that bypasses certain checks. Let the command fail at the
 first missing capability check and add that capability, then try again and see
 if if fails on more. Rinse and repeat until command runs successfully.
 
-## GitHub repository
-{{< github repo="cappe987/capmon" >}}
+[GitHub repository](https://github.com/cappe987/capmon)
 
 ## Capabilities
 It is not recommended to always use a Linux system as root user. For this reason

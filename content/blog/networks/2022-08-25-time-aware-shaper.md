@@ -27,7 +27,7 @@ gates it restarts with the first gate again. Below is an example of a schedule
 with two gates, one which opens priorities 0-3 and one which opens priorities
 4-7.
 
-```
+```no-hl
 |---------|---------|---------|---------|
 | 0,1,2,3 | 4,5,6,7 | 0,1,2,3 | 4,5,6,7 | ...
 |---------|---------|---------|---------|
@@ -62,7 +62,7 @@ that if the frame started sending it will be guaranteed to finish before the
 gate closes. However, this could end up wasting a lot of time when a frame
 finishes very early into the guard band and it has to idle until the next gate.
 
-```
+```no-hl
 |------------------|-------------|
 |    Gate 1   | GB | Gate 2 | GB |
 |------------------|-------------|

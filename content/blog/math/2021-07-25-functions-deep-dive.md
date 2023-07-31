@@ -8,7 +8,8 @@ description: "Programming functions from a mathematical perspective."
 published: true
 ---
 
-{{< katex >}}
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+
 
 In this post we will take a closer look at functions and some mathematical
 concepts relating to them. This post assumes you are familiar working with

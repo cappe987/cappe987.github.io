@@ -118,7 +118,7 @@ The following illustration shows the slave clock synchronizing to the master
 clock using two-step timestamping. The cable has a delay of 1 time unit.
 Described from the point of the master clock's time:
 
-```
+```no-hl
   Master         Slave
       ┌───────────┐
       │           │
@@ -172,7 +172,7 @@ enough for many use cases.
 The following illustration shows an example layout of how a MAC and PHY would
 be attached in switching hardware. The PHY attaches directly to the cable.
 
-```
+```no-hl
       ┌───┐
       │CPU│
       └─┬─┘

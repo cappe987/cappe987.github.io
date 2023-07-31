@@ -19,8 +19,7 @@ using tools like [Nemesis](https://github.com/libnet/nemesis) or
 to write the frame by hand if you so wish.
 
 
-## GitHub repository
-{{< github repo="cappe987/hexend" >}}
+[GitHub repository](https://github.com/cappe987/hexend)
 
 
 ## Using Hexend

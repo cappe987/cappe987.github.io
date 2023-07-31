@@ -49,7 +49,7 @@ into title/body texts. On top of that, it can also be used to add lists or
 ASCII art to explain the commit. As an example, I'm going to use a commit I
 recently made to an open source project.
 
-```
+```no-hl
 ptp: Parse major and minor version correctly
 
 In IEEE1588-2008, the lower 4 bits of the field were defined as the PTP
@@ -82,8 +82,8 @@ at which it changes.
 As for how it looks on GitHub, here is both the title-only view and the full
 commit view.
 
-![GitHub title only](img/commit_title.png)
-![GitHub full commit](img/commit_body.png)
+![GitHub title only](/img/commit_title.png)
+![GitHub full commit](/img/commit_body.png)
 
 As a final note, I would like to add that, though I always write my commits in
 my editor, I am nowhere near as rigorous as the above example when it comes to

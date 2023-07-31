@@ -88,7 +88,7 @@ internal memory.
 The fdb and mdb are stored in a table with fast lookup to quickly switch the
 packets. The table might look something like this (simplified, it will usually
 contain more information, e.g., age and if it is static or not)
-```
+```no-hl
 -------------------------------------------------
 |        MAC        | VLAN | TYPE | DESTINATION |
 |-----------------------------------------------|

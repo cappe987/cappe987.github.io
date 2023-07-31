@@ -29,8 +29,7 @@ may be enough precision.
 If you are unfamiliar with timestamping I recommend checking out my post on [PTP
 and timestamping methods]({{< ref 2023-04-05-ptp-intro-timestamping.md >}}).
 
-## GitHub repository
-{{< github repo="cappe987/wiretime" >}}
+[GitHub repository](https://github.com/cappe987/wiretime)
 
 
 ## Using Wiretime

@@ -17,7 +17,7 @@ One of the most famous cellular automata is Conway's Game of Life and it models 
 3.  If it is dead and has 3 living neighbours then it becomes alive.
 4.  If it has 4 or more living neighbours then it dies.
 
-![A glider in Conway's Game of Life](img/cellular-automata-glider.png)
+![A glider in Conway's Game of Life](/img/cellular-automata-glider.png)
 
 Too few neighbours and it dies of underpopulation, too many and it dies of overpopulation. Just the right amount and new cells are born. The image above shows a *glider* in Conway's Game of Life. It is a set of cells that will continuously move diagonally (towards the bottom right in this image) until they collide with something else that disrupts the formation. Gliders are a stable formation because over a couple of steps it will return to its initial formation, thus making it go on forever in the same pattern.
 
