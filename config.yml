@@ -54,20 +54,6 @@ languages:
                   #url: https://github.com/adityatelange/hugo-PaperMod/wiki/
                 #- name: Discord
                   #url: https://discord.gg/ahpmTvhVmp
-        profileMode:
-            enabled: true
-            title: Casper Andersson
-            imageUrl: "/img/ghost.png"
-            imageTitle: ProfileMode image
-            # imageWidth: 120
-            # imageHeight: 120
-            #subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            subtitle: Software Developer
-            #buttons:
-                #- name: Blog
-                  #url: blog
-                #- name: Profile Mode
-                  #url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
 
     #fr:
         #languageName: ":fr:"
@@ -152,18 +138,20 @@ params:
     # comments: false
     #images: ["papermod-cover.png"]
 
-    #profileMode:
-        #enabled: false
-        #title: PaperMod
-        #imageUrl: "#"
-        #imageTitle: my image
-        ## imageWidth: 120
-        ## imageHeight: 120
+    profileMode:
+        enabled: true
+        title: Casper Andersson
+        imageUrl: "/img/ghost.png"
+        imageTitle: ProfileMode image
+        # imageWidth: 120
+        # imageHeight: 120
+        #subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        subtitle: Software Developer
         #buttons:
-            #- name: Archives
-              #url: archives
-            #- name: Tags
-              #url: tags
+            #- name: Blog
+              #url: blog
+            #- name: Profile Mode
+              #url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
 
     #homeInfoParams:
         #Title: "PaperMod"
