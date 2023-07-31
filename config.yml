@@ -4,7 +4,7 @@ paginate: 3
 theme: papermod
 
 permalinks:
-  blog: '/:section/:title'
+  blog: '/:sections[:2]/:title'
 
 sitemap:
   changefreq: 'daily'
