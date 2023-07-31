@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Computer Science on Casper Andersson</title>
+    <link>https://casan.se/blog/computer_science/</link>
+    <description>Recent content in Computer Science on Casper Andersson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/blog/computer_science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cellular automata</title>
+      <link>https://casan.se/blog/computer_science/cellular-automata/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/computer_science/cellular-automata/</guid>
+      <description>Conway&amp;#39;s Game of Life and other cellular automata. Originally a school essay.</description>
+    </item>
+    
+    <item>
+      <title>Type inference with Hindley-Milner W algorithm</title>
+      <link>https://casan.se/blog/computer_science/type-inference-with-hindley-milner-w-algorithm/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/computer_science/type-inference-with-hindley-milner-w-algorithm/</guid>
+      <description>A demonstration of the Hindley-Milner W Algorithm in F#.</description>
+    </item>
+    
+  </channel>
+</rss>

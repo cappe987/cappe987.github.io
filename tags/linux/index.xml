@@ -9,64 +9,64 @@
     <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful commands I use</title>
-      <link>https://casan.se/blog/useful-commands-i-use/</link>
+      <link>https://casan.se/blog/misc/useful-commands-i-use/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/useful-commands-i-use/</guid>
+      <guid>https://casan.se/blog/misc/useful-commands-i-use/</guid>
       <description> A list of commands that I like to use </description>
     </item>
     
     <item>
       <title>Synchronization and Syntonization</title>
-      <link>https://casan.se/blog/synchronization-and-syntonization/</link>
+      <link>https://casan.se/blog/networks/synchronization-and-syntonization/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/synchronization-and-syntonization/</guid>
+      <guid>https://casan.se/blog/networks/synchronization-and-syntonization/</guid>
       <description>Aligning and keeping clocks aligned</description>
     </item>
     
     <item>
       <title>Hexend - Send raw hex frames</title>
-      <link>https://casan.se/blog/hexend-send-raw-hex-frames/</link>
+      <link>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/hexend-send-raw-hex-frames/</guid>
+      <guid>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</guid>
       <description>A tool I made for sending raw hex frames</description>
     </item>
     
     <item>
       <title>The day Make started crashing</title>
-      <link>https://casan.se/blog/the-day-make-started-crashing/</link>
+      <link>https://casan.se/blog/programming/the-day-make-started-crashing/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/the-day-make-started-crashing/</guid>
+      <guid>https://casan.se/blog/programming/the-day-make-started-crashing/</guid>
       <description>The last thing you want is for your build system to crash</description>
     </item>
     
     <item>
       <title>A simpler life without sudo</title>
-      <link>https://casan.se/blog/a-simpler-life-without-sudo/</link>
+      <link>https://casan.se/blog/linux/a-simpler-life-without-sudo/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/a-simpler-life-without-sudo/</guid>
+      <guid>https://casan.se/blog/linux/a-simpler-life-without-sudo/</guid>
       <description>Using Capmon to figure out what capabilities your program needs</description>
     </item>
     
     <item>
       <title>Network bridge forwarding and learning</title>
-      <link>https://casan.se/blog/network-bridge-forwarding-and-learning/</link>
+      <link>https://casan.se/blog/networks/network-bridge-forwarding-and-learning/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/network-bridge-forwarding-and-learning/</guid>
+      <guid>https://casan.se/blog/networks/network-bridge-forwarding-and-learning/</guid>
       <description>Bridge forwarding of unicast and multicast in software and hardware</description>
     </item>
     
     <item>
       <title>Bouncing balls simulation using X11</title>
-      <link>https://casan.se/blog/bouncing-balls-simulation-using-x11/</link>
+      <link>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/bouncing-balls-simulation-using-x11/</guid>
+      <guid>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</guid>
       <description>A small project where I explore the X11 API in C.</description>
     </item>
     

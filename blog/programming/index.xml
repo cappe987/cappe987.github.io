@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming on Casper Andersson</title>
+    <link>https://casan.se/blog/programming/</link>
+    <description>Recent content in Programming on Casper Andersson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/blog/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The day Make started crashing</title>
+      <link>https://casan.se/blog/programming/the-day-make-started-crashing/</link>
+      <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/programming/the-day-make-started-crashing/</guid>
+      <description>The last thing you want is for your build system to crash</description>
+    </item>
+    
+    <item>
+      <title>Nondeterministic functions</title>
+      <link>https://casan.se/blog/programming/nondeterministic-functions/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/programming/nondeterministic-functions/</guid>
+      <description>Types of nondeterminism and interesting ways of handling them.</description>
+    </item>
+    
+    <item>
+      <title>Bouncing balls simulation using X11</title>
+      <link>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</guid>
+      <description>A small project where I explore the X11 API in C.</description>
+    </item>
+    
+    <item>
+      <title>Programming: how to learn it and how to get help.</title>
+      <link>https://casan.se/blog/programming/programming-how-to-learn-it-and-how-to-get-help./</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/programming/programming-how-to-learn-it-and-how-to-get-help./</guid>
+      <description>A tutorial for how to use tutorials. Some tips on how to learn efficiently.</description>
+    </item>
+    
+    <item>
+      <title>Operators are functions too</title>
+      <link>https://casan.se/blog/programming/operators-are-functions-too/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/programming/operators-are-functions-too/</guid>
+      <description>Viewing operators as functions and functions as operators.</description>
+    </item>
+    
+    <item>
+      <title>Static vs dynamic typing</title>
+      <link>https://casan.se/blog/programming/static-vs-dynamic-typing/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/programming/static-vs-dynamic-typing/</guid>
+      <description>Comparing static and dynamic typing and my experiences and opinions.</description>
+    </item>
+    
+  </channel>
+</rss>

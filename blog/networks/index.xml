@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Networks on Casper Andersson</title>
+    <link>https://casan.se/blog/networks/</link>
+    <description>Recent content in Networks on Casper Andersson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/blog/networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synchronization and Syntonization</title>
+      <link>https://casan.se/blog/networks/synchronization-and-syntonization/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/synchronization-and-syntonization/</guid>
+      <description>Aligning and keeping clocks aligned</description>
+    </item>
+    
+    <item>
+      <title>PTP and timestamping methods</title>
+      <link>https://casan.se/blog/networks/ptp-and-timestamping-methods/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/ptp-and-timestamping-methods/</guid>
+      <description>A maybe not so gentle introduction to the Precision Time Protocol</description>
+    </item>
+    
+    <item>
+      <title>Hexend - Send raw hex frames</title>
+      <link>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</guid>
+      <description>A tool I made for sending raw hex frames</description>
+    </item>
+    
+    <item>
+      <title>TSN: Time-Aware Shaper</title>
+      <link>https://casan.se/blog/networks/tsn-time-aware-shaper/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/tsn-time-aware-shaper/</guid>
+      <description>Time Sensitive Networking and the 802.1Qbv standard</description>
+    </item>
+    
+    <item>
+      <title>What is Time-Sensitive Networking?</title>
+      <link>https://casan.se/blog/networks/what-is-time-sensitive-networking/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/what-is-time-sensitive-networking/</guid>
+      <description>An introduction to Time-Sensitive Networking and some of its techniques</description>
+    </item>
+    
+    <item>
+      <title>Network bridge forwarding and learning</title>
+      <link>https://casan.se/blog/networks/network-bridge-forwarding-and-learning/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/network-bridge-forwarding-and-learning/</guid>
+      <description>Bridge forwarding of unicast and multicast in software and hardware</description>
+    </item>
+    
+  </channel>
+</rss>

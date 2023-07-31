@@ -9,82 +9,82 @@
     <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hexend - Send raw hex frames</title>
-      <link>https://casan.se/blog/hexend-send-raw-hex-frames/</link>
+      <link>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/hexend-send-raw-hex-frames/</guid>
+      <guid>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</guid>
       <description>A tool I made for sending raw hex frames</description>
     </item>
     
     <item>
       <title>The day Make started crashing</title>
-      <link>https://casan.se/blog/the-day-make-started-crashing/</link>
+      <link>https://casan.se/blog/programming/the-day-make-started-crashing/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/the-day-make-started-crashing/</guid>
+      <guid>https://casan.se/blog/programming/the-day-make-started-crashing/</guid>
       <description>The last thing you want is for your build system to crash</description>
     </item>
     
     <item>
       <title>A simpler life without sudo</title>
-      <link>https://casan.se/blog/a-simpler-life-without-sudo/</link>
+      <link>https://casan.se/blog/linux/a-simpler-life-without-sudo/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/a-simpler-life-without-sudo/</guid>
+      <guid>https://casan.se/blog/linux/a-simpler-life-without-sudo/</guid>
       <description>Using Capmon to figure out what capabilities your program needs</description>
     </item>
     
     <item>
       <title>Nondeterministic functions</title>
-      <link>https://casan.se/blog/nondeterministic-functions/</link>
+      <link>https://casan.se/blog/programming/nondeterministic-functions/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/nondeterministic-functions/</guid>
+      <guid>https://casan.se/blog/programming/nondeterministic-functions/</guid>
       <description>Types of nondeterminism and interesting ways of handling them.</description>
     </item>
     
     <item>
       <title>Bouncing balls simulation using X11</title>
-      <link>https://casan.se/blog/bouncing-balls-simulation-using-x11/</link>
+      <link>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/bouncing-balls-simulation-using-x11/</guid>
+      <guid>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</guid>
       <description>A small project where I explore the X11 API in C.</description>
     </item>
     
     <item>
       <title>Functions: a deep dive</title>
-      <link>https://casan.se/blog/functions-a-deep-dive/</link>
+      <link>https://casan.se/blog/math/functions-a-deep-dive/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/functions-a-deep-dive/</guid>
+      <guid>https://casan.se/blog/math/functions-a-deep-dive/</guid>
       <description>Programming functions from a mathematical perspective.</description>
     </item>
     
     <item>
       <title>Programming: how to learn it and how to get help.</title>
-      <link>https://casan.se/blog/programming-how-to-learn-it-and-how-to-get-help./</link>
+      <link>https://casan.se/blog/programming/programming-how-to-learn-it-and-how-to-get-help./</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/programming-how-to-learn-it-and-how-to-get-help./</guid>
+      <guid>https://casan.se/blog/programming/programming-how-to-learn-it-and-how-to-get-help./</guid>
       <description>A tutorial for how to use tutorials. Some tips on how to learn efficiently.</description>
     </item>
     
     <item>
       <title>Operators are functions too</title>
-      <link>https://casan.se/blog/operators-are-functions-too/</link>
+      <link>https://casan.se/blog/programming/operators-are-functions-too/</link>
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/operators-are-functions-too/</guid>
+      <guid>https://casan.se/blog/programming/operators-are-functions-too/</guid>
       <description>Viewing operators as functions and functions as operators.</description>
     </item>
     
     <item>
       <title>Static vs dynamic typing</title>
-      <link>https://casan.se/blog/static-vs-dynamic-typing/</link>
+      <link>https://casan.se/blog/programming/static-vs-dynamic-typing/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/static-vs-dynamic-typing/</guid>
+      <guid>https://casan.se/blog/programming/static-vs-dynamic-typing/</guid>
       <description>Comparing static and dynamic typing and my experiences and opinions.</description>
     </item>
     

@@ -22,17 +22,22 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://casan.se/blog/misc/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://casan.se/tags/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/useful-commands-i-use/</loc>
+    <loc>https://casan.se/blog/misc/useful-commands-i-use/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/dont-use-git-commit-m/</loc>
+    <loc>https://casan.se/blog/misc/dont-use-git-commit-m/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -42,7 +47,12 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/synchronization-and-syntonization/</loc>
+    <loc>https://casan.se/blog/networks/</loc>
+    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/networks/synchronization-and-syntonization/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -67,17 +77,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/ptp-and-timestamping-methods/</loc>
+    <loc>https://casan.se/blog/networks/ptp-and-timestamping-methods/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/jekyll-markdown-lists-that-dont-start-on-1./</loc>
+    <loc>https://casan.se/blog/misc/jekyll-markdown-lists-that-dont-start-on-1./</loc>
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/hexend-send-raw-hex-frames/</loc>
+    <loc>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,37 +97,47 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/the-day-make-started-crashing/</loc>
+    <loc>https://casan.se/blog/programming/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/a-simpler-life-without-sudo/</loc>
+    <loc>https://casan.se/blog/programming/the-day-make-started-crashing/</loc>
+    <lastmod>2022-09-17T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/a-simpler-life-without-sudo/</loc>
     <lastmod>2022-08-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/tsn-time-aware-shaper/</loc>
+    <loc>https://casan.se/blog/linux/</loc>
+    <lastmod>2022-08-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/networks/tsn-time-aware-shaper/</loc>
     <lastmod>2022-08-25T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/what-is-time-sensitive-networking/</loc>
+    <loc>https://casan.se/blog/networks/what-is-time-sensitive-networking/</loc>
     <lastmod>2022-06-07T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/network-bridge-forwarding-and-learning/</loc>
+    <loc>https://casan.se/blog/networks/network-bridge-forwarding-and-learning/</loc>
     <lastmod>2022-02-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/nondeterministic-functions/</loc>
+    <loc>https://casan.se/blog/programming/nondeterministic-functions/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/bouncing-balls-simulation-using-x11/</loc>
+    <loc>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</loc>
     <lastmod>2021-08-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -127,7 +147,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/functions-a-deep-dive/</loc>
+    <loc>https://casan.se/blog/math/functions-a-deep-dive/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -137,27 +157,37 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/cellular-automata/</loc>
+    <loc>https://casan.se/blog/math/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/computer_science/cellular-automata/</loc>
     <lastmod>2021-07-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/programming-how-to-learn-it-and-how-to-get-help./</loc>
+    <loc>https://casan.se/blog/computer_science/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/programming/programming-how-to-learn-it-and-how-to-get-help./</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/type-inference-with-hindley-milner-w-algorithm/</loc>
+    <loc>https://casan.se/blog/computer_science/type-inference-with-hindley-milner-w-algorithm/</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/operators-are-functions-too/</loc>
+    <loc>https://casan.se/blog/programming/operators-are-functions-too/</loc>
     <lastmod>2019-12-09T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/static-vs-dynamic-typing/</loc>
+    <loc>https://casan.se/blog/programming/static-vs-dynamic-typing/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

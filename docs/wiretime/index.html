@@ -4,7 +4,7 @@ This is useful for measuring the impact of traffic congestion and testing QoS
 features. The timestamped packets are intended to never touch any software on
 their trip through the network since that adds considerable delay and jitter,
 and the benefit of hardware timestamping dwindles. In which case using <code>ping</code>
-may be enough precision.</p><p>If you are unfamiliar with timestamping I recommend checking out my post on <a href=https://casan.se/blog/ptp-and-timestamping-methods/>PTP
+may be enough precision.</p><p>If you are unfamiliar with timestamping I recommend checking out my post on <a href=https://casan.se/blog/networks/ptp-and-timestamping-methods/>PTP
 and timestamping methods</a>.</p><p><a href=https://github.com/cappe987/wiretime>GitHub repository</a></p><h2 id=using-wiretime>Using Wiretime<a hidden class=anchor aria-hidden=true href=#using-wiretime>#</a></h2><p>Wiretime requires two interfaces, one for transmission and one for receival.
 This can be the same physical port by creating two VLAN interfaces on top of the
 port interface (note that they must be attached directly to the port and not

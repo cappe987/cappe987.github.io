@@ -9,28 +9,28 @@
     <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful commands I use</title>
-      <link>https://casan.se/blog/useful-commands-i-use/</link>
+      <link>https://casan.se/blog/misc/useful-commands-i-use/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/useful-commands-i-use/</guid>
+      <guid>https://casan.se/blog/misc/useful-commands-i-use/</guid>
       <description> A list of commands that I like to use </description>
     </item>
     
     <item>
       <title>Don&#39;t use &#39;git commit -m&#39;</title>
-      <link>https://casan.se/blog/dont-use-git-commit-m/</link>
+      <link>https://casan.se/blog/misc/dont-use-git-commit-m/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/dont-use-git-commit-m/</guid>
+      <guid>https://casan.se/blog/misc/dont-use-git-commit-m/</guid>
       <description> Commit messages should be detailed and carefully written. Take your time. </description>
     </item>
     
     <item>
       <title>Jekyll markdown lists that don&#39;t start on 1.</title>
-      <link>https://casan.se/blog/jekyll-markdown-lists-that-dont-start-on-1./</link>
+      <link>https://casan.se/blog/misc/jekyll-markdown-lists-that-dont-start-on-1./</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://casan.se/blog/jekyll-markdown-lists-that-dont-start-on-1./</guid>
+      <guid>https://casan.se/blog/misc/jekyll-markdown-lists-that-dont-start-on-1./</guid>
       <description>Custom properties of specific elements in a post</description>
     </item>
     
