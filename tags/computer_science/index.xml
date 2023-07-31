@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>computer_science on Casper Andersson</title><link>https://casan.se/tags/computer_science/</link><description>Recent content in computer_science on Casper Andersson</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/computer_science/index.xml" rel="self" type="application/rss+xml"/><item><title>Functions: a deep dive</title><link>https://casan.se/blog/functions-a-deep-dive/</link><pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate><guid>https://casan.se/blog/functions-a-deep-dive/</guid><description>In this post we will take a closer look at functions and some mathematical concepts relating to them. This post assumes you are familiar working with functions in some programming language and some mathematical knowledge of functions as well (like knowing what \(y = f(x)\) means and what a set is).</description></item><item><title>Cellular automata</title><link>https://casan.se/blog/cellular-automata/</link><pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate><guid>https://casan.se/blog/cellular-automata/</guid><description>Cellular automata is way to model biological systems through a set of cells that change their state based on their surroundings [ 1]. It requires some form of grid to operate on, where each location on the grid contains one cell. The cells are based on integer coordinates on the grid.</description></item><item><title>Type inference with Hindley-Milner W algorithm</title><link>https://casan.se/blog/type-inference-with-hindley-milner-w-algorithm/</link><pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate><guid>https://casan.se/blog/type-inference-with-hindley-milner-w-algorithm/</guid><description>Introduction # The W algorithm developed by J. Hindley and R. Milner is used to infer the types of a programming language where no types have been explicitly written. Several functional languages today use this kind of inference, for exampel F# and Haskell (although Haskellers still like to write out the types).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>computer_science on Casper Andersson</title>
+    <link>https://casan.se/tags/computer_science/</link>
+    <description>Recent content in computer_science on Casper Andersson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/computer_science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Functions: a deep dive</title>
+      <link>https://casan.se/blog/functions-a-deep-dive/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/functions-a-deep-dive/</guid>
+      <description>Programming functions from a mathematical perspective.</description>
+    </item>
+    
+    <item>
+      <title>Cellular automata</title>
+      <link>https://casan.se/blog/cellular-automata/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/cellular-automata/</guid>
+      <description>Conway&amp;#39;s Game of Life and other cellular automata. Originally a school essay.</description>
+    </item>
+    
+    <item>
+      <title>Type inference with Hindley-Milner W algorithm</title>
+      <link>https://casan.se/blog/type-inference-with-hindley-milner-w-algorithm/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/type-inference-with-hindley-milner-w-algorithm/</guid>
+      <description>A demonstration of the Hindley-Milner W Algorithm in F#.</description>
+    </item>
+    
+  </channel>
+</rss>
