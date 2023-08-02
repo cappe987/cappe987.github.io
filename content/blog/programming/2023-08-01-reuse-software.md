@@ -62,26 +62,28 @@ has some good but still quite easily digestible content.
 ## REUSE Software
 
 Code licensing is tricky, and it gets even trickier when you want to copy code
-from other places to use in your code. Finding out the license may not be
-immediately clear. GitHub does display the license of a repository, but only if
-it is placed in a way where GitHub is set to look for it. Far from all projects
-follow their conventions. And even then, it only displays one license. Projects
-can be licensed under multiple licenses depending on file type or where the code
-was taken from. Even a single file can have sections of code that fall under a
-different license. Dual licensing is another possibility that allows you to
-choose which of the listed licenses to redistribute the code with.
+from other places to use in your code. What license some code uses may not be
+immediately obvious. GitHub does display the license of a repository, but only
+if it is placed in a way where GitHub is set to look for it. Far from all
+projects follow their conventions. And even then, it only displays one license.
+Projects can be licensed under multiple licenses depending on file type or
+where the code was taken from. Even a single file can have sections of code
+that fall under a different license. Dual licensing is another possibility that
+allows you to choose which of the listed licenses to redistribute the code
+with.
 
-[REUSE](https://reuse.software/faq/) was created by the Free Software Foundation
+[REUSE](https://reuse.software) was created by the Free Software Foundation
 Europe (FSFE) and aims to simplify handling code licensing by providing a
 recommendation for how licensing should be done, as well as a tool to apply and
-check licenses. It makes use of the [SPDX](https://spdx.dev/) standardized
-methods for license and copyright of code. When a project is compliant with
-REUSE anyone can easily check the copyrights of a file.
+check licenses. It uses the [SPDX](https://spdx.dev/) standardized methods for
+license and copyright of code. When a project is compliant with REUSE anyone
+can easily check the copyrights of a file.
 
 REUSE requires licensing all files to be compliant, except for any files listed
-in `.gitignore` since they will never be included in any distributed artifacts.
-The default method of licensing is to have a header in each file that looks like
-this, using the relevant language's comment style.
+in `.gitignore` since they will never be included in the distribution of the
+source code. The default method of licensing is to have a header in each file
+that looks like this, using the comment style of the language corresponding to
+the file extension.
 
 ```sh
 # SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>
