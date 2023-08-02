@@ -74,7 +74,9 @@
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    <!--<p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>-->
+    <!--Truncation dots seem to appear whenever it overflows anyways, no need for special check -->
+    <p>{{ .Description | plainify | htmlUnescape }}</p>
   </div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}
