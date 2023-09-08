@@ -41,7 +41,7 @@ port interface (note that they must be attached directly to the port and not
 through a bridge as bridges cannot do timestamping). Ideally, Wiretime should be
 used on a network switch that has multiple interface capable of timestamping.
 For best accuracy the ports should use the same Physical Hardware Clock (PHC).
-If they aren't using the same PHC they need to be precicely synced.
+If they aren't using the same PHC they need to be precisely synced.
 
 The packets will use a path that loops back to the transmitting switch. The
 receiving port should be removed from the switch bridge to avoid flooding.
