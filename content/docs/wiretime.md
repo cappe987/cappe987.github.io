@@ -44,9 +44,10 @@ For best accuracy the ports should use the same Physical Hardware Clock (PHC).
 If they aren't using the same PHC they need to be precisely synced.
 
 The packets will use a path that loops back to the transmitting switch. The
-receiving port should be removed from the switch bridge to avoid flooding.
-Packets are timestamped on transmission and receival and the difference is
-calculated across several packets and the average is taken.
+receiving port should be set to a different VLAN than the transmitting port, or
+removed from the bridge completely, to avoid flooding. Packets are timestamped
+on transmission and receival and the difference is calculated across several
+packets and the average is taken.
 
 The most basic command looks like this
 ```sh
