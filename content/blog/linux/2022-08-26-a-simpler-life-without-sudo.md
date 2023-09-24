@@ -4,82 +4,127 @@ title: "A simpler life without sudo"
 date: 2022-08-26
 tags: ["linux", "programming"]
 categories: linux
-description: Using Capmon to figure out what capabilities your program needs
+description: "
+Using Linux capabilities(7) to avoid using sudo, and using Capmon to figure out
+what capbilities are required.
+"
 published: true
 ---
 
-A couple months ago a colleague showed me his post on [a life without
-sudo](https://troglobit.com/2016/12/11/a-life-without-sudo/). In it he
-demonstrates the elegant use of Linux
-[capabilities(7)](http://man7.org/linux/man-pages/man7/capabilities.7.html). If
-you aren't familiar with capabilities I recommend reading his post first. I
-started using it myself and found it incredibly convenient. I would run sudo
-many times per day before. This would usually be to do some network-related
-activity such as sending raw packets or changing network interfaces. These I
-know require the capabilities `CAP_NET_RAW` and `CAP_NET_ADMIN`. But once in a
-while I come across something where I do not know which capability it uses.
-Network namespaces was such a thing. Turns out it requires `CAP_SYS_ADMIN` and
-`CAP_DAC_OVERRIDE`. 
+An incredibly underused but oh-so-amazing feature in Linux is *capabilities*.
+Everyone should use it to make their lives simpler.
 
-To make my new life without sudo even simpler I wrote [capmon - a Linux
-capabilities monitor](https://github.com/cappe987/capmon). It  allows you to
-monitor the capability checks that Linux does, and is able to filter and
-aggregate them for you.
+By default, a user does not have many permissions on a system. Some are granted
+automatically through different means, such as reading and writing files in
+your home directory. As developers, we may regularly have to reach for `sudo` to
+allow us to do what we want. Writing our password over and over again, or
+constantly forgetting to prefix your command with sudo. It can get tiring.
 
-## How it works
+On the other end, you could do like ye olden days and start a shell as a
+superuser; run everything with sudo. However, sudo was specifically invented to
+not have users run everything as a superuser, as it is inherently a bad idea.
+Using sudo gives you access to everything. Not using it gives you access to very
+little. But what if there was a middle ground?
 
-It makes use of kprobe-based event tracing. The kernel config
-`CONFIG_KPROBE_EVENTS` exposes a debugfs (debug file system) that you can
-interact with by reading and writing to files. It lets you set debug probes
-(kprobes) on kernel functions and print out information when they are called or
-returns. In the case of capmon it listens to calls to functions that do
-capability checks and prints the argument `int cap` which holds an integer
-representing the capability it is checking. It also prints the name of the
-process calling it and its process id (pid). This all ends up in a log file at
-`/sys/kernel/debug/tracing/trace_pipe` that capmon actively reads from when
-data comes in. The data is parsed and presented in a more user-friendly manner.
+Enter *capabilities*. All of the actions that normally require sudo have one or
+more capabilities associated with them. Sudo grants you all capabilities,
+allowing for any kind of mayhem when running commands with it. However, you can
+also grant yourself only some of these capabilities. It is assigned per user and
+application. This means that to run a command that normally requires sudo
+without it, both the user and the command must have the required capabilities.
+This gives the bonus of safety, an application cannot do actions you explicitly
+haven't given it access to. It also allows system administrators to give users
+access to run certain applications without the need to give them sudo rights.
 
-It features three filter options: filter by process name, pid, or capability
-being checked. Process name supports regular expressions. The filters can be
-combined freely. Filters of the same type are treated as `OR`, while filters of
-different types are treated as `AND`. Filtering is great, but one feature which
-I think really helps is the summary mode. Sometimes there can be a lot of
-output. The summary mode allows you to gather all checks by either process name
-or pid. At the end it will print out which names/id's checked which
-capabilities.
+## Using capabilities
 
-## How to use it
-`capmon` itself uses `CAP_DAC_OVERRIDE`, in case you don't want to use sudo for
-it. If you want to find the capabilities of a program you start by running
-capmon. Possibly with some filters or flags. Now we will use summary mode to
-find the required permission. For example:
+As mentioned above, capabilities are given to both users and applications. Let's
+start with users. This is stored in the file `/etc/security/capability.conf`.
+Edit the file and add a line like this but with your username.
+
+```sh
+cap_net_raw,cap_net_admin	casan
 ```
-capmon -s name
+
+This gives the user `casan` the two capabilities `cap_net_raw` and
+`cap_net_admin` and should take effect immediately. Next, we need some
+application. Let's use the `ip` command. To find where the command is located we
+can use `which ip`. An important detail here is that you can't give capabilities
+to symlinks, so if a command is symlinked the capability must be given to the
+actual executable file.
+
+But before we add the capability, let's try doing a command without sudo. It
+should fail with `ioctl(TUNSETIFF): Operation not permitted`.
+
+```sh
+ip tuntap add tap99 mod tap
 ```
-Then you run the program without sudo. Now you can either add the capability you
-saw pop up in capmon, or stop capmon using \<Ctrl-C\> to see the summary mode. It may fail on
-the first capability check and stop there. So you may have to add that
-capability then run it again to have it fail on the next one.
 
-## Issues
-As of release 1.1 of capmon there are some issues with the design that I would
-like to resolve in the future.
+Now add the capability `cap_net_admin` to the command.
 
-### What to monitor?
-Right now it shows more capability checks than necessary, and sometimes it might
-still not show all you want. This is because capability checks take different
-paths through the kernel, though they all seem to converge to `cap_capable`. But
-`cap_capable` is called a lot and for things you might not care about. I added
-that as an extra flag `-a`. By default it monitors `ns_capable` and
-`capable_wrt_inode_uidgid`. A lot of checks might happen due to capabilities I
-think the user might have by default. For example, `CAP_SYS_PTRACE` is called a
-lot when you run `htop`. Even though I never explicitly gave that capability.
+```sh
+sudo setcap cap_net_admin+ep /bin/ip
+```
 
-### Interacting with kprobe events
-The debugfs interface works fine for manual debugging. But it feels too unstable
-to be used for an application. It uses a common output file and it could easily
-break through manually touching the debugfs. Or even if some other application
-wants to do a similar thing. They might send a clear-all command to the debufs.
+Try the previous command again and it should work. And just to clean up our mess
+we can delete the newly created `tap99` interface with `ip link del dev tap99`
+(which we can also do without sudo).
 
-I would like to rewrite this using libbpf, to write proper code that attaches to
-the functions instead of sending raw strings to files.
+Now you know how to add capabilities to avoid using sudo. But how do we know
+which capabilities a command needs? It can depend on which arguments you pass
+the command, depending on what the arguments do. If you use the commands of `ip
+netns` you need different capabilities than the example above. You can always
+read the manpage
+[capabilities(7)](http://man7.org/linux/man-pages/man7/capabilities.7.html) to
+get a better understanding of the individual capabilities. But if you don't
+fully understand how a command works it can be difficult to figure out. It can
+also be the case of one command starting another subprocess, where the
+subprocess is the one that needs the capability.
+
+## Capmon: figuring out capabilities
+
+Introducing [Capmon - a Linux capabilities
+monitor](https://github.com/cappe987/capmon). A tool that monitors your process
+and shows a report over which capabilities it looked for. You simply pass your
+command as an argument to Capmon and it will execute it. But before you get
+started, Capmon does require the capabilities `cap_dac_override` and
+`cap_sys_admin`, running it with sudo does not work correctly because that
+bypasses certain checks. Now that you've added those capabilities to yourself
+and Capmon, let's try it out.
+
+```sh
+capmon 'ip tuntap add tap99 mod tap'
+```
+
+Assuming you did everything correctly, this should output the following text
+indicating that the `ip` application accessed the `cap_net_admin` capability
+successfully.
+
+```sh
+[ip]
+- [PASS] CAP_NET_ADMIN
+```
+
+Now take what you've learnt here and use more commands without sudo.
+
+### Some things to keep in mind
+
+- If a command is failing but you are not seeing any FAIL output from Capmon,
+  try running with the flag `-a`. This adds some additional monitoring points.
+- It is recommended to use quotes around your command, otherwise dash-arguments
+  arguments will be interpreted as arguments to Capmon.
+- Commands that require multiple capabilities will usually stop and return an
+  error on the first failed check. In this case, add the first capability, then
+  run it again and it will fail on the second.
+
+
+
+
+## Footnote
+
+The title of this post is a homage to a blogpost by a former colleague who
+taught me about capabilities and a ton of other things, which in turn inspired
+me to create Capmon. You can read his post at [A life without
+sudo](https://troglobit.com/2016/12/11/a-life-without-sudo/).
+
+
