@@ -49,7 +49,7 @@
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://casan.se/blog/linux/a-simpler-life-without-sudo/</guid>
-      <description>Using Capmon to figure out what capabilities your program needs</description>
+      <description> Using Linux capabilities(7) to avoid using sudo, and using Capmon to figure out what capbilities are required. </description>
     </item>
     
     <item>
