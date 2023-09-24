@@ -12,55 +12,15 @@ published: true
 ---
 
 Monitor when processes check `capabilities(7)` to find out what they require.
-Run `capmon <cmd>` to track the capabilities it requires. It's important to not
+Run `capmon '<cmd>'` to track the capabilities it requires. It's important to not
 run it with sudo since that bypasses certain checks. Let the command fail at the
 first missing capability check and add that capability, then try again and see
 if if fails on more. Rinse and repeat until command runs successfully.
 
-[GitHub repository](https://github.com/cappe987/capmon)
+If you are not familiar with capabilities can read [A simpler life without
+sudo]({{< ref "2022-08-26-a-simpler-life-without-sudo.md" >}}).
 
-## Capabilities
-It is not recommended to always use a Linux system as root user. For this reason
-the `sudo` command was invented. With it you can run one command at a time as
-root user, given that you have permissions to use it. But sometimes you run a
-command very often, and it gets annoying to always type your "long and secure"
-password. Or possibly you don't have permissions to use `sudo` but still need to
-use certain commands (for which you could ask your sysadmin to set up the
-required capabilities for you). For this reason
-[capabilities(7)](https://man7.org/linux/man-pages/man7/capabilities.7.html)
-exists.
-
-Capabilities allows setting certain permissions per-user and per-command. A
-command can only be successfully run if both the user and the command has the
-required permissions. Do note that these are runtime checks that happen when
-doing certain syscalls, and can therefore not be determined beforehand. If a
-command requires two higher-privilege permissions and it only has one then the
-first call may succeed while the second one fails. Because this is runtime
-checks, depending on how the program runs (different arguments or
-circumstances), there may be different privileges required.
-
-This is where `capmon` comes in. It runs the given command and listens for all
-permission checks by it or any of its subprocesses and gives a report for which
-checks it passed and which it failed.
-
-To add the capability `CAP_NET_ADMIN` to the `ip` command do
-```sh
-sudo setcap "cap_net_admin+ep" /bin/ip
-```
-
-To add the capability `CAP_NET_ADMIN` to a user open
-`/etc/security/capability.conf` add a line like
-```
-cap_net_admin		casper
-```
-
-For multiple capabilities use a comma to separate them:
-```sh
-sudo setcap "cap_net_admin,cap_dac_override+ep" /bin/ip
-```
-```
-cap_net_admin,cap_dac_override		casper
-```
+[Capmon - GitHub](https://github.com/cappe987/capmon)
 
 ## Using Capmon
 
@@ -70,12 +30,12 @@ Capmon requires `CAP_DAC_OVERRIDE` and `CAP_SYS_ADMIN`.
 
 To use Capmon do
 ```sh
-capmon <cmd>
+capmon '<cmd>'
 ```
 
 For example:
 ```sh
-capmon "ip link netns add test"
+capmon 'ip link netns add test'
 ```
 It is recommended to enclose the command in quotes to avoid the shell from
 doing any funny business with globbing or other special features. Capmon will
@@ -110,14 +70,13 @@ Capmon uses BPF tracepoints and fexit tracing to listen to two different events.
 1. Capability checks (fexit)
 2. Process starts (tracepoint)
 
-Number (1) looks a the return value of the capability check. By default it
-listens to the `ns_capable` and `capable_wrt_inode_uidgid` kernel functions.
-Most required capability checks go through either of these two functions. But in
-case it doesn't, the `--all` flag changes it to instead listen to the
-`cap_capable`. The capability and the result is saved and mapped to the PID that
-did the check.
+(1) looks a the return value of the capability check. By default it listens to
+the `ns_capable` and `capable_wrt_inode_uidgid` kernel functions. Most required
+capability checks go through either of these two functions. But in case it
+doesn't, the `--all` flag changes it to instead listen to the `cap_capable`. The
+capability and the result is saved and mapped to the PID that did the check.
 
-Number (2) looks at the PID of the parent process (the one who started the new
+(2) looks at the PID of the parent process (the one who started the new
 process) and if that matches with the PID of the command it is saved. Next time
 a process starts it will look against all previously saved PID. This ensures
 that any even subprocesses of subprocesses, and so on, are kept track of.
@@ -127,7 +86,8 @@ all capability checks done and takes the intersection. The output is the
 capability checks done by the input command.
 
 Capmon itself ignores `Ctrl-C` (`SIGINT`) so it is passed down to the monitored
-program. This allows it to support interactive programs.
+program. This allows it to support interactive programs that are stopped with
+`Ctrl-C`.
 
 It currently does not handle orphan processes since it stops once the initial
 command is done. To handle this there is monitor mode using the `--monitor`
