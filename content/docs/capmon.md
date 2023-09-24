@@ -37,9 +37,10 @@ For example:
 ```sh
 capmon 'ip link netns add test'
 ```
-It is recommended to enclose the command in quotes to avoid the shell from
-doing any funny business with globbing or other special features. Capmon will
-run the command with `/bin/sh`.
+It is recommended to enclose the command in quotes to avoid the shell from doing
+any funny business with globbing or other special features, and to avoid Capmon
+from interpreting the command's argument as its own. Capmon will run the command
+with `/bin/sh`.
 
 The output of the above command will be
 ```sh
