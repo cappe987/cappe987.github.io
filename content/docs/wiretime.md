@@ -69,12 +69,12 @@ hardware through SW2, and then back to SW1.
 
 ### Flags
 
-`-t, --tx <IFACE>`
-Transmit packets on `<IFACE>`. Can be a VLAN or other interface,
+`-t, --tx <interface>`
+Transmit packets on `<interface>`. Can be a VLAN or other interface,
 as long as the physical port supports hardware timestamping.
 
-`-r, --rx <IFACE>`
-Receive packets on interface `<IFACE>`. Can be a VLAN or other interface,
+`-r, --rx <interface>`
+Receive packets on interface `<interface>`. Can be a VLAN or other interface,
 as long as the physical port supports hardware timestamping.
 
 `-p, --pcp <PCP>`
@@ -83,7 +83,7 @@ PCP priority. If VLAN is not set it will use VLAN 0.
 `-v, --vlan <VID>`
 VID to tag the packet with.
 
-`-P, --prio <PRIO>`
+`-P, --prio <priority>`
 Socket priority. Used to achieve egress QoS.
 
 `-o, --one-step`
@@ -94,15 +94,15 @@ Output data into file for plotting. Use when running Wiretime on a device that
 does not have Gnuplot installed. The file can then be copied to another device
 for plotting afterwards.
 
-`-s, --pkts_per_sec <count>`
-Amount of packets to transmit per second. Default: 100
+`-i, --interval <milliseconds>`
+Interval between packets. Default: 1000
 
-`-S, --pkts_per_summary <count>`
-Amount of packets to include in every output. Size of one *interval*. Together
-with `pkts_per_sec` this determines how often it will show outputs. Default:
-`pkts_per_sec` (meaning once every second). Maximum: 32768 packets due to the
-PTP sequence number field used being 16 bits and Wiretime keeps two full
-intervals active.
+`-b, --batch_size <count>`
+Amount of packets to include in every output. Together with pkts_per_sec this
+determines how often it will show outputs. Default: 1
+
+`-S, --software_tstamp`
+Perform software timestamping instead of hardware timestamping.
 
 `--plot <filename>`
 Plots the data using Gnuplot and exports as PDF. If -O is
