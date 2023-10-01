@@ -105,7 +105,7 @@ determines how often it will show outputs. Default: 1
 Perform software timestamping instead of hardware timestamping.
 
 `--plot <filename>`
-Plots the data using Gnuplot and exports as PDF. If -O is
+Plots the data using Gnuplot and exports as PDF. If `-O` is
 not used it will create a temporary file for storing the data. The same plotting
 settings also exists as a bash script in the repository.
 
