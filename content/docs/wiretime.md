@@ -95,11 +95,11 @@ does not have Gnuplot installed. The file can then be copied to another device
 for plotting afterwards.
 
 `-i, --interval <milliseconds>`
-Interval between packets. Default: 1000
+Interval between packets. Default: 1000.
 
 `-b, --batch_size <count>`
-Amount of packets to include in every output. Together with pkts_per_sec this
-determines how often it will show outputs. Default: 1
+Amount of packets to include in every output. Outputs the average time of all
+packets in the batch. Default: 1.
 
 `-S, --software_tstamp`
 Perform software timestamping instead of hardware timestamping.
