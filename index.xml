@@ -6,7 +6,16 @@
     <description>Recent content on Casper Andersson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PTP peer delay measurement</title>
+      <link>https://casan.se/blog/networks/ptp-peer-delay-measurement/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/ptp-peer-delay-measurement/</guid>
+      <description>Methods of measuring peer delay</description>
+    </item>
+    
     <item>
       <title>My thoughts on AI code generators</title>
       <link>https://casan.se/blog/programming/my-thoughts-on-ai-code-generators/</link>

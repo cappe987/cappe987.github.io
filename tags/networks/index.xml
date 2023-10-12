@@ -6,7 +6,16 @@
     <description>Recent content in networks on Casper Andersson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/networks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PTP peer delay measurement</title>
+      <link>https://casan.se/blog/networks/ptp-peer-delay-measurement/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://casan.se/blog/networks/ptp-peer-delay-measurement/</guid>
+      <description>Methods of measuring peer delay</description>
+    </item>
+    
     <item>
       <title>Synchronization and Syntonization</title>
       <link>https://casan.se/blog/networks/synchronization-and-syntonization/</link>
