@@ -85,7 +85,7 @@ pdelay_resp_fup.correction)/2
 Here we will now have `t2` and `t3` set to zero on the clients side. And that
 time instead comes in the `pdelay_resp_fup.correction`. The end result is the
 same. And the server side can choose which method to use since it doesn't matter
-in to the client.
+to the client.
 
 CorrectionField contains a number of nanoseconds that should be subtracted by
 the receiver. This exists to allow other forms of compensation as well. The
@@ -111,6 +111,9 @@ to the client, which now uses the following formula
 meanPathDelay = ((t4-t1) - pdelay_resp.correction)/2
 ```
 
+Note that the full formula from above can still be used, as the unused values
+will be 0 (and there will be no follow-up).
+
 
 ## 1.5-step peer delay
 
@@ -123,7 +126,7 @@ matches) comes to the hardware the timestamp is filled in. When it goes on the
 wire it now looks like a normal two-step.
 
 The benefit of this is because one-step adds latency to the transmission
-because it has to stop, take the timestamp just before transmitting, and then
+as it has to stop, take the timestamp just before transmitting, and then
 modify the packet. At speeds of 10Gbit and higher it starts affecting the
 transmission speed. The follow-up doesn't have to be modified exactly at
 transmission time, it can be prepared ahead of time so it doesn't affect the
