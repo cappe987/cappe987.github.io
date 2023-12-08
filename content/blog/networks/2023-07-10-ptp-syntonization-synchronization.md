@@ -120,7 +120,7 @@ advance.
 The leap seconds always happen on either June 30th or December 31st at 23:59:59.
 A leap second ahead is shown as 23:59:60, before advancing to 00:00:00. A leap
 second backwards goes directly from 23:59:58 to 00:00:00. As for when a leap
-second occurs, a Linux system should be informed by an NTP daemon when when is
+second occurs, a Linux system should be informed by an NTP daemon when one is
 scheduled, which in turn gets its time through NTP from a more authoritative
 clock device.
 
