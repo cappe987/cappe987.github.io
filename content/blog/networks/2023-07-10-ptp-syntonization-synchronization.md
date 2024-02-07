@@ -32,7 +32,7 @@ difference hopefully within maybe a microsecond.
 ## Syntonization
 
 Now that the clocks are nearly aligned we need to consider the frequency of the
-oscillators driving the clocks. If two clocks driven by oscillators
+oscillators driving the clocks. If two clocks are driven by oscillators
 at different frequencies, or even just of different qualities, it will result in
 wander. A big difference will allow significant wander in between every
 synchronization, resulting in never reaching near-perfect accuracy. When the
@@ -54,7 +54,7 @@ master after losing the synchronization (e.g. losing connection). A typical
 requirement is that it should keep some accuracy during 5 seconds loss. In terms
 of PTP this may happen if its master clock goes down and it needs to find an new
 master. And during those 5 seconds while waiting for a new master it cannot
-wander too far away from the initial time.
+drift too far away from the initial time.
 
 
 
