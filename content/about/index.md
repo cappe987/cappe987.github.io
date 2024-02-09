@@ -19,30 +19,15 @@ documentation.
 
 ## Experience
 
-Working with embedded Linux systems on network switches. Driver development in
-the Linux kernel, including some upstreaming. Focusing on time synchronization
-and QoS.
+### Westermo Network Technologies: *2021-\**
 
+Working with embedded Linux systems on network switches/routers.
 
-Thesis: <a href="https://mdu.diva-portal.org/smash/get/diva2:1569712/FULLTEXT01.pdf">Reservoir Computing Approach For Network Intrusion Detection</a>
-<br>
+### Bachelor's in Computer Science: *2018-2021*
 
-On top of my studies I also worked as an assistant in a course on <i>Introduction
-to Programming</i> in C a couple times. The tasks included helping students with
-their assignments and answer any questions they had regarding programming and
-the course.
-<br>
+Mälardalen University
 
-<h4>Notable courses:</h4>
-<ul style="margin-top: 0">
-<li>DVA234 - Databases</li>
-<li>DVA218 - Data Communication</li>
-<li>DVA229 - Functional Programming with F#</li>
-<li>DVA315 - Operating Systems</li>
-<li>DVA339 - Compiler Theory</li>
-<li>DVA340 - Artificial Intelligence</li>
-<li>MAA507 - Mathematics of Internet</li>
-<li>MMA500 - Discrete Mathematics, a Second Course</li>
-</ul>
+Thesis: [Reservoir Computing Approach For Network Intrusion Detection](https://mdu.diva-portal.org/smash/get/diva2:1569712/FULLTEXT01.pdf)
+
 
 
