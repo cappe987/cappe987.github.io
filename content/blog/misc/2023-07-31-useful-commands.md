@@ -99,3 +99,19 @@ I often use this inside Vim by selecting some lines, then running it from Vim
 with `:!tac`. (Note: placing an exclamation mark at the start of a Vim command
 runs it as a shell command).
 
+
+---
+
+Added 2024-03-15:
+
+## `btop`
+A better and prettier alternative to the more common `htop`. Check it
+out [here](https://github.com/aristocratos/btop).
+
+## `unshare`
+Preferably with the arguments `-n -r` to start a separate network
+namespace and as root. This allows running commands as root even
+though you might not have root access. Certain actions are obviously
+not possible even as this root. But it can allow you to do testing
+of applications that requires root. For me it's relevant for network
+applications.
