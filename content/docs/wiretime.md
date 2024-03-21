@@ -22,12 +22,12 @@ pre > code {
 
 Measure the time a packet is on the wire accurately using hardware timestamping.
 This is useful for measuring the impact of traffic congestion and testing QoS
-features. The timestamped packets are intended to never touch any software on
-their trip through the network since that adds considerable delay and jitter,
-and the benefit of hardware timestamping dwindles. In which case using `ping`
-may be enough precision.
+features. The timestamped packets shouldn't go through any software
+on their trip through the network since that adds considerable delay
+and jitter, and the benefit of hardware timestamping dwindles. In
+which case using `ping` may be enough precision.
 
-If you are unfamiliar with timestamping I recommend checking out my post on [PTP
+For those unfamiliar with timestamping, check out this post on [PTP
 and timestamping methods]({{< ref 2023-04-05-ptp-intro-timestamping.md >}}).
 
 [GitHub repository](https://github.com/cappe987/wiretime)
@@ -35,19 +35,21 @@ and timestamping methods]({{< ref 2023-04-05-ptp-intro-timestamping.md >}}).
 
 ## Using Wiretime
 
-Wiretime requires two interfaces, one for transmission and one for receival.
+Wiretime requires two interfaces, one for transmission and one for reception.
 This can be the same physical port by creating two VLAN interfaces on top of the
-port interface (note that they must be attached directly to the port and not
-through a bridge as bridges cannot do timestamping). Ideally, Wiretime should be
-used on a network switch that has multiple interface capable of timestamping.
-For best accuracy the ports should use the same Physical Hardware Clock (PHC).
-If they aren't using the same PHC they need to be precisely synced.
+port interface (note that they must attach directly to the port and not
+through a bridge as bridges can't do timestamping). Ideally, use
+Wiretime on a network switch that has more than one interface capable of
+timestamping. For best accuracy the ports should use the same
+Physical Hardware Clock (PHC).  If they aren't using the same PHC they
+need to be precisely synced.
 
-The packets will use a path that loops back to the transmitting switch. The
-receiving port should be set to a different VLAN than the transmitting port, or
-removed from the bridge completely, to avoid flooding. Packets are timestamped
-on transmission and receival and the difference is calculated across several
-packets and the average is taken.
+The packets will use a path that loops back to the transmitting
+switch. The receiving port have a different untagged VLAN than the
+transmitting port, or removed from the bridge completely, to avoid
+flooding. Wiretime timestamps packets on transmission and reception,
+and calculates the difference across several packets and outputs an
+average time.
 
 The most basic command looks like this
 ```sh
@@ -55,8 +57,9 @@ wiretime --tx eth1 --rx eth2
 ```
 
 The following is an illustration of an example setup. Wiretime runs on SW1 and
-transmits on one port and receives on another. The packet is switched in
-hardware through SW2, and then back to SW1.
+transmits on one port and receives on another. SW2 forwards it in
+hardware, and then back to SW1.
+
 ```
     ┌───────┐
     │       │
@@ -70,7 +73,7 @@ hardware through SW2, and then back to SW1.
 ### Flags
 
 `-t, --tx <interface>`
-Transmit packets on `<interface>`. Can be a VLAN or other interface,
+Send packets on `<interface>`. Can be a VLAN or other interface,
 as long as the physical port supports hardware timestamping.
 
 `-r, --rx <interface>`
@@ -78,7 +81,7 @@ Receive packets on interface `<interface>`. Can be a VLAN or other interface,
 as long as the physical port supports hardware timestamping.
 
 `-p, --pcp <PCP>`
-PCP priority. If VLAN is not set it will use VLAN 0.
+VLAN Priority Code Point (PCP). If VLAN isn't set it will use VLAN 0.
 
 `-v, --vlan <VID>`
 VID to tag the packet with.
@@ -91,8 +94,8 @@ Use one-step TX instead of two-step.
 
 `-O, --out <filename>`
 Output data into file for plotting. Use when running Wiretime on a device that
-does not have Gnuplot installed. The file can then be copied to another device
-for plotting afterwards.
+doesn't have Gnuplot installed. Then copy it to another device for
+plotting afterward.
 
 `-i, --interval <milliseconds>`
 Interval between packets. Default: 1000.
@@ -110,14 +113,14 @@ not used it will create a temporary file for storing the data. The same plotting
 settings also exists as a bash script in the repository.
 
 `--tstamp-all`
-Enable timestamping of non-PTP packets. On some NICs this will behave
+Enable timestamping of non-PTP packets. On some network cards this will behave
 differently than timestamping PTP packets only. Incompatible with `--one-step`.
 
 
 ## Example plot
 
 Below is an example plot using one-step PHY timestamping taken over 110 seconds.
-The packets are sent from one switch, through another, and back to the senders
+The packets sends from one switch, through another, and back to the senders
 receiving port. The total time spent on the wire is around 3500--4000
 nanoseconds, or 3.5--4 microseconds.
 

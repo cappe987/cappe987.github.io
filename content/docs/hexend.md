@@ -14,9 +14,9 @@ published: true
 
 Send hexdumps copied from Tcpdump/Wireshark. Save the hexdump in a file and
 give it to `hexend` to send it on an interface. Useful for repeating a specific
-captured frame, instead of making a pcap playback or trying to recreate it
+captured frame, instead of making a PCAP playback or trying to recreate it
 using tools like [Nemesis](https://github.com/libnet/nemesis) or
-[EasyFrames](https://github.com/microchip-ung/easyframes). It is also possible
+[EasyFrames](https://github.com/microchip-ung/easyframes). It's also possible
 to write the frame by hand if you so wish.
 
 
@@ -57,5 +57,5 @@ If you just want a simple alternative to this you can use a script like
 #!/bin/sh
 cat $2 | xxd -r -p | socat -u STDIN interface:$1
 ```
-that will behave like Hexend regarding the input, but does not support any
-flags. Looping this is also very inefficient for sending many frames quickly.
+that will behave like Hexend regarding the input, but doesn't support any
+flags. Looping this is also inefficient for sending at low intervals.
