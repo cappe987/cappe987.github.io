@@ -15,3 +15,10 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+# Vale (vale.sh) styling
+vale-styles/Microsoft
+vale-styles/Google
+vale-styles/write-good
+vale-styles/Readability
+vale-styles/.vale-config/
