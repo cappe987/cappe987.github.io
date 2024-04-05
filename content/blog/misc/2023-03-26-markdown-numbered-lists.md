@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll markdown lists that don't start on 1.
+title: "Jekyll markdown lists that don't start on 1"
 date: 2023-03-26
 tags: ["misc"]
 categories: misc
