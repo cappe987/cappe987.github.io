@@ -5,7 +5,6 @@ date: 2021-07-24
 tags: ["computer_science"]
 categories: computer-science
 description: "Conway's Game of Life and other cellular automata. Originally a school essay."
-published: true
 ---
 
 Cellular automata is way to model biological systems through a set of cells that change their state based on their surroundings [[1](#cellular)]. It requires some form of grid to operate on, where each location on the grid contains one cell. The cells are based on integer coordinates on the grid. The second requirement is a set of rules that determine when a cell should change state and to what state. The third and final requirement is an initial state, what it looks like at the start. Then the rules can be applied on all the cells to update their states.  Applying the rules can be done as many times as you wish. Each application is called a *step*. Over time, when applying these rules certain behaviours may exhibit in the grid. This shows the interaction of the cells as a system.

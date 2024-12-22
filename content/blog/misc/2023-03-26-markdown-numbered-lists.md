@@ -5,7 +5,6 @@ date: 2023-03-26
 tags: ["misc"]
 categories: misc
 description: Custom properties of specific elements in a post
-published: true
 ---
 
 This is just a short note to myself and anyone who encounters the same issue.

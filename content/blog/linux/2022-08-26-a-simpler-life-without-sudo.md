@@ -8,7 +8,6 @@ description: "
 Using Linux capabilities(7) to avoid using sudo, and using Capmon to figure out
 what capbilities are required.
 "
-published: true
 ---
 
 An incredibly underused but oh-so-amazing feature in Linux is *capabilities*.

@@ -10,7 +10,6 @@ layoutBackgroundHeaderSpace: false
 groupByYear: false
 <!--showSummary: true-->
 cardView: true
-published: true
 ---
 
 

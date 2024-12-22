@@ -7,7 +7,6 @@ categories: misc
 description: "
 Commit messages should be detailed and carefully written. Take your time.
 "
-published: true
 ---
 
 I often see `git commit -m "My commit"` as a beginner example of how to create

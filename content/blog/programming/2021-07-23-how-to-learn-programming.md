@@ -5,7 +5,6 @@ date: 2021-07-23
 tags: ["programming"]
 categories: programming
 description: "A tutorial for how to use tutorials. Some tips on how to learn efficiently."
-published: true
 ---
 
 This article is intended to be read by someone who is looking to learn programming or is just starting out. This doesn't tell you what programming language to choose or what tutorials to follow. Only some general tips to keep in mind when learning.

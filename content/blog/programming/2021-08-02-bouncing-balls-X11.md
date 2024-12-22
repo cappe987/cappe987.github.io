@@ -5,7 +5,6 @@ date: 2021-08-02
 tags: ["programming", "linux"]
 categories: programming
 description: "A small project where I explore the X11 API in C."
-published: true
 ---
 
 Recently I got the idea that I wanted to experiment with using X11 directly, instead of some higher-level library where buttons and fields already exist as objects. The goal was to get a better idea of how the graphics and window systems works in Linux (X11 specifically). This wasn't a huge project and I only got to see parts of it before moving on, but it was a very interesting experience. Especially for someone like me who has barely done any kind of graphics programming before. In doing this project I started with a template from [this guide](http://mech.math.msu.su/~vvb/2course/Borisenko/CppProjects/GWindow/xintro.html) that contained setting up a window and listening to user events inside the window. The [official documentation](https://www.x.org/releases/X11R7.6/doc/libX11/specs/libX11/libX11.html) was also very useful, along with the manpages in Linux. This post contains some short explanations of problems I encountered and discoveries I made during this project. Github: [https://github.com/cappe987/graphics-simulation](https://github.com/cappe987/graphics-simulation).

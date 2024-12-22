@@ -9,7 +9,6 @@ showReadingTime: false
 showDate: false
 showDescription: true
 hideMeta: true
-published: true
 ---
 
 <style type="text/css">

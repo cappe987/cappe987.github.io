@@ -5,7 +5,6 @@ date: 2019-11-21
 tags: ["programming"]
 categories: programming
 description: "Comparing static and dynamic typing and my experiences and opinions."
-published: true
 ---
 
 

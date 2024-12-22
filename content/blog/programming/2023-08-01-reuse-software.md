@@ -8,7 +8,6 @@ description: "
 Code licensing and copyright is tricky. The REUSE Software initiative by the
 Free Software Foundation provides standards and tools to make it easier.
 "
-published: true
 ---
 
 > **Disclaimer:** I am not a lawyer. Please consult with a lawyer if you have

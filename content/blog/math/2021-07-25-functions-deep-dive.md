@@ -5,7 +5,6 @@ date: 2021-07-25
 tags: ["math", "programming", "computer_science"]
 categories: math
 description: "Programming functions from a mathematical perspective."
-published: true
 ---
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>

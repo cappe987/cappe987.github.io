@@ -5,7 +5,6 @@ date: 2020-02-26
 tags: ["computer_science"]
 categories: computer-science
 description: "A demonstration of the Hindley-Milner W Algorithm in F#."
-published: true
 ---
 
 ## Introduction

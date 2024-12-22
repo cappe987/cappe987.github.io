@@ -7,7 +7,6 @@ categories: misc
 description: "
 A list of commands that I like to use
 "
-published: true
 ---
 
 I thought it would be fun to look at all the different commands I use. I took a

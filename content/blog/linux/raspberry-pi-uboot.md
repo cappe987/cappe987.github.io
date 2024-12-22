@@ -10,7 +10,6 @@ not reasonable. Instead, use U-boot to allow booting over the network. In this
 post I go over configuring Buildroot to build U-boot and configure it for a
 Raspberry Pi.
 "
-published: true
 ---
 
 This post guides you through setting up Buildroot together with U-boot

@@ -5,7 +5,6 @@ date: 2024-01-06
 tags: ["networks", "linux"]
 categories: networks
 description: How to use ts2phc to synchronize clocks
-published: true
 ---
 
 The Precision Time Protocol, PTP, is used for synchronizing time across the

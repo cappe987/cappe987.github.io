@@ -7,7 +7,6 @@ categories: misc
 description: "
 A quick guide to using Vim Fugitive
 "
-published: true
 ---
 
 Fugitive is an amazing plugin for Vim. It integrates a lot of Git functionality

@@ -5,7 +5,6 @@ date: 2022-08-25
 tags: ["networks"]
 categories: networks
 description: "Time Sensitive Networking and the 802.1Qbv standard"
-published: true
 ---
 
 Let's dive a little deeper into Time-Aware Shapers, specified in the

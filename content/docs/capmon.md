@@ -8,7 +8,6 @@ showReadingTime: false
 showDate: false
 showDescription: true
 hideMeta: true
-published: true
 ---
 
 Track when processes check `capabilities(7)` to find out what they require.

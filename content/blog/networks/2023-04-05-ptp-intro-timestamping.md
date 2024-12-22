@@ -5,7 +5,6 @@ date: 2023-04-05
 tags: ["networks"]
 categories: networks
 description: A maybe not so gentle introduction to the Precision Time Protocol
-published: true
 ---
 
 <style type="text/css">

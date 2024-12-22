@@ -1,6 +1,5 @@
 baseURL: "https://casan.se/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: Casper Andersson
-paginate: 3
 theme: papermod
 
 permalinks:
@@ -32,6 +31,8 @@ languages:
     en:
         languageName: "English"
         weight: 1
+        pagination:
+          pagerSize: 3
         taxonomies:
           #category: categories
           tag: tags

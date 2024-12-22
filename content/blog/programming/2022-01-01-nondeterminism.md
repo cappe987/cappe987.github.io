@@ -5,7 +5,6 @@ date: 2022-01-01
 tags: ["programming"]
 categories: programming
 description: "Types of nondeterminism and interesting ways of handling them."
-published: true
 ---
 
 In a [previous post]({{< ref "2021-07-25-functions-deep-dive.md" >}}) I talked about deterministic functions and some useful properties they have. I recommend you read that one first if you haven't already. But deterministic functions aren't all that useful to get tasks done. They only transform data from one form to another, but cannot actually read input from the console or even print to the console. A program consisting of only deterministic functions will always perform the same calculation, and given that it doesn't have input or output it will only use whatever numbers it was compiled with. It essentially becomes a black box that does some computation without ever showing the result. It is just a waste of time. To do anything useful we need input and output (IO) in one way or another. This doesn't mean every function should be nondeterministic. I still encourage you to make as much as possible deterministic, for the reasons outlined in the previous post. But IO is a must for any useful program.

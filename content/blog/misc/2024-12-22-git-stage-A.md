@@ -8,7 +8,6 @@ description: "
 
 Don't stage and fire away your commit. Take your time reviewing your changes.
 "
-published: true
 ---
 
 This is a follow-up to my earlier post [Don't use 'git commit

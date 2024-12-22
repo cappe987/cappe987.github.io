@@ -5,7 +5,6 @@ date: 2022-02-18
 tags: ["networks", "linux"]
 categories: networks
 description: "Bridge forwarding of unicast and multicast in software and hardware"
-published: true
 ---
 
 A network switch has multiple ports to send and receive data on. To manage this

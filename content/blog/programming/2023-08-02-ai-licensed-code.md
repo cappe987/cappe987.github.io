@@ -9,7 +9,6 @@ A lot of AI tools are popping up and use is becoming widespread. There is no
 doubt that AI generated code is not perfect, but what about the legality of
 using it?
 "
-published: true
 ---
 
 > **Disclaimer:** I am not a lawyer. Please consult with a lawyer if you have

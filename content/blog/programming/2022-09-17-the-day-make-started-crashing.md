@@ -4,7 +4,6 @@ title: "The day Make started crashing"
 date: 2022-09-17
 tags: ["programming", "linux"]
 description: The last thing you want is for your build system to crash
-published: true
 ---
 
 This is a short story from `$DAYJOB` about my discovery and investigations of

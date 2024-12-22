@@ -5,7 +5,6 @@ date: 2023-07-10
 tags: ["networks", "linux"]
 categories: networks
 description: Aligning and keeping clocks aligned
-published: true
 ---
 
 Setting two clocks to the same time doesn't seem that hard, right? If

@@ -5,7 +5,6 @@ date: 2019-12-09
 tags: ["programming"]
 categories: programming
 description: "Viewing operators as functions and functions as operators."
-published: true
 ---
 
 ## Introduction
