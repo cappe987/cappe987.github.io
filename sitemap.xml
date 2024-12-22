@@ -3,12 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://casan.se/blog/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/misc/dont-use-git-stage-a/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/linux/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/misc/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/misc/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/programming/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -17,28 +57,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/tags/misc/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/blog/misc/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://casan.se/blog/misc/vim-fugitive-notes-for-myself/</loc>
     <lastmod>2024-01-12T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/linux/</loc>
-    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -63,11 +83,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/programming/my-thoughts-on-ai-code-generators/</loc>
-    <lastmod>2023-08-02T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/programming/</loc>
     <lastmod>2023-08-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -138,11 +153,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/linux/a-simpler-life-without-sudo/</loc>
-    <lastmod>2022-08-26T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/blog/linux/</loc>
     <lastmod>2022-08-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

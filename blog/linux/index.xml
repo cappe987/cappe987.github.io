@@ -4,17 +4,23 @@
     <title>Linux on Casper Andersson</title>
     <link>https://casan.se/blog/linux/</link>
     <description>Recent content in Linux on Casper Andersson</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/blog/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://casan.se/blog/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buildroot and U-boot on Raspberry Pi</title>
+      <link>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</guid>
+      <description> When doing development of the OS, flashing your SD card after every change is not reasonable. Instead, use U-boot to allow booting over the network. In this post I go over configuring Buildroot to build U-boot and configure it for a Raspberry Pi. </description>
+    </item>
     <item>
       <title>A simpler life without sudo</title>
       <link>https://casan.se/blog/linux/a-simpler-life-without-sudo/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/linux/a-simpler-life-without-sudo/</guid>
       <description> Using Linux capabilities(7) to avoid using sudo, and using Capmon to figure out what capbilities are required. </description>
     </item>
-    
   </channel>
 </rss>

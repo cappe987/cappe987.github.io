@@ -4,107 +4,93 @@
     <title>Programming on Casper Andersson</title>
     <link>https://casan.se/tags/programming/</link>
     <description>Recent content in Programming on Casper Andersson</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://casan.se/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buildroot and U-boot on Raspberry Pi</title>
+      <link>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</guid>
+      <description> When doing development of the OS, flashing your SD card after every change is not reasonable. Instead, use U-boot to allow booting over the network. In this post I go over configuring Buildroot to build U-boot and configure it for a Raspberry Pi. </description>
+    </item>
     <item>
       <title>My thoughts on AI code generators</title>
       <link>https://casan.se/blog/programming/my-thoughts-on-ai-code-generators/</link>
       <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/my-thoughts-on-ai-code-generators/</guid>
       <description> A lot of AI tools are popping up and use is becoming widespread. There is no doubt that AI generated code is not perfect, but what about the legality of using it? </description>
     </item>
-    
     <item>
       <title>Licensing and the REUSE Software initiative</title>
       <link>https://casan.se/blog/programming/licensing-and-the-reuse-software-initiative/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/licensing-and-the-reuse-software-initiative/</guid>
       <description> Code licensing and copyright is tricky. The REUSE Software initiative by the Free Software Foundation provides standards and tools to make it easier. </description>
     </item>
-    
     <item>
       <title>Hexend - Send raw hex frames</title>
       <link>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</guid>
       <description>A tool I made for sending raw hex frames</description>
     </item>
-    
     <item>
       <title>The day Make started crashing</title>
       <link>https://casan.se/blog/programming/the-day-make-started-crashing/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/the-day-make-started-crashing/</guid>
       <description>The last thing you want is for your build system to crash</description>
     </item>
-    
     <item>
       <title>A simpler life without sudo</title>
       <link>https://casan.se/blog/linux/a-simpler-life-without-sudo/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/linux/a-simpler-life-without-sudo/</guid>
       <description> Using Linux capabilities(7) to avoid using sudo, and using Capmon to figure out what capbilities are required. </description>
     </item>
-    
     <item>
       <title>Nondeterministic functions</title>
       <link>https://casan.se/blog/programming/nondeterministic-functions/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/nondeterministic-functions/</guid>
       <description>Types of nondeterminism and interesting ways of handling them.</description>
     </item>
-    
     <item>
       <title>Bouncing balls simulation using X11</title>
       <link>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</guid>
       <description>A small project where I explore the X11 API in C.</description>
     </item>
-    
     <item>
       <title>Functions: a deep dive</title>
       <link>https://casan.se/blog/math/functions-a-deep-dive/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/math/functions-a-deep-dive/</guid>
       <description>Programming functions from a mathematical perspective.</description>
     </item>
-    
     <item>
       <title>Programming: how to learn it and how to get help</title>
       <link>https://casan.se/blog/programming/programming-how-to-learn-it-and-how-to-get-help/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/programming-how-to-learn-it-and-how-to-get-help/</guid>
       <description>A tutorial for how to use tutorials. Some tips on how to learn efficiently.</description>
     </item>
-    
     <item>
       <title>Operators are functions too</title>
       <link>https://casan.se/blog/programming/operators-are-functions-too/</link>
       <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/operators-are-functions-too/</guid>
       <description>Viewing operators as functions and functions as operators.</description>
     </item>
-    
     <item>
       <title>Static vs dynamic typing</title>
       <link>https://casan.se/blog/programming/static-vs-dynamic-typing/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/static-vs-dynamic-typing/</guid>
       <description>Comparing static and dynamic typing and my experiences and opinions.</description>
     </item>
-    
   </channel>
 </rss>

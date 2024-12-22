@@ -4,53 +4,52 @@
     <title>Misc on Casper Andersson</title>
     <link>https://casan.se/tags/misc/</link>
     <description>Recent content in Misc on Casper Andersson</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://casan.se/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t use &#39;git stage -A&#39;</title>
+      <link>https://casan.se/blog/misc/dont-use-git-stage-a/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/misc/dont-use-git-stage-a/</guid>
+      <description>
+Don&amp;#39;t stage and fire away your commit. Take your time reviewing your changes. </description>
+    </item>
     <item>
       <title>Improving my task management with Emacs Org-mode</title>
       <link>https://casan.se/blog/misc/improving-my-task-management-with-emacs-org-mode/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/misc/improving-my-task-management-with-emacs-org-mode/</guid>
       <description> Transitioning from using Markdown to Org-mode for my notes had a huge impact on my ability to keep track of my tasks </description>
     </item>
-    
     <item>
       <title>Vim Fugitive notes for myself</title>
       <link>https://casan.se/blog/misc/vim-fugitive-notes-for-myself/</link>
       <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/misc/vim-fugitive-notes-for-myself/</guid>
       <description> A quick guide to using Vim Fugitive </description>
     </item>
-    
     <item>
       <title>Useful commands I use</title>
       <link>https://casan.se/blog/misc/useful-commands-i-use/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/misc/useful-commands-i-use/</guid>
       <description> A list of commands that I like to use </description>
     </item>
-    
     <item>
       <title>Don&#39;t use &#39;git commit -m&#39;</title>
       <link>https://casan.se/blog/misc/dont-use-git-commit-m/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/misc/dont-use-git-commit-m/</guid>
       <description> Commit messages should be detailed and carefully written. Take your time. </description>
     </item>
-    
     <item>
       <title>Jekyll markdown lists that don&#39;t start on 1</title>
       <link>https://casan.se/blog/misc/jekyll-markdown-lists-that-dont-start-on-1/</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/misc/jekyll-markdown-lists-that-dont-start-on-1/</guid>
       <description>Custom properties of specific elements in a post</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,80 +4,72 @@
     <title>Linux on Casper Andersson</title>
     <link>https://casan.se/tags/linux/</link>
     <description>Recent content in Linux on Casper Andersson</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://casan.se/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://casan.se/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buildroot and U-boot on Raspberry Pi</title>
+      <link>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</guid>
+      <description> When doing development of the OS, flashing your SD card after every change is not reasonable. Instead, use U-boot to allow booting over the network. In this post I go over configuring Buildroot to build U-boot and configure it for a Raspberry Pi. </description>
+    </item>
     <item>
       <title>ts2phc and synchronizing hardware clocks</title>
       <link>https://casan.se/blog/networks/ts2phc-and-synchronizing-hardware-clocks/</link>
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/networks/ts2phc-and-synchronizing-hardware-clocks/</guid>
       <description>How to use ts2phc to synchronize clocks</description>
     </item>
-    
     <item>
       <title>Useful commands I use</title>
       <link>https://casan.se/blog/misc/useful-commands-i-use/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/misc/useful-commands-i-use/</guid>
       <description> A list of commands that I like to use </description>
     </item>
-    
     <item>
       <title>Synchronization and Syntonization</title>
       <link>https://casan.se/blog/networks/synchronization-and-syntonization/</link>
       <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/networks/synchronization-and-syntonization/</guid>
       <description>Aligning and keeping clocks aligned</description>
     </item>
-    
     <item>
       <title>Hexend - Send raw hex frames</title>
       <link>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/networks/hexend-send-raw-hex-frames/</guid>
       <description>A tool I made for sending raw hex frames</description>
     </item>
-    
     <item>
       <title>The day Make started crashing</title>
       <link>https://casan.se/blog/programming/the-day-make-started-crashing/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/the-day-make-started-crashing/</guid>
       <description>The last thing you want is for your build system to crash</description>
     </item>
-    
     <item>
       <title>A simpler life without sudo</title>
       <link>https://casan.se/blog/linux/a-simpler-life-without-sudo/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/linux/a-simpler-life-without-sudo/</guid>
       <description> Using Linux capabilities(7) to avoid using sudo, and using Capmon to figure out what capbilities are required. </description>
     </item>
-    
     <item>
       <title>Network bridge forwarding and learning</title>
       <link>https://casan.se/blog/networks/network-bridge-forwarding-and-learning/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/networks/network-bridge-forwarding-and-learning/</guid>
       <description>Bridge forwarding of unicast and multicast in software and hardware</description>
     </item>
-    
     <item>
       <title>Bouncing balls simulation using X11</title>
       <link>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://casan.se/blog/programming/bouncing-balls-simulation-using-x11/</guid>
       <description>A small project where I explore the X11 API in C.</description>
     </item>
-    
   </channel>
 </rss>
