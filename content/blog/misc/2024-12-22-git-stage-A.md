@@ -36,4 +36,4 @@ print", etc., because you were careless.
 
 Obviously, mistakes happen anyway. Even with multiple people reviewing
 your code. But let's all put in a little extra effort to make
-reviewing code and reading Git history a more pleasant experience
+reviewing code and reading Git history a more pleasant experience.
