@@ -16,6 +16,13 @@
       <description>IEEE 1588 defines the field portNumber as a 16-bit unsigned integer.</description>
     </item>
     <item>
+      <title>The Good Developer</title>
+      <link>https://casan.se/blog/programming/the-good-developer/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/programming/the-good-developer/</guid>
+      <description>What makes a good developer?</description>
+    </item>
+    <item>
       <title>Buildroot and U-boot on Raspberry Pi</title>
       <link>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
