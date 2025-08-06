@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Casper Andersson</description>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://casan.se/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networks</title>
+      <link>https://casan.se/tags/networks/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/tags/networks/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linux</title>
       <link>https://casan.se/tags/linux/</link>
@@ -27,13 +34,6 @@
       <link>https://casan.se/tags/programming/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://casan.se/tags/programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Networks</title>
-      <link>https://casan.se/tags/networks/</link>
-      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://casan.se/tags/networks/</guid>
       <description></description>
     </item>
     <item>
