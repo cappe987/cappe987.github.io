@@ -38,6 +38,8 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+    <hr/>
+    <i> I do not consent to any content on this website being used to train AI models.</i>
   </div>
   {{- end }}
 
