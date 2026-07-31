@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://casan.se/blog/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/programming/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/programming/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/programming/tab-width-8/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/misc/</loc>
+    <lastmod>2026-01-05T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -23,21 +48,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/networks/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/programming/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/blog/programming/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -68,11 +78,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/tags/misc/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/blog/misc/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
