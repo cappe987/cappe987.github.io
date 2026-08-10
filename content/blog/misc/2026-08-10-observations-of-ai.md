@@ -8,7 +8,7 @@ date: 2026-08-10
 draft: true
 ---
 
-<!--TODO: UPDATE FILE NAME AND DATE-->
+<!--TODO: REMOVE DRAFT FLAG-->
 
 Three years ago I wrote [My thoughts on AI code generators]({{<
 ref "2023-08-02-ai-licensed-code.md" >}}) just as AI coding was taking
