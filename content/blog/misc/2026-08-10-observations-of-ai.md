@@ -3,12 +3,12 @@ layout: post
 title: Observations from three years of AI
 tags: ["misc"]
 categories: misc
-description: "Observations, experiences, and the effect of AI on society. Should the business exist?"
+description: "
+I have always been sceptical to AI. Now we've seen it in full action for a
+couple of years. What are the results? What did it cost us?
+"
 date: 2026-08-10
-draft: true
 ---
-
-<!--TODO: REMOVE DRAFT FLAG-->
 
 Three years ago I wrote [My thoughts on AI code generators]({{<
 ref "2023-08-02-ai-licensed-code.md" >}}) just as AI coding was taking
@@ -17,18 +17,18 @@ off. AI has improved immensely since then.
 My journey in the tech realm really began with my degree in Computer Science,
 starting in 2018. I don't know how the AI landscape looked before that, but as I
 did my degree, AI was hyped up everywhere. Everyone wanted to learn AI and
-machine learning. The university even started creating an AI degree (which I
+machine learning. The university even began creating an AI degree (which I
 believe was launched the term after I left in 2021). Large Language Models (LLM)
 as we know today didn't exist yet, but every CS student wanted to learn about
-AI. Initially, I too viewed AI as cool and interesting.
+AI. Initially, I too saw AI as cool and interesting.
 
 Over time, the glamorous world of AI started to fade in my eyes. I took an
 AI course and then did my Bachelor's thesis on it. I realized it wasn't nearly
 as fun as everyone made it out to be. Tweaking parameters to get slightly better
 results and then waiting for the Neural Network (NN) to train. I should clarify,
-my main gripe was with NN. I loved and still do love algorithmic AI based on
+my main gripe was with NNs. I loved and still do love algorithmic AI based on
 heuristics, for example game theory and alpha-beta pruning. Unfortunately, that
-is greatly overshadowed by NN and LLMs today. 
+is greatly overshadowed by NNs and LLMs today. 
 
 All this is to say that I was tired of AI before LLMs even existed. When the
 news of LLMs came I was always sceptical to its practical use.
@@ -46,8 +46,8 @@ the skill. Especially when the expectation is that you should know how to do it
 and how it works. Speaking as a software developer, my job is to be an expert at
 specific fields relevant for my employer. If I don't actively spend time
 learning and debugging the application I won't have the necessary knowledge.
-Becaus I have spent months and years working within the field, debugging at
-every level, I have deep knowledge of it. I can answer a lot of questions off the
+It is because I have spent months and years working within the field, debugging at
+every level, that I have deep knowledge of it. I can answer a lot of questions off the
 top of my head. Sometimes, AI cannot even answer these questions because they are
 rather niche and the answer may come entirely from experience, with no true
 source being written down anywhere.
@@ -70,7 +70,7 @@ am.
 
 ### Pressure from management
 
-At my job management were early to jump on the AI bandwagon. Our CEO decided that we
+At my job, management were early to jump on the AI bandwagon. Our CEO decided that we
 need to be on the forefront of AI. We'll get left behind if we don't.
 Microsoft already runs our entire IT infrastructure so getting their Copilot for
 everyone was the first step. Some employees have gotten to demonstrate how they
@@ -80,8 +80,8 @@ it occasionally. It's not useless but I'm still not entirely sold on it. Every
 management presentation mentions AI. They scheduled bi-weekly (optional)
 meetings for knowledge sharing. AI was always optional, but it was omnipresent.
 
-GitHub Copilot has also been a large part of the AI rollout. Which is primarily
-what affects me as a developer.
+GitHub Copilot has also been a large part of the AI rollout. Which is what primarily
+affects me as a developer.
 
 My breaking point came when it was no longer optional. During the annual
 performance review I had AI put into my goals for the next year and felt like I
@@ -160,15 +160,15 @@ DuckDuckGo allows turning off their AI overview. They also offer a search with
 Unfortunately, this doesn't stop all the slop generated on various websites.
 
 
-### Art, film, and music
+### Art, videos, and music
 
 I'm very much against AI art in general. There are many arguments against it in
 terms of copyright and how it hurts artists.
 
-Images and film can still be somewhat distinguished from human-made (but not
+Images and videos can still be somewhat distinguished from human-made (but not
 always). I think there's also a difference in how the art is appreciated, for me
 at least. When appreciating visual media I look at the details of it. Visual
-media tends to be connected to some message. E.g. advertisements. Coca Cola
+media tends to be connected to some message. For example, advertisements. Coca Cola
 famously made an AI commercial
 ([2024](https://www.youtube.com/watch?v=E3-J0MwvBSI),
 [2025](https://www.youtube.com/watch?v=dwex5VgfQtw)). Seeing that invokes the
@@ -207,10 +207,11 @@ there has been many court cases. However, the question of AI training material
 still hasn't been resolved in any court. OpenAI has openly admitted that they
 wouldn't be able to make LLMs if they didn't use copyrighted material.
 
-> Because copyright today covers virtually every sort of human
+> "Because copyright today covers virtually every sort of human
 > expression -- including blog posts, photographs, forum posts, scraps
 > of software code, and government documents -- it would be impossible
-> to train today's leading AI models without using copyrighted materials.
+> to train today's leading AI models without using copyrighted materials," said
+> OpenAI
 > --- [The Guardian](https://www.theguardian.com/technology/2024/jan/08/ai-tools-chatgpt-copyrighted-material-openai)
 
 OpenAI originally set out to develop AI responsibly due to fears of how it could
@@ -219,6 +220,6 @@ brains, spreading misinformation, ruining art, building a potential economic
 bubble, destroying the land, and all this by possibly breaching copyright law.
 It touches every corner of society. All in the name of chasing profits.
 
-To quote a [Calvin and Habs sketch on YouTube](https://www.youtube.com/shorts/rEQhA-JJlH0):
+To quote a [Calvin and Habs sketch](https://www.youtube.com/shorts/rEQhA-JJlH0):
 
 > THEN THE BUSINESS SHOULD NOT EXIST!
