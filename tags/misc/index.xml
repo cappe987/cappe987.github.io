@@ -6,8 +6,15 @@
     <description>Recent content in Misc on Casper Andersson</description>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://casan.se/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Observations from three years of AI</title>
+      <link>https://casan.se/blog/misc/observations-from-three-years-of-ai/</link>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/misc/observations-from-three-years-of-ai/</guid>
+      <description> I have always been sceptical to AI. Now we&amp;#39;ve seen it in full action for a couple of years. What are the results? What did it cost us? </description>
+    </item>
     <item>
       <title>Don&#39;t use &#39;git stage -A&#39;</title>
       <link>https://casan.se/blog/misc/dont-use-git-stage-a/</link>

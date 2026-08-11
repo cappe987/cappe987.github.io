@@ -3,11 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://casan.se/blog/</loc>
-    <lastmod>2026-08-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/linux/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/linux/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/seamless-redundancy-in-networks/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/misc/</loc>
+    <lastmod>2026-08-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/misc/</loc>
     <lastmod>2026-08-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -17,7 +57,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://casan.se/blog/misc/observations-from-three-years-of-ai/</loc>
+    <lastmod>2026-08-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://casan.se/tags/programming/</loc>
+    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/programming/</loc>
     <lastmod>2026-07-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -32,17 +82,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/tags/</loc>
-    <lastmod>2026-07-31T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://casan.se/blog/networks/how-many-ethernet-ports-are-too-many/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/tags/networks/</loc>
+    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/networks/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -63,21 +113,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/misc/dont-use-git-stage-a/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/linux/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/blog/linux/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/misc/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -212,6 +247,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://casan.se/categories/math/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://casan.se/blog/math/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -223,6 +263,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/computer_science/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/computer-science/</loc>
     <lastmod>2021-07-24T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

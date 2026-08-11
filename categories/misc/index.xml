@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Misc on Casper Andersson</title>
-    <link>https://casan.se/blog/misc/</link>
+    <link>https://casan.se/categories/misc/</link>
     <description>Recent content in Misc on Casper Andersson</description>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://casan.se/blog/misc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://casan.se/categories/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Observations from three years of AI</title>
       <link>https://casan.se/blog/misc/observations-from-three-years-of-ai/</link>
