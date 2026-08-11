@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Seamless redundancy in networks
-tags: ["linux"]
-categories: linux
+tags: ["networks"]
+categories: networks
 description: "
 Redundancy without downtime is crucial in many industries. Try it yourself with
 HSR in network namespaces.
