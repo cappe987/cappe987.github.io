@@ -2,7 +2,6 @@
 title: "Documentation"
 showDate: false
 showAuthor: true
-showDate: false
 showReadingTime: false
 showEdit: false
 showTableOfContents: false

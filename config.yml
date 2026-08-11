@@ -34,7 +34,7 @@ languages:
         pagination:
           pagerSize: 3
         taxonomies:
-          #category: categories
+          category: categories
           tag: tags
           #series: series
         menu:
@@ -223,23 +223,23 @@ markup:
         # lineNos: true
         # style: monokai
 
-privacy:
-    vimeo:
-        disabled: false
-        simple: true
+# privacy:
+#     vimeo:
+#         disabled: false
+#         simple: true
 
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
+#     twitter:
+#         disabled: false
+#         enableDNT: true
+#         simple: true
 
-    instagram:
-        disabled: false
-        simple: true
+#     instagram:
+#         disabled: false
+#         simple: true
 
-    youtube:
-        disabled: false
-        privacyEnhanced: true
+#     youtube:
+#         disabled: false
+#         privacyEnhanced: true
 
 #services:
     #instagram:
