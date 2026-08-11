@@ -17,22 +17,22 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/tags/linux/</loc>
+    <loc>https://casan.se/tags/networks/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/categories/linux/</loc>
+    <loc>https://casan.se/categories/networks/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/linux/</loc>
+    <loc>https://casan.se/blog/networks/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/blog/linux/seamless-redundancy-in-networks/</loc>
+    <loc>https://casan.se/blog/networks/seamless-redundancy-in-networks/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,21 +87,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://casan.se/tags/networks/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/categories/networks/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/blog/networks/</loc>
-    <lastmod>2025-08-06T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://casan.se/blog/programming/the-good-developer/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -113,6 +98,21 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/misc/dont-use-git-stage-a/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/linux/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/linux/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

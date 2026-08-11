@@ -6,8 +6,15 @@
     <description>Recent content in Networks on Casper Andersson</description>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://casan.se/blog/networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Seamless redundancy in networks</title>
+      <link>https://casan.se/blog/networks/seamless-redundancy-in-networks/</link>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/networks/seamless-redundancy-in-networks/</guid>
+      <description> Redundancy without downtime is crucial in many industries. Try it yourself with HSR in network namespaces. </description>
+    </item>
     <item>
       <title>How many ethernet ports are too many?</title>
       <link>https://casan.se/blog/networks/how-many-ethernet-ports-are-too-many/</link>

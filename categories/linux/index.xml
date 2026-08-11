@@ -6,15 +6,8 @@
     <description>Recent content in Linux on Casper Andersson</description>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://casan.se/categories/linux/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Seamless redundancy in networks</title>
-      <link>https://casan.se/blog/linux/seamless-redundancy-in-networks/</link>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://casan.se/blog/linux/seamless-redundancy-in-networks/</guid>
-      <description> Redundancy without downtime is crucial in many industries. Try it yourself with HSR in network namespaces. </description>
-    </item>
     <item>
       <title>Buildroot and U-boot on Raspberry Pi</title>
       <link>https://casan.se/blog/linux/buildroot-and-u-boot-on-raspberry-pi/</link>
