@@ -1,6 +1,5 @@
 baseURL: "https://casan.se/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: casan
-description: Hello World
 theme: papermod
 
 permalinks:
@@ -140,7 +139,7 @@ params:
     ShowReadingTime: true
     disableSpecial1stPost: true
     displayFullLangName: false
-    ShowPostNavLinks: false
+    ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
@@ -150,12 +149,12 @@ params:
 
     profileMode:
         enabled: true
-        title: casan
-        imageUrl: "/img/ghost.png"
+        title: Casan
+        imageUrl: "/img/ghost-dark.svg"
         imageTitle: ProfileMode image
-        # imageWidth: 120
-        # imageHeight: 120
-        #subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        # imageWidth: 150
+        # imageHeight: 150
+        # subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
         subtitle: Software Developer
         #buttons:
             #- name: Blog
@@ -185,10 +184,10 @@ params:
         #Text: "Suggest Changes" # edit text
         #appendFilePath: true # to append file path to Edit link
 
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
+    label:
+        text: "Casan"
+        icon: favicon.svg
+        iconHeight: 35
 
     # analytics:
     #     google:
