@@ -1,5 +1,6 @@
 baseURL: "https://casan.se/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: Casper Andersson
+title: casan
+description: Hello World
 theme: papermod
 
 permalinks:
@@ -123,9 +124,14 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    #description: "My blog"
     #author: Casper Andersson
     author: ""
+    description: "My writings about tech, programming, linux and networks."
+    keywords: 
+        - technology
+        - programming
+        - linux
+        - networks
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: dark
@@ -144,7 +150,7 @@ params:
 
     profileMode:
         enabled: true
-        title: Casper Andersson
+        title: casan
         imageUrl: "/img/ghost.png"
         imageTitle: ProfileMode image
         # imageWidth: 120
