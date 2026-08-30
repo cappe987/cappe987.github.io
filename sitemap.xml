@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://casan.se/blog/</loc>
-    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/</loc>
-    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/categories/</loc>
-    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/kernel-debugging-with-kmemd/</loc>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/linux/</loc>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/categories/linux/</loc>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/blog/linux/</loc>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://casan.se/tags/</loc>
+    <lastmod>2026-08-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -33,11 +58,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/networks/seamless-redundancy-in-networks/</loc>
-    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -98,21 +118,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://casan.se/blog/misc/dont-use-git-stage-a/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/tags/linux/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/categories/linux/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://casan.se/blog/linux/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

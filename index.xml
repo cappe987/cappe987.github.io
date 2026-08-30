@@ -6,8 +6,15 @@
     <description>Recent content on casan</description>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://casan.se/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kernel debugging with kmemd</title>
+      <link>https://casan.se/blog/linux/kernel-debugging-with-kmemd/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://casan.se/blog/linux/kernel-debugging-with-kmemd/</guid>
+      <description> Inspect the memory of a running Linux kernel on a remote system using kmemd, GDB, and Python scripting. </description>
+    </item>
     <item>
       <title>Seamless redundancy in networks</title>
       <link>https://casan.se/blog/networks/seamless-redundancy-in-networks/</link>
